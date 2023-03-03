@@ -5,7 +5,15 @@ author: Sujan Balami
 
 social-network-links:
   twitter: BalamiSujan "https://twitter.com/BalamiSujan"
-  
+# _publications
+  - scope:
+      path: ""
+      type: publications
+    values:
+      layout: single
+      author_profile: true
+      share: true
+      comments: true
 
 plugins:
   - jekyll-relative-links
