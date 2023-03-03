@@ -1,5 +1,5 @@
-theme: "minimal-mistakes-jekyll"
-minimal_mistakes_skin: "neon"
+theme: jekyll-theme-minimal
+minimal_mistakes_skin: 
 title: Sujan Balami
 description: Ph.D. student | University of South Bohemia
 author: Sujan Balami
