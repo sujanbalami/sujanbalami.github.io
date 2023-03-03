@@ -1,5 +1,6 @@
 theme: jekyll-theme-minimal
 title: Sujan Balami
+comments_html: View all %{count} <img src="./sujan.jpg"> comments
 description: Ph.D. student | University of South Bohemia
 author: Sujan Balami
 
