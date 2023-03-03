@@ -4,7 +4,8 @@ description: Ph.D. student | University of South Bohemia
 author: Sujan Balami
 
 social-network-links:
-  twitter: BalamiSujan
+  twitter: BalamiSujan "https://twitter.com/BalamiSujan"
+  
 
 plugins:
   - jekyll-relative-links
