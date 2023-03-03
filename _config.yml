@@ -5,7 +5,8 @@ author: Sujan Balami
 
 social-network-links:
   twitter: BalamiSujan "https://twitter.com/BalamiSujan"
-# _publications
+
+_publications
   - scope:
       path: ""
       type: publications
