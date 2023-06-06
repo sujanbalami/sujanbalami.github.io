@@ -118,12 +118,6 @@ header ul {
 font-size:12px;	
 }
 
-header li {
-  width:89px;
-  float:left;
-  border-right:1px solid #e0e0e0;
-  height:40px;
-}
 
 header li:first-child a {
   border-radius:5px 0 0 5px;
@@ -162,6 +156,7 @@ header ul li + li + li {
   width:89px;
 }
 
+
 header ul a strong {
   font-size:14px;
   display:block;
@@ -189,7 +184,7 @@ footer {
   width:270px;
   float:left;
   position:fixed;
-  bottom:20px;
+  bottom:0px;
   -webkit-font-smoothing:subpixel-antialiased;
 }
 
@@ -199,6 +194,7 @@ footer {
     width:auto;
     margin:0;
   }
+
 
   header, section, footer {
     float:none;
