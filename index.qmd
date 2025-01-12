@@ -7,12 +7,15 @@ about:
     - icon: twitter
       text: Twitter
       href: https://x.com/BalamiSujan
-    - icon: linkedin
-      text: LinkedIn
-      href: https://linkedin.com
+    - icon: ResearchGate
+      text: ResearchGate
+      href: https://www.researchgate.net/profile/Sujan-Balami
     - icon: github
       text: Github
       href: https://github.com/sujanbalami
+    - icon: GoogleScholar
+      text: Google Scholar
+      href: https://scholar.google.com/citations?user=xm8CpYMAAAAJ&hl=en
 ---
 
 Highly motivated and results-driven ecologist with experience on plant and soil microbiome. Skilled in molecular techniques including next-generation sequencing (NGS) methods. Proficient in analyzing NGS data as well as phylogenetic analysis. Published research and review articles in SCI listed journals and gathered experience in meta-analysis. Have strong collaborative spirit and passionate about conducting innovative research that drives scientific breakthroughs.
