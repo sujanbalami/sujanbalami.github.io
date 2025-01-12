@@ -1,0 +1,30 @@
+project:
+  type: website
+  output-dir: "docs"
+
+website:
+  title: "Sujan Balami"
+  navbar:
+    left: 
+      - text: "Home"
+        file: index.qmd
+      - text: "Portfolio"
+        file: portfolio.qmd
+      - text: "Publications"
+        file: publications.qmd
+      - text: "Projects"
+        file: Projects.qmd
+      - text: "CV"
+        file: CV.qmd
+    right:
+      - icon: github
+        href: https://github.com/
+      - icon: twitter
+        href: https://twitter.com
+format:
+  html:
+    theme: lumen
+    css: styles.css
+
+editor: visual
+
