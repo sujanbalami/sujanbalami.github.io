@@ -1,5 +1,7 @@
 ---
-title: "About"
+title: "About me"
+page-layout: full
+title-block-banner: true
 image: sujan.jpg
 about:
   template: jolla

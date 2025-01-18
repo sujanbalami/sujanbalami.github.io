@@ -2,7 +2,7 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "About",
+    "title": "About me",
     "section": "",
     "text": "Highly motivated and results-driven ecologist with experience on plant and soil microbiome. Skilled in molecular techniques including next-generation sequencing (NGS) methods. Proficient in analyzing NGS data as well as phylogenetic analysis. Published research and review articles in SCI listed journals and gathered experience in meta-analysis. Have strong collaborative spirit and passionate about conducting innovative research that drives scientific breakthroughs."
   },
@@ -33,5 +33,19 @@
     "title": "Microbiome data analysis",
     "section": "",
     "text": "This is a post with executable code.\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "Research.html",
+    "href": "Research.html",
+    "title": "Research",
+    "section": "",
+    "text": "Restoration ecology\nFungal ecology"
+  },
+  {
+    "objectID": "Tutorial.html",
+    "href": "Tutorial.html",
+    "title": "Tutorial",
+    "section": "",
+    "text": "Metagenomics\n\nHere, I have illustrated the steps for downstream processing of fungal metagenomic data using QIIME2 in macOSx.\n\nTerminal\n\n\nqiime_command &lt;- \"qiime tools import --type 'FeatureData[Sequence]' --input-path /path/to/sequences.fasta --output-path sequences.qza\"\n\n# Run the QIIME 2 command\nsystem(qiime_command)\n\nWarning in system(qiime_command): error in running command\n\n\n\nImporting pair-end sequences\nDenoising\n\nStatistics\n\nRarefaction curve\n\n\nlibrary(vegan)"
   }
 ]

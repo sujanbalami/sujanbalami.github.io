@@ -10,8 +10,10 @@ website:
         file: index.qmd
       - text: "Publications"
         file: publications.qmd
-      - text: "Projects"
-        file: Projects.qmd
+      - text: "Research"
+        file: Research.qmd
+      - text: "Tutorial"
+        file: Tutorial.qmd
       - text: "CV"
         file: CV.qmd
     right:
@@ -21,7 +23,7 @@ website:
         href: https://twitter.com
 format:
   html:
-    theme: lumen
+    theme: cosmos
     css: styles.css
 
 editor: visual

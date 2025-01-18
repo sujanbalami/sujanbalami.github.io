@@ -1,0 +1,34 @@
+---
+title: "Tutorial"
+page-layout: full
+title-block-banner: true
+---
+
+------------------------------------------------------------------------
+
+[**Metagenomics**]{style="font-size: 24px;"}
+
+![](pictures/fungi.png){width="10%"}
+
+Here, I have illustrated the steps for downstream processing of fungal metagenomic data using QIIME2 in macOSx.
+
+-   **Importing pair-end sequences**
+
+```{r}
+qiime_command <- "qiime tools import --type 'FeatureData[Sequence]' --input-path /path/to/sequences.fasta --output-path sequences.qza"
+
+# Run the QIIME 2 command
+system(qiime_command)
+```
+
+-   **Denoising**
+
+-   **Feature table**
+
+[**Statistics**]{style="font-size: 24px;"}
+
+1.  **Rarefaction curve**
+
+```{r rarefaction-curve, warning=FALSE, message=FALSE}
+library(vegan)
+```
