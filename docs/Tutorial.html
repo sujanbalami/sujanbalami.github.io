@@ -191,30 +191,19 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <hr>
 <p><span style="font-size: 24px;"><strong>Metagenomics</strong></span></p>
-<p><img src="fungi.png" class="img-fluid" style="width:10.0%"></p>
+<p><img src="pictures/fungi.png" class="img-fluid" style="width:10.0%"></p>
 <p>Here, I have illustrated the steps for downstream processing of fungal metagenomic data using QIIME2 in macOSx.</p>
-<ul>
-<li><strong>Terminal</strong></li>
-</ul>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>qiime_command <span class="ot">&lt;-</span> <span class="st">"qiime tools import --type 'FeatureData[Sequence]' --input-path /path/to/sequences.fasta --output-path sequences.qza"</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Run the QIIME 2 command</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">system</span>(qiime_command)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stderr">
-<pre><code>Warning in system(qiime_command): error in running command</code></pre>
-</div>
-</div>
 <ul>
 <li><p><strong>Importing pair-end sequences</strong></p></li>
 <li><p><strong>Denoising</strong></p></li>
+<li><p><strong>Feature table</strong></p></li>
 </ul>
 <p><span style="font-size: 24px;"><strong>Statistics</strong></span></p>
 <ol type="1">
 <li><strong>Rarefaction curve</strong></li>
 </ol>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(vegan)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(vegan)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 
 

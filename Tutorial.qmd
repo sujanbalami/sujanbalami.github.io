@@ -14,13 +14,6 @@ Here, I have illustrated the steps for downstream processing of fungal metagenom
 
 -   **Importing pair-end sequences**
 
-```{r}
-qiime_command <- "qiime tools import --type 'FeatureData[Sequence]' --input-path /path/to/sequences.fasta --output-path sequences.qza"
-
-# Run the QIIME 2 command
-system(qiime_command)
-```
-
 -   **Denoising**
 
 -   **Feature table**

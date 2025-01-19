@@ -2,26 +2,29 @@
 title: "Publications"
 page-layout: full
 title-block-banner: true
+format:
+  html: 
+    css: styles/publication.css
 ---
 
 ------------------------------------------------------------------------
 
-**Main author**
+**Main Author**
 
--   How do root fungi of Alnus nepalensis and Schima wallichii recover during succession of abandoned land?[\[Link\]](https://link.springer.com/article/10.1007/s00572-023-01124-6)
--   Soil fungal communities in abandoned agricultural land has not yet moved towards the seminatural forest.[\[Link\]](https://www.sciencedirect.com/science/article/pii/S0378112721002693)
--   Soil fungal communities across land use types.[\[Link\]](https://iforest.sisef.org/abstract/?id=ifor3231-013)
--   Effects of invasive Ageratina adenophora on mycelial growth of some important soil fungi.[\[Link\]](https://www.thaiscience.info/Journals/Article/SONG/10993263.pdf)
--   Effect of invasive Ageratina adenophora on species richness and composition of saprotrophic and pathogenic soil fungi.[\[Link\]](https://journal.biotrop.org/index.php/biotropia/article/view/702)
--   Herbivory damage in native Alnus nepalensis and invasive Ageratina adenophora.[\[Link\]](https://www.nepjol.info/index.php/BOTOR/article/view/21026)
--   Sterilization effect of Ageratina adenophora invaded soil on root growth of native Schima wallichii.[\[Link\]](https://scholar.google.com/scholar?oi=bibs&cluster=8416116845825312059&btnI=1&hl=en)
+-   [How do root fungi of *Alnus nepalensis* and *Schima wallichii* recover during succession of abandoned land?](https://link.springer.com/article/10.1007/s00572-023-01124-6)
+-   [Soil fungal communities in abandoned agricultural land has not yet moved towards the seminatural forest.](https://www.sciencedirect.com/science/article/pii/S0378112721002693)
+-   [Soil fungal communities across land use types.](https://iforest.sisef.org/abstract/?id=ifor3231-013)
+-   [Effects of invasive Ageratina adenophora on mycelial growth of some important soil fungi.](https://www.thaiscience.info/Journals/Article/SONG/10993263.pdf)
+-   [Effect of invasive Ageratina adenophora on species richness and composition of saprotrophic and pathogenic soil fungi.](https://journal.biotrop.org/index.php/biotropia/article/view/702)
+-   [Herbivory damage in native Alnus nepalensis and invasive Ageratina adenophora.](https://www.nepjol.info/index.php/BOTOR/article/view/21026)
+-   [Sterilization effect of Ageratina adenophora invaded soil on root growth of native Schima wallichii.](https://scholar.google.com/scholar?oi=bibs&cluster=8416116845825312059&btnI=1&hl=en)
 
 **Co-author**
 
--   Strangler fig–host tree associations: Insights into the ecology and management of tropical urban green spaces[\[Link\]](https://nph.onlinelibrary.wiley.com/doi/full/10.1002/ppp3.10572)
--   Combining critical transition indicator to compare the stable structure of epiphyte–host networks[\[Link\]](https://www.sciencedirect.com/science/article/pii/S1470160X24009270)
--   Laetiporus sulphureus in the mid-hills of Central Nepal: ecology, ethnomycology and present status[\[Link\]](https://www.nepjol.info/index.php/ON/article/view/67347)
--   Variation in carbon storage among tree species in the planted forest of Kathmandu, Central Nepal.[\[Link\]](https://www.jstor.org/stable/26978192)
--   Comparative assessment of ethnobotany and antibacterial activity of Moringa oleifera Lam. in Nepal.[\[Link\]](https://ethnobotanyjournal.org/era/index.php/era/article/view/4395)
--   Peoples' Perception on Invasive Alien Plant Species of Ramdhuni Municipality, Sunsari District, Eastern Nepal.[\[Link\]](https://www.nepjol.info/index.php/arj/article/view/50481)
--   Nutritive value of some wild edible macrofungi from Devdaha, Rupandehi district, Nepal.[\[Link\]](https://www.researchgate.net/publication/367331807_Nutritive_value_of_some_wild_edible_macrofungi_from_Devdaha_Rupandhei_district_Nepal)
+-   [Strangler fig–host tree associations: Insights into the ecology and management of tropical urban green spaces](https://nph.onlinelibrary.wiley.com/doi/full/10.1002/ppp3.10572)
+-   [Combining critical transition indicator to compare the stable structure of epiphyte–host networks](https://www.sciencedirect.com/science/article/pii/S1470160X24009270)
+-   [Laetiporus sulphureus in the mid-hills of Central Nepal: ecology, ethnomycology and present status](https://www.nepjol.info/index.php/ON/article/view/67347)
+-   [Variation in carbon storage among tree species in the planted forest of Kathmandu, Central Nepal.](https://www.jstor.org/stable/26978192)
+-   [Comparative assessment of ethnobotany and antibacterial activity of Moringa oleifera Lam. in Nepal.](https://ethnobotanyjournal.org/era/index.php/era/article/view/4395)
+-   [Peoples' Perception on Invasive Alien Plant Species of Ramdhuni Municipality, Sunsari District, Eastern Nepal.](https://www.nepjol.info/index.php/arj/article/view/50481)
+-   [Nutritive value of some wild edible macrofungi from Devdaha, Rupandehi district, Nepal.](https://www.researchgate.net/publication/367331807_Nutritive_value_of_some_wild_edible_macrofungi_from_Devdaha_Rupandhei_district_Nepal)

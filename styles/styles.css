@@ -1,0 +1,8 @@
+.about-extra {
+  font-family: 'Arial', serif;
+  font-size: 18px;
+  color: #553; /* Adjust the text color */
+  margin-top: 20px; /* Add spacing above this block */
+  line-height: 1.6; /* Adjust line spacing for better readability */
+  text-align: justify; /* Justify the text */
+}

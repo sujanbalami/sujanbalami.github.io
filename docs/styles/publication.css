@@ -1,0 +1,4 @@
+a {
+  text-decoration: none; /* Removes underline */
+  color: steelblue; /* Ensures link inherits text color */
+}

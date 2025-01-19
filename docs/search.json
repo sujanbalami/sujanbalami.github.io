@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "About me",
     "section": "",
-    "text": "Highly motivated and results-driven ecologist with experience on plant and soil microbiome. Skilled in molecular techniques including next-generation sequencing (NGS) methods. Proficient in analyzing NGS data as well as phylogenetic analysis. Published research and review articles in SCI listed journals and gathered experience in meta-analysis. Have strong collaborative spirit and passionate about conducting innovative research that drives scientific breakthroughs."
+    "text": "Professional summary\nHighly motivated and results-driven ecologist with experience on plant and soil microbiome. Skilled in molecular techniques including next-generation sequencing (NGS) methods. Proficient in analyzing NGS data as well as phylogenetic analysis. Published research and review articles in SCI listed journals and gathered experience in meta-analysis. Have strong collaborative spirit and passionate about conducting innovative research that drives scientific breakthroughs.\n\n\nEducation\nUniversity of South Bohemia, Ceske Budejovice | Czech Republic | PhD in Botany\nTribhuvan University, Kathmandu | Nepal | MSc in Botany\n\n\nExperience\nTeaching Assistant | Tribhuvan University, Kathmandu | Nepal\nResearch Assistant | CzechGlobe, Czech Academy of Science | Czech Republic\nLab Technician | University of South Bohemia, Ceske Budejovice | Czech Republic"
   },
   {
     "objectID": "portfolio.html",
@@ -18,7 +18,7 @@
     "href": "publications.html",
     "title": "Publications",
     "section": "",
-    "text": "Main author\n\nHow do root fungi of Alnus nepalensis and Schima wallichii recover during succession of abandoned land?[Link]\nSoil fungal communities in abandoned agricultural land has not yet moved towards the seminatural forest.[Link]\nSoil fungal communities across land use types.[Link]\nEffects of invasive Ageratina adenophora on mycelial growth of some important soil fungi.[Link]\nEffect of invasive Ageratina adenophora on species richness and composition of saprotrophic and pathogenic soil fungi.[Link]\nHerbivory damage in native Alnus nepalensis and invasive Ageratina adenophora.[Link]\nSterilization effect of Ageratina adenophora invaded soil on root growth of native Schima wallichii.[Link]\n\nCo-author\n\nStrangler fig–host tree associations: Insights into the ecology and management of tropical urban green spaces[Link]\nCombining critical transition indicator to compare the stable structure of epiphyte–host networks[Link]\nLaetiporus sulphureus in the mid-hills of Central Nepal: ecology, ethnomycology and present status[Link]\nVariation in carbon storage among tree species in the planted forest of Kathmandu, Central Nepal.[Link]\nComparative assessment of ethnobotany and antibacterial activity of Moringa oleifera Lam. in Nepal.[Link]\nPeoples’ Perception on Invasive Alien Plant Species of Ramdhuni Municipality, Sunsari District, Eastern Nepal.[Link]\nNutritive value of some wild edible macrofungi from Devdaha, Rupandehi district, Nepal.[Link]"
+    "text": "Main Author\n\nHow do root fungi of Alnus nepalensis and Schima wallichii recover during succession of abandoned land?\nSoil fungal communities in abandoned agricultural land has not yet moved towards the seminatural forest.\nSoil fungal communities across land use types.\nEffects of invasive Ageratina adenophora on mycelial growth of some important soil fungi.\nEffect of invasive Ageratina adenophora on species richness and composition of saprotrophic and pathogenic soil fungi.\nHerbivory damage in native Alnus nepalensis and invasive Ageratina adenophora.\nSterilization effect of Ageratina adenophora invaded soil on root growth of native Schima wallichii.\n\nCo-author\n\nStrangler fig–host tree associations: Insights into the ecology and management of tropical urban green spaces\nCombining critical transition indicator to compare the stable structure of epiphyte–host networks\nLaetiporus sulphureus in the mid-hills of Central Nepal: ecology, ethnomycology and present status\nVariation in carbon storage among tree species in the planted forest of Kathmandu, Central Nepal.\nComparative assessment of ethnobotany and antibacterial activity of Moringa oleifera Lam. in Nepal.\nPeoples’ Perception on Invasive Alien Plant Species of Ramdhuni Municipality, Sunsari District, Eastern Nepal.\nNutritive value of some wild edible macrofungi from Devdaha, Rupandehi district, Nepal."
   },
   {
     "objectID": "posts/welcome/index.html",
@@ -46,6 +46,27 @@
     "href": "Tutorial.html",
     "title": "Tutorial",
     "section": "",
-    "text": "Metagenomics\n\nHere, I have illustrated the steps for downstream processing of fungal metagenomic data using QIIME2 in macOSx.\n\nTerminal\n\n\nqiime_command &lt;- \"qiime tools import --type 'FeatureData[Sequence]' --input-path /path/to/sequences.fasta --output-path sequences.qza\"\n\n# Run the QIIME 2 command\nsystem(qiime_command)\n\nWarning in system(qiime_command): error in running command\n\n\n\nImporting pair-end sequences\nDenoising\n\nStatistics\n\nRarefaction curve\n\n\nlibrary(vegan)"
+    "text": "Metagenomics\n\nHere, I have illustrated the steps for downstream processing of fungal metagenomic data using QIIME2 in macOSx.\n\nImporting pair-end sequences\nDenoising\nFeature table\n\nStatistics\n\nRarefaction curve\n\n\nlibrary(vegan)"
+  },
+  {
+    "objectID": "index.html#education",
+    "href": "index.html#education",
+    "title": "About me",
+    "section": "Education",
+    "text": "Education\nUniversity of California, San Diego | San Diego, CA PhD in Mathematics | Sept 2011 - June 2015\nMacalester College | St. Paul MA B.A in Economics | Sept 2007 - June 2011"
+  },
+  {
+    "objectID": "index.html#experience",
+    "href": "index.html#experience",
+    "title": "About me",
+    "section": "Experience",
+    "text": "Experience\nWengo Analytics | Head Data Scientist | April 2018 - present\nGeoScynce | Chief Analyst | Spet 2012 - April 2018"
+  },
+  {
+    "objectID": "index.html#professional-summary",
+    "href": "index.html#professional-summary",
+    "title": "About me",
+    "section": "Professional summary",
+    "text": "Professional summary\nHighly motivated and results-driven ecologist with experience on plant and soil microbiome. Skilled in molecular techniques including next-generation sequencing (NGS) methods. Proficient in analyzing NGS data as well as phylogenetic analysis. Published research and review articles in SCI listed journals and gathered experience in meta-analysis. Have strong collaborative spirit and passionate about conducting innovative research that drives scientific breakthroughs.\nUniversity of California, San Diego | San Diego, CA PhD in Mathematics | Sept 2011 - June 2015\nMacalester College | St. Paul MA B.A in Economics | Sept 2007 - June 2011"
   }
 ]

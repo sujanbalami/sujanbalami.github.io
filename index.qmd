@@ -2,9 +2,12 @@
 title: "About me"
 page-layout: full
 title-block-banner: true
+format: 
+  html: 
+    css: styles/styles.css
 image: sujan.jpg
 about:
-  template: jolla
+  template: trestles
   links:
     - icon: twitter
       text: Twitter
@@ -15,9 +18,26 @@ about:
     - icon: github
       text: Github
       href: https://github.com/sujanbalami
-    - icon: GoogleScholar
+    - icon: Google Scholar
       text: Google Scholar
       href: https://scholar.google.com/citations?user=xm8CpYMAAAAJ&hl=en
 ---
-
+:::{.about-extra}
+### Professional summary
 Highly motivated and results-driven ecologist with experience on plant and soil microbiome. Skilled in molecular techniques including next-generation sequencing (NGS) methods. Proficient in analyzing NGS data as well as phylogenetic analysis. Published research and review articles in SCI listed journals and gathered experience in meta-analysis. Have strong collaborative spirit and passionate about conducting innovative research that drives scientific breakthroughs.
+
+### Education
+University of South Bohemia, Ceske Budejovice \| Czech Republic \| PhD in Botany
+
+Tribhuvan University, Kathmandu \| Nepal \| MSc in Botany
+
+### Experience
+
+Teaching Assistant \| Tribhuvan University, Kathmandu \| Nepal
+
+Research Assistant \| CzechGlobe, Czech Academy of Science \| Czech Republic
+
+Lab Technician \| University of South Bohemia, Ceske Budejovice \| Czech Republic
+:::
+
+
