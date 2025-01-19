@@ -1,9 +1,7 @@
 project:
   type: website
   output-dir: "docs"
-
 website:
-  title: "Sujan Balami"
   navbar:
     left: 
       - text: "Home"

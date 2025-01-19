@@ -1,2 +1,7 @@
-![](CV.pdf){width=100%
-height=1000px}
+---
+title: "CV"
+page-layout: full
+title-block-banner: true
+---
+
+![](CV.pdf){width="100%" height="1000px"}

@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Tutorial – Sujan Balami</title>
+<title>Tutorial</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -103,6 +103,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 <link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="styles/tutorial.css">
 </head>
 
 <body class="nav-fixed">
@@ -111,11 +112,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <header id="quarto-header" class="headroom fixed-top quarto-banner">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
-      <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title">Sujan Balami</span>
-    </a>
-  </div>
             <div id="quarto-search" class="" title="Search"></div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
@@ -189,16 +185,87 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 
-<hr>
-<p><span style="font-size: 24px;"><strong>Metagenomics</strong></span></p>
+<section id="metagenomics" class="level2 metagenomics">
+<h2 class="anchored" data-anchor-id="metagenomics">Metagenomics</h2>
 <p><img src="pictures/fungi.png" class="img-fluid" style="width:10.0%"></p>
 <p>Here, I have illustrated the steps for downstream processing of fungal metagenomic data using QIIME2 in macOSx.</p>
-<ul>
-<li><p><strong>Importing pair-end sequences</strong></p></li>
-<li><p><strong>Denoising</strong></p></li>
-<li><p><strong>Feature table</strong></p></li>
-</ul>
-<p><span style="font-size: 24px;"><strong>Statistics</strong></span></p>
+</section>
+<section id="download-and-install-qiime2" class="level4">
+<h4 class="anchored" data-anchor-id="download-and-install-qiime2">Download and install QIIME2</h4>
+<div class="download">
+<p>To download QIIME2 natively, you can follow these steps:</p>
+<ol type="1">
+<li>Install <strong><em><a href="https://docs.anaconda.com/miniconda/">Miniconda</a></em></strong> appropriate for your system.</li>
+<li>Open terminal window</li>
+<li>Confirm Miniconda is installed. Just write “conda” and press enter.</li>
+<li>Now install *<strong>QIIME2 Metagenome Distribution</strong> running following code.</li>
+</ol>
+<p>conda env create -n qiime2-metagenome-2024.10 –file https://data.qiime2.org/distro/metagenome/qiime2-metagenome-2024.10-py310-osx-conda.yml</p>
+</div>
+</section>
+<section id="activate-qiime2-environment" class="level4">
+<h4 class="anchored" data-anchor-id="activate-qiime2-environment">Activate QIIME2 environment</h4>
+<div class="download">
+<p>After installing Miniconda and QIIME2 Metagenome Distribution run following code to activate QIIME2 environment</p>
+<p>conda activate qiime2-metagenome-2024.10</p>
+</div>
+</section>
+<section id="importing-pair-end-sequences" class="level4">
+<h4 class="anchored" data-anchor-id="importing-pair-end-sequences">Importing pair-end sequences</h4>
+<div class="download">
+<p>qiime tools import<br>
+–type ‘SampleData[PairedEndSequencesWithQuality]’<br>
+–input-path .<br>
+–input-format CasavaOneEightSingleLanePerSampleDirFmt<br>
+–output-path demux-paired-end.qza</p>
+</div>
+</section>
+<section id="visualize-imported-paired-end-sequences" class="level4">
+<h4 class="anchored" data-anchor-id="visualize-imported-paired-end-sequences">Visualize imported paired-end sequences</h4>
+<div class="download">
+<p>qiime demux summarize<br>
+–i-data demux-paired-end.qza<br>
+–o-visualization demux.qzv</p>
+</div>
+</section>
+<section id="denoising" class="level4">
+<h4 class="anchored" data-anchor-id="denoising">Denoising</h4>
+<div class="download">
+<p>To download and install QIIMM2 first install Conda</p>
+</div>
+</section>
+<section id="getting-feature-table" class="level4">
+<h4 class="anchored" data-anchor-id="getting-feature-table">Getting feature table</h4>
+<div class="download">
+<p>To download and install QIIMM2 first install Conda</p>
+</div>
+</section>
+<section id="getting-representative-sequences" class="level4">
+<h4 class="anchored" data-anchor-id="getting-representative-sequences">Getting representative sequences</h4>
+<div class="download">
+<p>To download and install QIIMM2 first install Conda</p>
+</div>
+</section>
+<section id="alignment" class="level4">
+<h4 class="anchored" data-anchor-id="alignment">Alignment</h4>
+<div class="download">
+<p>To download and install QIIMM2 first install Conda</p>
+</div>
+</section>
+<section id="alpha-diversity" class="level4">
+<h4 class="anchored" data-anchor-id="alpha-diversity">Alpha-Diversity</h4>
+<div class="download">
+<p>To download and install QIIMM2 first install Conda</p>
+</div>
+</section>
+<section id="beta-diversity" class="level4">
+<h4 class="anchored" data-anchor-id="beta-diversity">Beta-Diversity</h4>
+<div class="download">
+<p>To download and install QIIMM2 first install Conda</p>
+</div>
+</section>
+<section id="statistics" class="level3">
+<h3 class="anchored" data-anchor-id="statistics">Statistics</h3>
 <ol type="1">
 <li><strong>Rarefaction curve</strong></li>
 </ol>
@@ -207,6 +274,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

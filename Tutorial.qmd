@@ -2,24 +2,80 @@
 title: "Tutorial"
 page-layout: full
 title-block-banner: true
+format: 
+  html: 
+    css: styles/tutorial.css
 ---
-
-------------------------------------------------------------------------
-
-[**Metagenomics**]{style="font-size: 24px;"}
-
+::: metagenomics
+## Metagenomics
 ![](pictures/fungi.png){width="10%"}
 
 Here, I have illustrated the steps for downstream processing of fungal metagenomic data using QIIME2 in macOSx.
 
--   **Importing pair-end sequences**
+:::
 
--   **Denoising**
+#### Download and install QIIME2
+::: download
+To download QIIME2 natively, you can follow these steps:
 
--   **Feature table**
+1. Install ***[Miniconda](https://docs.anaconda.com/miniconda/)*** appropriate for your system.
+2. Open terminal window
+3. Confirm Miniconda is installed. Just write "conda" and press enter.
+4. Now install ***QIIME2 Metagenome Distribution** running following code.
+  
+  conda env create -n qiime2-metagenome-2024.10 --file https://data.qiime2.org/distro/metagenome/qiime2-metagenome-2024.10-py310-osx-conda.yml
+:::
 
-[**Statistics**]{style="font-size: 24px;"}
+#### Activate QIIME2 environment
+::: download
+After installing Miniconda and QIIME2 Metagenome Distribution run following code to activate QIIME2 environment 
 
+conda activate qiime2-metagenome-2024.10
+:::
+
+#### Importing pair-end sequences
+::: download
+qiime tools import \
+  --type 'SampleData[PairedEndSequencesWithQuality]' \
+  --input-path . \
+  --input-format CasavaOneEightSingleLanePerSampleDirFmt \
+  --output-path demux-paired-end.qza
+:::
+
+#### Visualize imported paired-end sequences
+::: download
+qiime demux summarize \
+  --i-data demux-paired-end.qza \
+  --o-visualization demux.qzv
+:::
+#### Denoising
+::: download
+To download and install QIIMM2 first install Conda
+:::
+#### Getting feature table
+::: download
+To download and install QIIMM2 first install Conda
+:::
+#### Getting representative sequences
+::: download
+To download and install QIIMM2 first install Conda
+:::
+#### Alignment
+::: download
+To download and install QIIMM2 first install Conda
+:::
+
+#### Alpha-Diversity
+::: download
+To download and install QIIMM2 first install Conda
+:::
+
+#### Beta-Diversity
+::: download
+To download and install QIIMM2 first install Conda
+:::
+
+### Statistics
 1.  **Rarefaction curve**
 
 ```{r rarefaction-curve, warning=FALSE, message=FALSE}

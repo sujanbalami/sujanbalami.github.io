@@ -1,0 +1,22 @@
+.metagenomics {
+  font-family: 'Arial', serif;
+  font-size: 15px;
+  color: #553; /* Adjust the text color */
+  margin-top: 20px; /* Add spacing above this block */
+  line-height: 1.6; /* Adjust line spacing for better readability */
+  text-align: justify; /* Justify the text */
+}
+
+
+/* Styling for grey box */
+.download {
+  background-color: #f9f9f9; /* Softer light grey for background */
+  padding: 15px; /* Add spacing inside the box */
+  border-left: 4px none; /* Subtle left border for emphasis */
+  margin: 20px 0; /* Vertical margin to separate content */
+  font-size: 16px; /* Readable font size */
+  color: #444; /* Text color for readability */
+  border-radius: 5px; /* Rounded corners for a smoother look */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adds a slight shadow for depth */
+}
+

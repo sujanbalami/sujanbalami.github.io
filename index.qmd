@@ -7,7 +7,7 @@ format:
     css: styles/styles.css
 image: sujan.jpg
 about:
-  template: trestles
+  template: jolla
   links:
     - icon: twitter
       text: Twitter
@@ -22,11 +22,27 @@ about:
       text: Google Scholar
       href: https://scholar.google.com/citations?user=xm8CpYMAAAAJ&hl=en
 ---
-:::{.about-extra}
+
+::: contact
+**Sujan Balami PhD**
+
+*Postdoctoral Research Fellow*
+
+Restoration Ecology Group
+
+Key Laboratory of Tropical Forest Ecology \| Xishuangbanna Tropical Botanical Garden
+
+Chinese Academy of Sciences
+:::
+------------------------------------------------------------------------
+
+::: about-extra
 ### Professional summary
+
 Highly motivated and results-driven ecologist with experience on plant and soil microbiome. Skilled in molecular techniques including next-generation sequencing (NGS) methods. Proficient in analyzing NGS data as well as phylogenetic analysis. Published research and review articles in SCI listed journals and gathered experience in meta-analysis. Have strong collaborative spirit and passionate about conducting innovative research that drives scientific breakthroughs.
 
 ### Education
+
 University of South Bohemia, Ceske Budejovice \| Czech Republic \| PhD in Botany
 
 Tribhuvan University, Kathmandu \| Nepal \| MSc in Botany
@@ -40,4 +56,11 @@ Research Assistant \| CzechGlobe, Czech Academy of Science \| Czech Republic
 Lab Technician \| University of South Bohemia, Ceske Budejovice \| Czech Republic
 :::
 
+------------------------------------------------------------------------
+::: contact2
+### Contact
+E-mail: balamisujan@gmail.com \| sujanbalami@xtbg.ac.cn
 
+Address: Menglun Town \|  Mengla County \| Yunnan Province  \| China
+
+:::

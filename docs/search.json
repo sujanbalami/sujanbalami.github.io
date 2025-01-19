@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "About me",
     "section": "",
-    "text": "Professional summary\nHighly motivated and results-driven ecologist with experience on plant and soil microbiome. Skilled in molecular techniques including next-generation sequencing (NGS) methods. Proficient in analyzing NGS data as well as phylogenetic analysis. Published research and review articles in SCI listed journals and gathered experience in meta-analysis. Have strong collaborative spirit and passionate about conducting innovative research that drives scientific breakthroughs.\n\n\nEducation\nUniversity of South Bohemia, Ceske Budejovice | Czech Republic | PhD in Botany\nTribhuvan University, Kathmandu | Nepal | MSc in Botany\n\n\nExperience\nTeaching Assistant | Tribhuvan University, Kathmandu | Nepal\nResearch Assistant | CzechGlobe, Czech Academy of Science | Czech Republic\nLab Technician | University of South Bohemia, Ceske Budejovice | Czech Republic"
+    "text": "Sujan Balami PhD\nPostdoctoral Research Fellow\nRestoration Ecology Group\nKey Laboratory of Tropical Forest Ecology | Xishuangbanna Tropical Botanical Garden\nChinese Academy of Sciences\n\n\n\n\nProfessional summary\nHighly motivated and results-driven ecologist with experience on plant and soil microbiome. Skilled in molecular techniques including next-generation sequencing (NGS) methods. Proficient in analyzing NGS data as well as phylogenetic analysis. Published research and review articles in SCI listed journals and gathered experience in meta-analysis. Have strong collaborative spirit and passionate about conducting innovative research that drives scientific breakthroughs.\n\n\nEducation\nUniversity of South Bohemia, Ceske Budejovice | Czech Republic | PhD in Botany\nTribhuvan University, Kathmandu | Nepal | MSc in Botany\n\n\nExperience\nTeaching Assistant | Tribhuvan University, Kathmandu | Nepal\nResearch Assistant | CzechGlobe, Czech Academy of Science | Czech Republic\nLab Technician | University of South Bohemia, Ceske Budejovice | Czech Republic\n\n\n\n\nContact\nE-mail: balamisujan@gmail.com | sujanbalami@xtbg.ac.cn\nAddress: Menglun Town | Mengla County | Yunnan Province | China"
   },
   {
     "objectID": "portfolio.html",
@@ -18,7 +18,7 @@
     "href": "publications.html",
     "title": "Publications",
     "section": "",
-    "text": "Main Author\n\nHow do root fungi of Alnus nepalensis and Schima wallichii recover during succession of abandoned land?\nSoil fungal communities in abandoned agricultural land has not yet moved towards the seminatural forest.\nSoil fungal communities across land use types.\nEffects of invasive Ageratina adenophora on mycelial growth of some important soil fungi.\nEffect of invasive Ageratina adenophora on species richness and composition of saprotrophic and pathogenic soil fungi.\nHerbivory damage in native Alnus nepalensis and invasive Ageratina adenophora.\nSterilization effect of Ageratina adenophora invaded soil on root growth of native Schima wallichii.\n\nCo-author\n\nStrangler fig–host tree associations: Insights into the ecology and management of tropical urban green spaces\nCombining critical transition indicator to compare the stable structure of epiphyte–host networks\nLaetiporus sulphureus in the mid-hills of Central Nepal: ecology, ethnomycology and present status\nVariation in carbon storage among tree species in the planted forest of Kathmandu, Central Nepal.\nComparative assessment of ethnobotany and antibacterial activity of Moringa oleifera Lam. in Nepal.\nPeoples’ Perception on Invasive Alien Plant Species of Ramdhuni Municipality, Sunsari District, Eastern Nepal.\nNutritive value of some wild edible macrofungi from Devdaha, Rupandehi district, Nepal."
+    "text": "Main Author\n\nHow do root fungi of Alnus nepalensis and Schima wallichii recover during succession of abandoned land?\nSoil fungal communities in abandoned agricultural land has not yet moved towards the seminatural forest.\nSoil fungal communities across land use types.\nEffects of invasive Ageratina adenophora on mycelial growth of some important soil fungi.\nEffect of invasive Ageratina adenophora on species richness and composition of saprotrophic and pathogenic soil fungi.\nHerbivory damage in native Alnus nepalensis and invasive Ageratina adenophora.\nSterilization effect of Ageratina adenophora invaded soil on root growth of native Schima wallichii.\n\n\n\nCo-author\n\nStrangler fig–host tree associations: Insights into the ecology and management of tropical urban green spaces\nCombining critical transition indicator to compare the stable structure of epiphyte–host networks\nLaetiporus sulphureus in the mid-hills of Central Nepal: ecology, ethnomycology and present status\nVariation in carbon storage among tree species in the planted forest of Kathmandu, Central Nepal.\nComparative assessment of ethnobotany and antibacterial activity of Moringa oleifera Lam. in Nepal.\nPeoples’ Perception on Invasive Alien Plant Species of Ramdhuni Municipality, Sunsari District, Eastern Nepal.\nNutritive value of some wild edible macrofungi from Devdaha, Rupandehi district, Nepal."
   },
   {
     "objectID": "posts/welcome/index.html",
@@ -39,14 +39,14 @@
     "href": "Research.html",
     "title": "Research",
     "section": "",
-    "text": "Restoration ecology\nFungal ecology"
+    "text": "Restoration Ecology\n\n\nFungal Ecology\n\n\nFungal Taxonomy"
   },
   {
     "objectID": "Tutorial.html",
     "href": "Tutorial.html",
     "title": "Tutorial",
     "section": "",
-    "text": "Metagenomics\n\nHere, I have illustrated the steps for downstream processing of fungal metagenomic data using QIIME2 in macOSx.\n\nImporting pair-end sequences\nDenoising\nFeature table\n\nStatistics\n\nRarefaction curve\n\n\nlibrary(vegan)"
+    "text": "Here, I have illustrated the steps for downstream processing of fungal metagenomic data using QIIME2 in macOSx."
   },
   {
     "objectID": "index.html#education",
@@ -68,5 +68,12 @@
     "title": "About me",
     "section": "Professional summary",
     "text": "Professional summary\nHighly motivated and results-driven ecologist with experience on plant and soil microbiome. Skilled in molecular techniques including next-generation sequencing (NGS) methods. Proficient in analyzing NGS data as well as phylogenetic analysis. Published research and review articles in SCI listed journals and gathered experience in meta-analysis. Have strong collaborative spirit and passionate about conducting innovative research that drives scientific breakthroughs.\nUniversity of California, San Diego | San Diego, CA PhD in Mathematics | Sept 2011 - June 2015\nMacalester College | St. Paul MA B.A in Economics | Sept 2007 - June 2011"
+  },
+  {
+    "objectID": "Tutorial.html#metagenomics",
+    "href": "Tutorial.html#metagenomics",
+    "title": "Tutorial",
+    "section": "",
+    "text": "Here, I have illustrated the steps for downstream processing of fungal metagenomic data using QIIME2 in macOSx."
   }
 ]
