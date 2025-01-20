@@ -7,7 +7,7 @@ format:
     css: styles/tutorial.css
 ---
 ::: metagenomics
-## Metagenomics
+## Downstream processing of fungal metagenomic data
 ![](pictures/fungi.png){width="10%"}
 
 Here, I have illustrated the steps for downstream processing of fungal metagenomic data using QIIME2 in macOSx.
@@ -18,55 +18,127 @@ Here, I have illustrated the steps for downstream processing of fungal metagenom
 ::: download
 To download QIIME2 natively, you can follow these steps:
 
-1. Install ***[Miniconda](https://docs.anaconda.com/miniconda/)*** appropriate for your system.
-2. Open terminal window
+1. Install **[Miniconda](https://docs.anaconda.com/miniconda/)** appropriate to your system.
+2. Then, open terminal window.
 3. Confirm Miniconda is installed. Just write "conda" and press enter.
-4. Now install ***QIIME2 Metagenome Distribution** running following code.
+4. Now install **[QIIME2 Metagenome Distribution](https://docs.qiime2.org/2024.10/install/native/#install-qiime-2-within-a-conda-environment)** running following code.
   
-  conda env create -n qiime2-metagenome-2024.10 --file https://data.qiime2.org/distro/metagenome/qiime2-metagenome-2024.10-py310-osx-conda.yml
+<span style="color: #0000FF;">conda env create -n qiime2-metagenome-2024.10 --file https://data.qiime2.org/distro/metagenome/qiime2-metagenome-2024.10-py310-osx-conda.yml</span>
+  
+It will take some time..... 
 :::
 
 #### Activate QIIME2 environment
 ::: download
-After installing Miniconda and QIIME2 Metagenome Distribution run following code to activate QIIME2 environment 
+1.Run following code to activate QIIME2 environment.
 
-conda activate qiime2-metagenome-2024.10
+<span style="color: #0000FF;">conda activate qiime2-metagenome-2024.10</span>
 :::
 
-#### Importing pair-end sequences
+#### Importing demultiplexed pair-end sequences
 ::: download
-qiime tools import \
-  --type 'SampleData[PairedEndSequencesWithQuality]' \
-  --input-path . \
-  --input-format CasavaOneEightSingleLanePerSampleDirFmt \
-  --output-path demux-paired-end.qza
+1. Make sure your working directory is set to the folder where you have saved your demultiplexed sequences.
+
+Run <span style="color: #0000FF;">cd /path/to/your/file</span> this will change your directory
+
+Run <span style="color: #0000FF;">pwd</span> check your current working directory
+
+
+2. Make sure your sequences file are in .gz and has name format e.g. 
+
+**Forward sequences** AF05_SB09_L001_R1_001.fastq.gz
+
+**Reverse sequences** AF05_SB09_L001_R2_001.fastq.gz
+
+Here AF05 and SB09 are the sample information. You can use L001 and 001 for all samples, it will not affect importing demultiplexed sequences.
+
+<span style="color: #0000FF;">
+qiime tools import \ <br>
+--type 'SampleData[PairedEndSequencesWithQuality]' \\<br>
+--input-path . \\<br>
+--input-format CasavaOneEightSingleLanePerSampleDirFmt \\<br>
+--output-path demux-paired-end.qza
+</span>
 :::
 
 #### Visualize imported paired-end sequences
 ::: download
-qiime demux summarize \
-  --i-data demux-paired-end.qza \
-  --o-visualization demux.qzv
+<span style="color: #0000FF;">qiime demux summarize \\<br>
+  --i-data demux-paired-end.qza \\<br>
+  --o-visualization demux.qzv</span>
+  
+use **[QIIME2view](https://view.qiime2.org)** to view demux.qzv file<br>
+here, you can see the quality of sequences and determine the parameters for denoising
 :::
 #### Denoising
 ::: download
-To download and install QIIMM2 first install Conda
+<span style="color: #0000FF;">qiime dada2 denoise-paired \\<br>
+  --i-demultiplexed-seqs demux-paired-end.qza \\<br>
+  --p-trim-left-f 15 \\<br>
+  --p-trim-left-r 15 \\<br>
+  --p-trunc-len-f 260 \\<br>
+  --p-trunc-len-r 220 \\<br>
+  --o-table table.qza \\<br>
+  --o-representative-sequences rep-seqs.qza \\<br>
+  --o-denoising-stats stats.qza \\<br>
+  --verbose</span>
 :::
-#### Getting feature table
+#### View denoised samples stats
 ::: download
-To download and install QIIMM2 first install Conda
+<span style="color: #0000FF;">
+qiime metadata tabulate \\<br>
+  --m-input-file stats.qza \\<br>
+  --o-visualization stats.qzv</span>
 :::
-#### Getting representative sequences
+#### View feature table
 ::: download
-To download and install QIIMM2 first install Conda
-:::
-#### Alignment
-::: download
-To download and install QIIMM2 first install Conda
+<span style="color: #0000FF;">
+qiime feature-table summarize \\<br>
+  --i-table table.qza \\<br>
+  --m-sample-metadata-file metadata.txt \\<br>
+  --o-visualization table.qzv
+</span>
 :::
 
+#### Export feature table
+::: download
+<span style="color: #0000FF;">
+qiime tools export \\<br>
+  --input-path rarefied-table.qza \\<br>
+  --output-path Feature_table/
+</span>
+:::
+
+#### Convert feature table biom to tsv
+:::download
+<span style="color: #0000FF;">
+biom convert \\<br>
+  -i Feature_table/feature-table.biom \\<br>
+  -o Feature_table/feature-table.tsv \\<br>
+  --to-tsv\\
+</span>
+:::
+
+#### View representative sequences
+::: download
+<span style="color: #0000FF;">
+qiime feature-table tabulate-seqs \\<br>
+  --i-data rep-seqs.qza \\<br>
+  --o-visualization rep-seqs.qzv
+</span>
+:::
+
+#### Alignment
+:::download
+<span style="color: #0000FF;">
+qiime phylogeny align-to-tree-mafft-fasttree \\<br>
+  --i-sequences filtered-rep-seqs.qza \\<br>
+  --output-dir Aligned/
+</span>
+:::
 #### Alpha-Diversity
 ::: download
+<span style="color: #0000FF;">
 To download and install QIIMM2 first install Conda
 :::
 
@@ -74,10 +146,3 @@ To download and install QIIMM2 first install Conda
 ::: download
 To download and install QIIMM2 first install Conda
 :::
-
-### Statistics
-1.  **Rarefaction curve**
-
-```{r rarefaction-curve, warning=FALSE, message=FALSE}
-library(vegan)
-```
