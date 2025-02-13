@@ -82,5 +82,103 @@
     "title": "Tutorial",
     "section": "",
     "text": "Here, I have illustrated the steps for downstream processing of fungal metagenomic data using QIIME2 in macOSx."
+  },
+  {
+    "objectID": "Tutorial.html#download-and-install-qiime2",
+    "href": "Tutorial.html#download-and-install-qiime2",
+    "title": "Tutorial",
+    "section": "Download and install QIIME2",
+    "text": "Download and install QIIME2\n\nTo download QIIME2 natively, you can follow these steps:\n\nInstall Miniconda appropriate to your system.\nThen, open terminal window.\nConfirm Miniconda is installed. Just write “conda” and press enter.\nNow install QIIME2 Metagenome Distribution running following code.\n\nconda env create -n qiime2-metagenome-2024.10 –file https://data.qiime2.org/distro/metagenome/qiime2-metagenome-2024.10-py310-osx-conda.yml\nIt will take some time….."
+  },
+  {
+    "objectID": "Tutorial.html#activate-qiime2-environment",
+    "href": "Tutorial.html#activate-qiime2-environment",
+    "title": "Tutorial",
+    "section": "Activate QIIME2 environment",
+    "text": "Activate QIIME2 environment\n\n1.Run following code to activate QIIME2 environment.\nconda activate qiime2-metagenome-2024.10 You can see “qiime” environment being activated"
+  },
+  {
+    "objectID": "Tutorial.html#importing-demultiplexed-pair-end-sequences",
+    "href": "Tutorial.html#importing-demultiplexed-pair-end-sequences",
+    "title": "Tutorial",
+    "section": "Importing demultiplexed pair-end sequences",
+    "text": "Importing demultiplexed pair-end sequences\n\n\nMake sure your working directory is set to the folder where you have saved your demultiplexed sequences.\n\nRun cd /path/to/your/file this will change your directory\nRun pwd check your current working directory\n\nMake sure your sequences file are in .gz and has name format e.g.\n\nForward sequences AF05_SB09_L001_R1_001.fastq.gz\nReverse sequences AF05_SB09_L001_R2_001.fastq.gz\nHere AF05 and SB09 are the sample information. You can use L001 and 001 for all samples, it will not affect importing demultiplexed sequences.\nqiime tools import   –type ‘SampleData[PairedEndSequencesWithQuality]’ \\ –input-path . \\ –input-format CasavaOneEightSingleLanePerSampleDirFmt \\ –output-path demux-paired-end.qza"
+  },
+  {
+    "objectID": "Tutorial.html#visualize-imported-paired-end-sequences",
+    "href": "Tutorial.html#visualize-imported-paired-end-sequences",
+    "title": "Tutorial",
+    "section": "Visualize imported paired-end sequences",
+    "text": "Visualize imported paired-end sequences\n\nTo get .qvz file of imported paired-end sequences run following code \nqiime demux summarize \\ –i-data demux-paired-end.qza \\ –o-visualization demux.qzv\nuse QIIME2view to view demux.qzv file You can see one example in the following figures.  here, you can see the quality of sequences which will help you to determine the parameters for denoising sequences for both forward and reverse sequencing"
+  },
+  {
+    "objectID": "Tutorial.html#denoising",
+    "href": "Tutorial.html#denoising",
+    "title": "Tutorial",
+    "section": "Denoising",
+    "text": "Denoising\n\nDenoising step includes cutting out ambiguous bp which are usually during begining and end of sequence amplification process, followed by removing chimeric sequences. qiime dada2 denoise-paired \\ –i-demultiplexed-seqs demux-paired-end.qza \\ –p-trim-left-f 15 \\ –p-trim-left-r 15 \\ –p-trunc-len-f 260 \\ –p-trunc-len-r 220 \\ –o-table table.qza \\ –o-representative-sequences rep-seqs.qza \\ –o-denoising-stats stats.qza \\ –verbose  here –verbose step will gives messages during the process of denoising."
+  },
+  {
+    "objectID": "Tutorial.html#view-denoised-samples-stats",
+    "href": "Tutorial.html#view-denoised-samples-stats",
+    "title": "Tutorial",
+    "section": "View denoised samples stats",
+    "text": "View denoised samples stats\n\nqiime metadata tabulate \\ –m-input-file stats.qza \\ –o-visualization stats.qzv"
+  },
+  {
+    "objectID": "Tutorial.html#view-feature-table",
+    "href": "Tutorial.html#view-feature-table",
+    "title": "Tutorial",
+    "section": "View feature table",
+    "text": "View feature table\n\nqiime feature-table summarize \\ –i-table table.qza \\ –m-sample-metadata-file metadata.txt \\ –o-visualization table.qzv"
+  },
+  {
+    "objectID": "Tutorial.html#export-feature-table",
+    "href": "Tutorial.html#export-feature-table",
+    "title": "Tutorial",
+    "section": "Export feature table",
+    "text": "Export feature table\n\nqiime tools export \\ –input-path rarefied-table.qza \\ –output-path Feature_table/"
+  },
+  {
+    "objectID": "Tutorial.html#convert-feature-table-biom-to-tsv",
+    "href": "Tutorial.html#convert-feature-table-biom-to-tsv",
+    "title": "Tutorial",
+    "section": "Convert feature table biom to tsv",
+    "text": "Convert feature table biom to tsv\n\nbiom convert \\ -i Feature_table/feature-table.biom \\ -o Feature_table/feature-table.tsv \\ –to-tsv\\"
+  },
+  {
+    "objectID": "Tutorial.html#view-representative-sequences",
+    "href": "Tutorial.html#view-representative-sequences",
+    "title": "Tutorial",
+    "section": "View representative sequences",
+    "text": "View representative sequences\n\nqiime feature-table tabulate-seqs \\ –i-data rep-seqs.qza \\ –o-visualization rep-seqs.qzv"
+  },
+  {
+    "objectID": "Tutorial.html#beta-diversity",
+    "href": "Tutorial.html#beta-diversity",
+    "title": "Tutorial",
+    "section": "Beta-Diversity",
+    "text": "Beta-Diversity\n\nTo download and install QIIMM2 first install Conda"
+  },
+  {
+    "objectID": "Tutorial.html#diversity",
+    "href": "Tutorial.html#diversity",
+    "title": "Tutorial",
+    "section": "Diversity",
+    "text": "Diversity\n\nqiime diversity core-metrics-phylogenetic \\–i-phylogeny clustered-sequences/Aligned/rooted_tree.qza \\–i-table clustered-sequences/rarefied-table.qza \\–p-sampling-depth 27300 \\–m-metadata-file metadata.txt \\–output-dir clustered-sequences/diversity-rarefied-data"
+  },
+  {
+    "objectID": "Tutorial.html#alignment",
+    "href": "Tutorial.html#alignment",
+    "title": "Tutorial",
+    "section": "Alignment",
+    "text": "Alignment\n\nqiime phylogeny align-to-tree-mafft-fasttree \\ –i-sequences filtered-rep-seqs.qza \\ –output-dir Aligned/"
+  },
+  {
+    "objectID": "Tutorial.html#hidden-section",
+    "href": "Tutorial.html#hidden-section",
+    "title": "Tutorial",
+    "section": "",
+    "text": "Here, I have illustrated the steps for downstream processing of fungal metagenomic data using QIIME2 in macOSx."
   }
 ]
