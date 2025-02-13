@@ -1,0 +1,26 @@
+---
+title: "Metagenomics data analysis"
+page-layout: full
+title-block-banner: true
+format: 
+  html: 
+    css: styles/tutorial.css
+    toc: true
+    toc-depth: 2
+    toc-title: "**Table of contents**"
+editor: 
+  markdown: 
+    wrap: 72
+files: 
+  - SEED2.qmd
+  - QIIME2.qmd
+---
+
+## SEED2 Tutorial
+[Click here to explore SEED2 tutorial](SEED2.qmd)
+
+## QIIME2 Tutorial
+[Click here to explore QIIME2 tutorial](QIIME2.qmd)
+
+
+## SSU pipeline

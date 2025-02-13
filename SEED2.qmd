@@ -1,0 +1,30 @@
+---
+title: "SEED2"
+page-layout: full
+title-block-banner: true
+format: 
+  html: 
+    css: styles/tutorial.css
+    toc: true
+    toc-depth: 2
+    toc-title: "**Table of contents**"
+editor: 
+  markdown: 
+    wrap: 72
+---
+
+# Download SEED2
+Click Downlaod SEED2 tab
+
+This will ask you to provide your email address and the download link will be sent to your email address.
+
+<iframe src="https://www.biomed.cas.cz/mbu/lbwrf/seed/" width="100%" height="600px"></iframe>
+
+# Check SEED2 installation
+Open SEED2 after installation and check the settings tab.
+
+# Steps
+
+Follow the steps provided carefully.
+
+<iframe src="https://www.biomed.cas.cz/mbu/lbwrf/seed/archive/SEED2_TUTORIAL_ITS.pdf" width="100%" height="600px"></iframe>

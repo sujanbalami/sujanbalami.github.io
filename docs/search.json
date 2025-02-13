@@ -46,7 +46,7 @@
     "href": "Tutorial.html",
     "title": "Tutorial",
     "section": "",
-    "text": "Here, I have illustrated the steps for downstream processing of fungal metagenomic data using QIIME2 in macOSx."
+    "text": "Click here to explore Metagenomics analysis"
   },
   {
     "objectID": "index.html#education",
@@ -74,7 +74,7 @@
     "href": "Tutorial.html#metagenomics",
     "title": "Tutorial",
     "section": "",
-    "text": "Here, I have illustrated the steps for downstream processing of fungal metagenomic data using QIIME2 in macOSx."
+    "text": "Click here to explore Metagenomics analysis"
   },
   {
     "objectID": "Tutorial.html#downstream-processing-of-fungal-metagenomic-data",
@@ -180,5 +180,397 @@
     "title": "Tutorial",
     "section": "",
     "text": "Here, I have illustrated the steps for downstream processing of fungal metagenomic data using QIIME2 in macOSx."
+  },
+  {
+    "objectID": "metagenomics.html",
+    "href": "metagenomics.html",
+    "title": "Metagenomics data analysis",
+    "section": "",
+    "text": "Here, I have illustrated the steps for downstream processing of fungal metagenomic data using QIIME2 in macOSx."
+  },
+  {
+    "objectID": "metagenomics.html#download-and-install-qiime2",
+    "href": "metagenomics.html#download-and-install-qiime2",
+    "title": "Metagenomics data analysis",
+    "section": "Download and install QIIME2",
+    "text": "Download and install QIIME2\n\nTo download QIIME2 natively, you can follow these steps:\n\nInstall Miniconda appropriate to your system.\nThen, open terminal window.\nConfirm Miniconda is installed. Just write “conda” and press enter.\nNow install QIIME2 Metagenome Distribution running following code.\n\nconda env create -n qiime2-metagenome-2024.10 –file https://data.qiime2.org/distro/metagenome/qiime2-metagenome-2024.10-py310-osx-conda.yml\nIt will take some time….."
+  },
+  {
+    "objectID": "metagenomics.html#activate-qiime2-environment",
+    "href": "metagenomics.html#activate-qiime2-environment",
+    "title": "Metagenomics data analysis",
+    "section": "Activate QIIME2 environment",
+    "text": "Activate QIIME2 environment\n\n1.Run following code to activate QIIME2 environment.\nconda activate qiime2-metagenome-2024.10 You can see “qiime” environment being activated"
+  },
+  {
+    "objectID": "metagenomics.html#importing-demultiplexed-pair-end-sequences",
+    "href": "metagenomics.html#importing-demultiplexed-pair-end-sequences",
+    "title": "Metagenomics data analysis",
+    "section": "Importing demultiplexed pair-end sequences",
+    "text": "Importing demultiplexed pair-end sequences\n\n\nMake sure your working directory is set to the folder where you have saved your demultiplexed sequences.\n\nRun cd /path/to/your/file this will change your directory\nRun pwd check your current working directory\n\nMake sure your sequences file are in .gz and has name format e.g.\n\nForward sequences AF05_SB09_L001_R1_001.fastq.gz\nReverse sequences AF05_SB09_L001_R2_001.fastq.gz\nHere AF05 and SB09 are the sample information. You can use L001 and 001 for all samples, it will not affect importing demultiplexed sequences.\nqiime tools import   –type ‘SampleData[PairedEndSequencesWithQuality]’ \\ –input-path . \\ –input-format CasavaOneEightSingleLanePerSampleDirFmt \\ –output-path demux-paired-end.qza"
+  },
+  {
+    "objectID": "metagenomics.html#visualize-imported-paired-end-sequences",
+    "href": "metagenomics.html#visualize-imported-paired-end-sequences",
+    "title": "Metagenomics data analysis",
+    "section": "Visualize imported paired-end sequences",
+    "text": "Visualize imported paired-end sequences\n\nTo get .qvz file of imported paired-end sequences run following code \nqiime demux summarize \\ –i-data demux-paired-end.qza \\ –o-visualization demux.qzv\nuse QIIME2view to view demux.qzv file You can see one example in the following figures.  here, you can see the quality of sequences which will help you to determine the parameters for denoising sequences for both forward and reverse sequencing"
+  },
+  {
+    "objectID": "metagenomics.html#denoising",
+    "href": "metagenomics.html#denoising",
+    "title": "Metagenomics data analysis",
+    "section": "Denoising",
+    "text": "Denoising\n\nDenoising step includes cutting out ambiguous bp which are usually during begining and end of sequence amplification process, followed by removing chimeric sequences. qiime dada2 denoise-paired \\ –i-demultiplexed-seqs demux-paired-end.qza \\ –p-trim-left-f 15 \\ –p-trim-left-r 15 \\ –p-trunc-len-f 260 \\ –p-trunc-len-r 220 \\ –o-table table.qza \\ –o-representative-sequences rep-seqs.qza \\ –o-denoising-stats stats.qza \\ –verbose  here –verbose step will gives messages during the process of denoising."
+  },
+  {
+    "objectID": "metagenomics.html#view-denoised-samples-stats",
+    "href": "metagenomics.html#view-denoised-samples-stats",
+    "title": "Metagenomics data analysis",
+    "section": "View denoised samples stats",
+    "text": "View denoised samples stats\n\nqiime metadata tabulate \\ –m-input-file stats.qza \\ –o-visualization stats.qzv"
+  },
+  {
+    "objectID": "metagenomics.html#view-feature-table",
+    "href": "metagenomics.html#view-feature-table",
+    "title": "Metagenomics data analysis",
+    "section": "View feature table",
+    "text": "View feature table\n\nqiime feature-table summarize \\ –i-table table.qza \\ –m-sample-metadata-file metadata.txt \\ –o-visualization table.qzv"
+  },
+  {
+    "objectID": "metagenomics.html#export-feature-table",
+    "href": "metagenomics.html#export-feature-table",
+    "title": "Metagenomics data analysis",
+    "section": "Export feature table",
+    "text": "Export feature table\n\nqiime tools export \\ –input-path rarefied-table.qza \\ –output-path Feature_table/"
+  },
+  {
+    "objectID": "metagenomics.html#convert-feature-table-biom-to-tsv",
+    "href": "metagenomics.html#convert-feature-table-biom-to-tsv",
+    "title": "Metagenomics data analysis",
+    "section": "Convert feature table biom to tsv",
+    "text": "Convert feature table biom to tsv\n\nbiom convert \\ -i Feature_table/feature-table.biom \\ -o Feature_table/feature-table.tsv \\ –to-tsv\\"
+  },
+  {
+    "objectID": "metagenomics.html#view-representative-sequences",
+    "href": "metagenomics.html#view-representative-sequences",
+    "title": "Metagenomics data analysis",
+    "section": "View representative sequences",
+    "text": "View representative sequences\n\nqiime feature-table tabulate-seqs \\ –i-data rep-seqs.qza \\ –o-visualization rep-seqs.qzv"
+  },
+  {
+    "objectID": "metagenomics.html#alignment",
+    "href": "metagenomics.html#alignment",
+    "title": "Metagenomics data analysis",
+    "section": "Alignment",
+    "text": "Alignment\n\nqiime phylogeny align-to-tree-mafft-fasttree \\ –i-sequences filtered-rep-seqs.qza \\ –output-dir Aligned/"
+  },
+  {
+    "objectID": "metagenomics.html#diversity",
+    "href": "metagenomics.html#diversity",
+    "title": "Metagenomics data analysis",
+    "section": "Diversity",
+    "text": "Diversity\n\nqiime diversity core-metrics-phylogenetic \\–i-phylogeny clustered-sequences/Aligned/rooted_tree.qza \\–i-table clustered-sequences/rarefied-table.qza \\–p-sampling-depth 27300 \\–m-metadata-file metadata.txt \\–output-dir clustered-sequences/diversity-rarefied-data"
+  },
+  {
+    "objectID": "Statistics.html",
+    "href": "Statistics.html",
+    "title": "Metagenomics data analysis",
+    "section": "",
+    "text": "Here, I have illustrated the steps for downstream processing of fungal metagenomic data using QIIME2 in macOSx."
+  },
+  {
+    "objectID": "Statistics.html#download-and-install-qiime2",
+    "href": "Statistics.html#download-and-install-qiime2",
+    "title": "Metagenomics data analysis",
+    "section": "Download and install QIIME2",
+    "text": "Download and install QIIME2\n\nTo download QIIME2 natively, you can follow these steps:\n\nInstall Miniconda appropriate to your system.\nThen, open terminal window.\nConfirm Miniconda is installed. Just write “conda” and press enter.\nNow install QIIME2 Metagenome Distribution running following code.\n\nconda env create -n qiime2-metagenome-2024.10 –file https://data.qiime2.org/distro/metagenome/qiime2-metagenome-2024.10-py310-osx-conda.yml\nIt will take some time….."
+  },
+  {
+    "objectID": "Statistics.html#activate-qiime2-environment",
+    "href": "Statistics.html#activate-qiime2-environment",
+    "title": "Metagenomics data analysis",
+    "section": "Activate QIIME2 environment",
+    "text": "Activate QIIME2 environment\n\n1.Run following code to activate QIIME2 environment.\nconda activate qiime2-metagenome-2024.10 You can see “qiime” environment being activated"
+  },
+  {
+    "objectID": "Statistics.html#importing-demultiplexed-pair-end-sequences",
+    "href": "Statistics.html#importing-demultiplexed-pair-end-sequences",
+    "title": "Metagenomics data analysis",
+    "section": "Importing demultiplexed pair-end sequences",
+    "text": "Importing demultiplexed pair-end sequences\n\n\nMake sure your working directory is set to the folder where you have saved your demultiplexed sequences.\n\nRun cd /path/to/your/file this will change your directory\nRun pwd check your current working directory\n\nMake sure your sequences file are in .gz and has name format e.g.\n\nForward sequences AF05_SB09_L001_R1_001.fastq.gz\nReverse sequences AF05_SB09_L001_R2_001.fastq.gz\nHere AF05 and SB09 are the sample information. You can use L001 and 001 for all samples, it will not affect importing demultiplexed sequences.\nqiime tools import   –type ‘SampleData[PairedEndSequencesWithQuality]’ \\ –input-path . \\ –input-format CasavaOneEightSingleLanePerSampleDirFmt \\ –output-path demux-paired-end.qza"
+  },
+  {
+    "objectID": "Statistics.html#visualize-imported-paired-end-sequences",
+    "href": "Statistics.html#visualize-imported-paired-end-sequences",
+    "title": "Metagenomics data analysis",
+    "section": "Visualize imported paired-end sequences",
+    "text": "Visualize imported paired-end sequences\n\nTo get .qvz file of imported paired-end sequences run following code \nqiime demux summarize \\ –i-data demux-paired-end.qza \\ –o-visualization demux.qzv\nuse QIIME2view to view demux.qzv file You can see one example in the following figures.  here, you can see the quality of sequences which will help you to determine the parameters for denoising sequences for both forward and reverse sequencing"
+  },
+  {
+    "objectID": "Statistics.html#denoising",
+    "href": "Statistics.html#denoising",
+    "title": "Metagenomics data analysis",
+    "section": "Denoising",
+    "text": "Denoising\n\nDenoising step includes cutting out ambiguous bp which are usually during begining and end of sequence amplification process, followed by removing chimeric sequences. qiime dada2 denoise-paired \\ –i-demultiplexed-seqs demux-paired-end.qza \\ –p-trim-left-f 15 \\ –p-trim-left-r 15 \\ –p-trunc-len-f 260 \\ –p-trunc-len-r 220 \\ –o-table table.qza \\ –o-representative-sequences rep-seqs.qza \\ –o-denoising-stats stats.qza \\ –verbose  here –verbose step will gives messages during the process of denoising."
+  },
+  {
+    "objectID": "Statistics.html#view-denoised-samples-stats",
+    "href": "Statistics.html#view-denoised-samples-stats",
+    "title": "Metagenomics data analysis",
+    "section": "View denoised samples stats",
+    "text": "View denoised samples stats\n\nqiime metadata tabulate \\ –m-input-file stats.qza \\ –o-visualization stats.qzv"
+  },
+  {
+    "objectID": "Statistics.html#view-feature-table",
+    "href": "Statistics.html#view-feature-table",
+    "title": "Metagenomics data analysis",
+    "section": "View feature table",
+    "text": "View feature table\n\nqiime feature-table summarize \\ –i-table table.qza \\ –m-sample-metadata-file metadata.txt \\ –o-visualization table.qzv"
+  },
+  {
+    "objectID": "Statistics.html#export-feature-table",
+    "href": "Statistics.html#export-feature-table",
+    "title": "Metagenomics data analysis",
+    "section": "Export feature table",
+    "text": "Export feature table\n\nqiime tools export \\ –input-path rarefied-table.qza \\ –output-path Feature_table/"
+  },
+  {
+    "objectID": "Statistics.html#convert-feature-table-biom-to-tsv",
+    "href": "Statistics.html#convert-feature-table-biom-to-tsv",
+    "title": "Metagenomics data analysis",
+    "section": "Convert feature table biom to tsv",
+    "text": "Convert feature table biom to tsv\n\nbiom convert \\ -i Feature_table/feature-table.biom \\ -o Feature_table/feature-table.tsv \\ –to-tsv\\"
+  },
+  {
+    "objectID": "Statistics.html#view-representative-sequences",
+    "href": "Statistics.html#view-representative-sequences",
+    "title": "Metagenomics data analysis",
+    "section": "View representative sequences",
+    "text": "View representative sequences\n\nqiime feature-table tabulate-seqs \\ –i-data rep-seqs.qza \\ –o-visualization rep-seqs.qzv"
+  },
+  {
+    "objectID": "Statistics.html#alignment",
+    "href": "Statistics.html#alignment",
+    "title": "Metagenomics data analysis",
+    "section": "Alignment",
+    "text": "Alignment\n\nqiime phylogeny align-to-tree-mafft-fasttree \\ –i-sequences filtered-rep-seqs.qza \\ –output-dir Aligned/"
+  },
+  {
+    "objectID": "Statistics.html#diversity",
+    "href": "Statistics.html#diversity",
+    "title": "Metagenomics data analysis",
+    "section": "Diversity",
+    "text": "Diversity\n\nqiime diversity core-metrics-phylogenetic \\–i-phylogeny clustered-sequences/Aligned/rooted_tree.qza \\–i-table clustered-sequences/rarefied-table.qza \\–p-sampling-depth 27300 \\–m-metadata-file metadata.txt \\–output-dir clustered-sequences/diversity-rarefied-data"
+  },
+  {
+    "objectID": "Tutorial.html#statistical-analysis",
+    "href": "Tutorial.html#statistical-analysis",
+    "title": "Tutorial",
+    "section": "Statistical Analysis",
+    "text": "Statistical Analysis\nClick here to explore Statistical analysis"
+  },
+  {
+    "objectID": "Metagenomics.html",
+    "href": "Metagenomics.html",
+    "title": "Metagenomics data analysis",
+    "section": "",
+    "text": "Click here to explore SEED2 tutorial"
+  },
+  {
+    "objectID": "Metagenomics.html#download-and-install-qiime2",
+    "href": "Metagenomics.html#download-and-install-qiime2",
+    "title": "Metagenomics data analysis",
+    "section": "Download and install QIIME2",
+    "text": "Download and install QIIME2\n\nTo download QIIME2 natively, you can follow these steps:\n\nInstall Miniconda appropriate to your system.\nThen, open terminal window.\nConfirm Miniconda is installed. Just write “conda” and press enter.\nNow install QIIME2 Metagenome Distribution running following code.\n\nconda env create -n qiime2-metagenome-2024.10 –file https://data.qiime2.org/distro/metagenome/qiime2-metagenome-2024.10-py310-osx-conda.yml\nIt will take some time….."
+  },
+  {
+    "objectID": "Metagenomics.html#activate-qiime2-environment",
+    "href": "Metagenomics.html#activate-qiime2-environment",
+    "title": "Metagenomics data analysis",
+    "section": "Activate QIIME2 environment",
+    "text": "Activate QIIME2 environment\n\n1.Run following code to activate QIIME2 environment.\nconda activate qiime2-metagenome-2024.10 You can see “qiime” environment being activated"
+  },
+  {
+    "objectID": "Metagenomics.html#importing-demultiplexed-pair-end-sequences",
+    "href": "Metagenomics.html#importing-demultiplexed-pair-end-sequences",
+    "title": "Metagenomics data analysis",
+    "section": "Importing demultiplexed pair-end sequences",
+    "text": "Importing demultiplexed pair-end sequences\n\n\nMake sure your working directory is set to the folder where you have saved your demultiplexed sequences.\n\nRun cd /path/to/your/file this will change your directory\nRun pwd check your current working directory\n\nMake sure your sequences file are in .gz and has name format e.g.\n\nForward sequences AF05_SB09_L001_R1_001.fastq.gz\nReverse sequences AF05_SB09_L001_R2_001.fastq.gz\nHere AF05 and SB09 are the sample information. You can use L001 and 001 for all samples, it will not affect importing demultiplexed sequences.\nqiime tools import   –type ‘SampleData[PairedEndSequencesWithQuality]’ \\ –input-path . \\ –input-format CasavaOneEightSingleLanePerSampleDirFmt \\ –output-path demux-paired-end.qza"
+  },
+  {
+    "objectID": "Metagenomics.html#visualize-imported-paired-end-sequences",
+    "href": "Metagenomics.html#visualize-imported-paired-end-sequences",
+    "title": "Metagenomics data analysis",
+    "section": "Visualize imported paired-end sequences",
+    "text": "Visualize imported paired-end sequences\n\nTo get .qvz file of imported paired-end sequences run following code \nqiime demux summarize \\ –i-data demux-paired-end.qza \\ –o-visualization demux.qzv\nuse QIIME2view to view demux.qzv file You can see one example in the following figures.  here, you can see the quality of sequences which will help you to determine the parameters for denoising sequences for both forward and reverse sequencing"
+  },
+  {
+    "objectID": "Metagenomics.html#denoising",
+    "href": "Metagenomics.html#denoising",
+    "title": "Metagenomics data analysis",
+    "section": "Denoising",
+    "text": "Denoising\n\nDenoising step includes cutting out ambiguous bp which are usually during begining and end of sequence amplification process, followed by removing chimeric sequences. qiime dada2 denoise-paired \\ –i-demultiplexed-seqs demux-paired-end.qza \\ –p-trim-left-f 15 \\ –p-trim-left-r 15 \\ –p-trunc-len-f 260 \\ –p-trunc-len-r 220 \\ –o-table table.qza \\ –o-representative-sequences rep-seqs.qza \\ –o-denoising-stats stats.qza \\ –verbose  here –verbose step will gives messages during the process of denoising."
+  },
+  {
+    "objectID": "Metagenomics.html#view-denoised-samples-stats",
+    "href": "Metagenomics.html#view-denoised-samples-stats",
+    "title": "Metagenomics data analysis",
+    "section": "View denoised samples stats",
+    "text": "View denoised samples stats\n\nqiime metadata tabulate \\ –m-input-file stats.qza \\ –o-visualization stats.qzv"
+  },
+  {
+    "objectID": "Metagenomics.html#view-feature-table",
+    "href": "Metagenomics.html#view-feature-table",
+    "title": "Metagenomics data analysis",
+    "section": "View feature table",
+    "text": "View feature table\n\nqiime feature-table summarize \\ –i-table table.qza \\ –m-sample-metadata-file metadata.txt \\ –o-visualization table.qzv"
+  },
+  {
+    "objectID": "Metagenomics.html#export-feature-table",
+    "href": "Metagenomics.html#export-feature-table",
+    "title": "Metagenomics data analysis",
+    "section": "Export feature table",
+    "text": "Export feature table\n\nqiime tools export \\ –input-path rarefied-table.qza \\ –output-path Feature_table/"
+  },
+  {
+    "objectID": "Metagenomics.html#convert-feature-table-biom-to-tsv",
+    "href": "Metagenomics.html#convert-feature-table-biom-to-tsv",
+    "title": "Metagenomics data analysis",
+    "section": "Convert feature table biom to tsv",
+    "text": "Convert feature table biom to tsv\n\nbiom convert \\ -i Feature_table/feature-table.biom \\ -o Feature_table/feature-table.tsv \\ –to-tsv\\"
+  },
+  {
+    "objectID": "Metagenomics.html#view-representative-sequences",
+    "href": "Metagenomics.html#view-representative-sequences",
+    "title": "Metagenomics data analysis",
+    "section": "View representative sequences",
+    "text": "View representative sequences\n\nqiime feature-table tabulate-seqs \\ –i-data rep-seqs.qza \\ –o-visualization rep-seqs.qzv"
+  },
+  {
+    "objectID": "Metagenomics.html#alignment",
+    "href": "Metagenomics.html#alignment",
+    "title": "Metagenomics data analysis",
+    "section": "Alignment",
+    "text": "Alignment\n\nqiime phylogeny align-to-tree-mafft-fasttree \\ –i-sequences filtered-rep-seqs.qza \\ –output-dir Aligned/"
+  },
+  {
+    "objectID": "Metagenomics.html#diversity",
+    "href": "Metagenomics.html#diversity",
+    "title": "Metagenomics data analysis",
+    "section": "Diversity",
+    "text": "Diversity\n\nqiime diversity core-metrics-phylogenetic \\–i-phylogeny clustered-sequences/Aligned/rooted_tree.qza \\–i-table clustered-sequences/rarefied-table.qza \\–p-sampling-depth 27300 \\–m-metadata-file metadata.txt \\–output-dir clustered-sequences/diversity-rarefied-data"
+  },
+  {
+    "objectID": "Metagenomics.html#seed2-tutorial",
+    "href": "Metagenomics.html#seed2-tutorial",
+    "title": "Metagenomics data analysis",
+    "section": "",
+    "text": "Click here to explore SEED2 tutorial"
+  },
+  {
+    "objectID": "Metagenomics.html#qiime2-tutorial",
+    "href": "Metagenomics.html#qiime2-tutorial",
+    "title": "Metagenomics data analysis",
+    "section": "QIIME2 Tutorial",
+    "text": "QIIME2 Tutorial\nClick here to explore QIIME2 tutorial"
+  },
+  {
+    "objectID": "QIIME2.html",
+    "href": "QIIME2.html",
+    "title": "QIIME2",
+    "section": "",
+    "text": "Here, I have illustrated the steps for downstream processing of fungal metagenomic data using QIIME2 in macOSx."
+  },
+  {
+    "objectID": "QIIME2.html#download-and-install-qiime2",
+    "href": "QIIME2.html#download-and-install-qiime2",
+    "title": "QIIME2",
+    "section": "Download and install QIIME2",
+    "text": "Download and install QIIME2\n\nTo download QIIME2 natively, you can follow these steps:\n\nInstall Miniconda appropriate to your system.\nThen, open terminal window.\nConfirm Miniconda is installed. Just write “conda” and press enter.\nNow install QIIME2 Metagenome Distribution running following code.\n\nconda env create -n qiime2-metagenome-2024.10 –file https://data.qiime2.org/distro/metagenome/qiime2-metagenome-2024.10-py310-osx-conda.yml\nIt will take some time….."
+  },
+  {
+    "objectID": "QIIME2.html#activate-qiime2-environment",
+    "href": "QIIME2.html#activate-qiime2-environment",
+    "title": "QIIME2",
+    "section": "Activate QIIME2 environment",
+    "text": "Activate QIIME2 environment\n\n1.Run following code to activate QIIME2 environment.\nconda activate qiime2-metagenome-2024.10 You can see “qiime” environment being activated"
+  },
+  {
+    "objectID": "QIIME2.html#importing-demultiplexed-pair-end-sequences",
+    "href": "QIIME2.html#importing-demultiplexed-pair-end-sequences",
+    "title": "QIIME2",
+    "section": "Importing demultiplexed pair-end sequences",
+    "text": "Importing demultiplexed pair-end sequences\n\n\nMake sure your working directory is set to the folder where you have saved your demultiplexed sequences.\n\nRun cd /path/to/your/file this will change your directory\nRun pwd check your current working directory\n\nMake sure your sequences file are in .gz and has name format e.g.\n\nForward sequences AF05_SB09_L001_R1_001.fastq.gz\nReverse sequences AF05_SB09_L001_R2_001.fastq.gz\nHere AF05 and SB09 are the sample information. You can use L001 and 001 for all samples, it will not affect importing demultiplexed sequences.\nqiime tools import   –type ‘SampleData[PairedEndSequencesWithQuality]’ \\ –input-path . \\ –input-format CasavaOneEightSingleLanePerSampleDirFmt \\ –output-path demux-paired-end.qza"
+  },
+  {
+    "objectID": "QIIME2.html#visualize-imported-paired-end-sequences",
+    "href": "QIIME2.html#visualize-imported-paired-end-sequences",
+    "title": "QIIME2",
+    "section": "Visualize imported paired-end sequences",
+    "text": "Visualize imported paired-end sequences\n\nTo get .qvz file of imported paired-end sequences run following code \nqiime demux summarize \\ –i-data demux-paired-end.qza \\ –o-visualization demux.qzv\nuse QIIME2view to view demux.qzv file You can see one example in the following figures.  here, you can see the quality of sequences which will help you to determine the parameters for denoising sequences for both forward and reverse sequencing"
+  },
+  {
+    "objectID": "QIIME2.html#denoising",
+    "href": "QIIME2.html#denoising",
+    "title": "QIIME2",
+    "section": "Denoising",
+    "text": "Denoising\n\nDenoising step includes cutting out ambiguous bp which are usually during begining and end of sequence amplification process, followed by removing chimeric sequences. qiime dada2 denoise-paired \\ –i-demultiplexed-seqs demux-paired-end.qza \\ –p-trim-left-f 15 \\ –p-trim-left-r 15 \\ –p-trunc-len-f 260 \\ –p-trunc-len-r 220 \\ –o-table table.qza \\ –o-representative-sequences rep-seqs.qza \\ –o-denoising-stats stats.qza \\ –verbose  here –verbose step will gives messages during the process of denoising."
+  },
+  {
+    "objectID": "QIIME2.html#view-denoised-samples-stats",
+    "href": "QIIME2.html#view-denoised-samples-stats",
+    "title": "QIIME2",
+    "section": "View denoised samples stats",
+    "text": "View denoised samples stats\n\nqiime metadata tabulate \\ –m-input-file stats.qza \\ –o-visualization stats.qzv"
+  },
+  {
+    "objectID": "QIIME2.html#view-feature-table",
+    "href": "QIIME2.html#view-feature-table",
+    "title": "QIIME2",
+    "section": "View feature table",
+    "text": "View feature table\n\nqiime feature-table summarize \\ –i-table table.qza \\ –m-sample-metadata-file metadata.txt \\ –o-visualization table.qzv"
+  },
+  {
+    "objectID": "QIIME2.html#export-feature-table",
+    "href": "QIIME2.html#export-feature-table",
+    "title": "QIIME2",
+    "section": "Export feature table",
+    "text": "Export feature table\n\nqiime tools export \\ –input-path rarefied-table.qza \\ –output-path Feature_table/"
+  },
+  {
+    "objectID": "QIIME2.html#convert-feature-table-biom-to-tsv",
+    "href": "QIIME2.html#convert-feature-table-biom-to-tsv",
+    "title": "QIIME2",
+    "section": "Convert feature table biom to tsv",
+    "text": "Convert feature table biom to tsv\n\nbiom convert \\ -i Feature_table/feature-table.biom \\ -o Feature_table/feature-table.tsv \\ –to-tsv\\"
+  },
+  {
+    "objectID": "QIIME2.html#view-representative-sequences",
+    "href": "QIIME2.html#view-representative-sequences",
+    "title": "QIIME2",
+    "section": "View representative sequences",
+    "text": "View representative sequences\n\nqiime feature-table tabulate-seqs \\ –i-data rep-seqs.qza \\ –o-visualization rep-seqs.qzv"
+  },
+  {
+    "objectID": "QIIME2.html#alignment",
+    "href": "QIIME2.html#alignment",
+    "title": "QIIME2",
+    "section": "Alignment",
+    "text": "Alignment\n\nqiime phylogeny align-to-tree-mafft-fasttree \\ –i-sequences filtered-rep-seqs.qza \\ –output-dir Aligned/"
+  },
+  {
+    "objectID": "QIIME2.html#diversity",
+    "href": "QIIME2.html#diversity",
+    "title": "QIIME2",
+    "section": "Diversity",
+    "text": "Diversity\n\nqiime diversity core-metrics-phylogenetic \\–i-phylogeny clustered-sequences/Aligned/rooted_tree.qza \\–i-table clustered-sequences/rarefied-table.qza \\–p-sampling-depth 27300 \\–m-metadata-file metadata.txt \\–output-dir clustered-sequences/diversity-rarefied-data"
+  },
+  {
+    "objectID": "SEED2.html",
+    "href": "SEED2.html",
+    "title": "SEED2",
+    "section": "",
+    "text": "Download SEED2\nClick Downlaod SEED2 tab\nThis will ask you to provide your email address and the download link will be sent to your email address.\n\n\n\n\nCheck SEED2 installation\nOpen SEED2 after installation and check the settings tab.\n\n\nSteps\nFollow the steps provided carefully"
   }
 ]

@@ -1,9 +1,10 @@
 project:
   type: website
   output-dir: "docs"
+
 website:
   navbar:
-    left: 
+    left:
       - text: "Home"
         file: index.qmd
       - text: "Publications"
@@ -12,17 +13,17 @@ website:
         file: Research.qmd
       - text: "Tutorial"
         file: Tutorial.qmd
+    right:
       - text: "CV"
         file: CV.qmd
-    right:
       - icon: github
         href: https://github.com/
       - icon: twitter
         href: https://twitter.com
+
 format:
   html:
     theme: cosmos
     css: styles.css
 
 editor: visual
-

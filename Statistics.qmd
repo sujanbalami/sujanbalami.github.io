@@ -1,0 +1,16 @@
+---
+title: "Statistical analysis"
+page-layout: full
+title-block-banner: true
+format: 
+  html: 
+    css: styles/tutorial.css
+    toc: true
+    toc-depth: 2
+    toc-title: "**Table of contents**"
+editor: 
+  markdown: 
+    wrap: 72
+---
+
+## Download and install R
