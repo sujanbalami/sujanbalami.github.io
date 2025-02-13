@@ -14,6 +14,7 @@ editor:
 files: 
   - SEED2.qmd
   - QIIME2.qmd
+  - SSU.qmd
 ---
 
 ## SEED2 Tutorial
@@ -24,3 +25,4 @@ files:
 
 
 ## SSU pipeline
+[Click here to explore SSU pipeline](SSU.qmd)
