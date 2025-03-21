@@ -5,17 +5,22 @@ title-block-banner: true
 format: 
   html: 
     css: styles/styles.css
-    toc: true
-    toc-depth: 3
-    toc-title: "**Table of contents**"
 editor: 
   markdown: 
     wrap: 72
 ---
 
-# Restoration Ecology
+![](Research/landscape.png)
 
-## Restoration of abandoned agricultural land
+Ecological restoration and its outcomes
+
+-   Vegetation
+
+-   Soil nutrients and cycling
+
+-   Soil microbial communities
+
+### Restoration of abandoned agricultural land {style="text-align: center;"}
 
 ``` {style="font-family: Arial, sans-serif;  font-size: 16px; color: gray"}
 Restoration of abandoned agricultural land in Nepal
@@ -23,29 +28,14 @@ Restoration of abandoned agricultural land in Nepal
 
 ![Short-term abandoned agricultural
 land](Research/short_term_abandoned_land.jpg){style="text-align: center;"
-width="435"}
+width="688"}
 
-![Long-term abandoned
+![Long-term abandoned agricultural
 land](Research/Long_term_abandoned_land.jpg){style="text-align: center;"
-width="413"}
+width="681"}
 
-## Restoration of rubber monoculture plantation
-
-``` {style="color: gray"}
-Restoration of rubber monoculture to rainforests
-```
+### Restoration of rubber monoculture plantation {style="text-align: center;"}
 
 ![Natural regeneration in abandoned rubber monoculture
-plantation](Research/Abandoned_rubber.jpg){style="text-align: center"}
-
-# Fungal Ecology
-
-## Fungal diversity
-
-## Community composition
-
-## Network
-
-## Community assembly
-
-# Fungal Taxonomy
+plantation](Research/Abandoned_rubber.jpg){style="text-align: center"
+width="783"}
