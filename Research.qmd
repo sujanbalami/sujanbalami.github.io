@@ -22,11 +22,11 @@ Restoration of abandoned agricultural land in Nepal
 ```
 
 ![Short-term abandoned agricultural
-land](short_term_abandoned_land.jpg){style="text-align: center;"
+land](Research/short_term_abandoned_land.jpg){style="text-align: center;"
 width="435"}
 
 ![Long-term abandoned
-land](Long_term_abandoned_land.jpg){style="text-align: center;"
+land](Research/Long_term_abandoned_land.jpg){style="text-align: center;"
 width="413"}
 
 ## Restoration of rubber monoculture plantation
@@ -36,7 +36,7 @@ Restoration of rubber monoculture to rainforests
 ```
 
 ![Natural regeneration in abandoned rubber monoculture
-plantation](Abandoned_rubber.jpg){style="text-align: center"}
+plantation](Research/Abandoned_rubber.jpg){style="text-align: center"}
 
 # Fungal Ecology
 
