@@ -13,6 +13,9 @@ website:
         file: Research.qmd
       - text: "Tutorial"
         file: Tutorial.qmd
+        menu:
+          - href: Metagenome.qmd
+            text: "Metagenome"
     right:
       - text: "CV"
         file: CV.qmd
