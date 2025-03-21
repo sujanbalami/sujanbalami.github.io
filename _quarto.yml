@@ -13,13 +13,6 @@ website:
         href: Research.qmd
       - text: "Tutorial"
         href: Tutorial.qmd
-        menu:
-          - text: "SEED"
-            href: Metagenome/SEED/SEED2.qmd
-          - text: "SSU"
-            href: Metagenome/SSU/SSU.qmd
-          - text: QIIME2
-            href: Metagenome/QIIME2/QIIME2.qmd
     right:
       - text: "CV"
         href: CV.qmd

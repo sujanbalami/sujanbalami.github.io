@@ -712,5 +712,26 @@
     "title": "QIIME2",
     "section": "Diversity",
     "text": "Diversity\n\nqiime diversity core-metrics-phylogenetic \\–i-phylogeny clustered-sequences/Aligned/rooted_tree.qza \\–i-table clustered-sequences/rarefied-table.qza \\–p-sampling-depth 27300 \\–m-metadata-file metadata.txt \\–output-dir clustered-sequences/diversity-rarefied-data"
+  },
+  {
+    "objectID": "Metagenome/SEED/SEED2.html",
+    "href": "Metagenome/SEED/SEED2.html",
+    "title": "SEED2",
+    "section": "",
+    "text": "Download SEED2\nClick Downlaod SEED2 tab\nThis will ask you to provide your email address and the download link will be sent to your email address.\n\n\n\n\nCheck SEED2 installation\nOpen SEED2 after installation and check the settings tab.\n\n\nSteps\nFollow the steps provided carefully."
+  },
+  {
+    "objectID": "Metagenome/Metagenomics.html#seed2-pipeline",
+    "href": "Metagenome/Metagenomics.html#seed2-pipeline",
+    "title": "Metagenomics data analysis",
+    "section": "",
+    "text": "Click here to explore SEED2 tutorial"
+  },
+  {
+    "objectID": "Metagenome/Metagenomics.html#qiime2-pipeline",
+    "href": "Metagenome/Metagenomics.html#qiime2-pipeline",
+    "title": "Metagenomics data analysis",
+    "section": "QIIME2 pipeline",
+    "text": "QIIME2 pipeline\nClick here to explore QIIME2 tutorial"
   }
 ]
