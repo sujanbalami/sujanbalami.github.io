@@ -14,11 +14,11 @@ editor:
 ---
 
 ## SEED2 Tutorial
-[Click here to explore SEED2 tutorial](SEED/SEED2.qmd)
+[Click here to explore SEED2 tutorial](Metagenome/SEED/SEED2.qmd)
 
 ## QIIME2 Tutorial
-[Click here to explore QIIME2 tutorial](QIIME2/QIIME2.qmd)
+[Click here to explore QIIME2 tutorial](Metagenome/QIIME2/QIIME2.qmd)
 
 
 ## SSU pipeline
-[Click here to explore SSU pipeline](SSU/SSU.qmd)
+[Click here to explore SSU pipeline](Metagenome/SSU/SSU.qmd)
