@@ -11,18 +11,14 @@ format:
 editor: 
   markdown: 
     wrap: 72
-files: 
-  - SEED2.qmd
-  - QIIME2.qmd
-  - SSU.qmd
 ---
 
 ## SEED2 Tutorial
-[Click here to explore SEED2 tutorial](SEED2.qmd)
+[Click here to explore SEED2 tutorial](SEED/SEED2.qmd)
 
 ## QIIME2 Tutorial
-[Click here to explore QIIME2 tutorial](QIIME2.qmd)
+[Click here to explore QIIME2 tutorial](QIIME2/QIIME2.qmd)
 
 
 ## SSU pipeline
-[Click here to explore SSU pipeline](SSU.qmd)
+[Click here to explore SSU pipeline](SSU/SSU.qmd)
