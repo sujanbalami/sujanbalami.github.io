@@ -6,19 +6,16 @@ website:
   navbar:
     left:
       - text: "Home"
-        file: index.qmd
+        href: index.qmd
       - text: "Publications"
-        file: publications.qmd
+        href: publications.qmd
       - text: "Research"
-        file: Research.qmd
+        href: Research.qmd
       - text: "Tutorial"
-        file: Tutorial.qmd
-        menu:
-          - href: Metagenome.qmd
-            text: "Metagenome"
+        href: Tutorial.qmd
     right:
       - text: "CV"
-        file: CV.qmd
+        href: CV.qmd
       - icon: github
         href: https://github.com/
       - icon: twitter

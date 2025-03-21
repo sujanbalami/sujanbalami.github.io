@@ -579,5 +579,138 @@
     "title": "Metagenomics data analysis",
     "section": "SSU pipeline",
     "text": "SSU pipeline\nClick here to explore SSU pipeline"
+  },
+  {
+    "objectID": "Metagenome/SEED2.html",
+    "href": "Metagenome/SEED2.html",
+    "title": "SEED2",
+    "section": "",
+    "text": "Download SEED2\nClick Downlaod SEED2 tab\nThis will ask you to provide your email address and the download link will be sent to your email address.\n\n\n\n\nCheck SEED2 installation\nOpen SEED2 after installation and check the settings tab.\n\n\nSteps\nFollow the steps provided carefully."
+  },
+  {
+    "objectID": "Metagenome/Metagenomics.html",
+    "href": "Metagenome/Metagenomics.html",
+    "title": "Metagenomics data analysis",
+    "section": "",
+    "text": "Click here to explore SEED2 tutorial"
+  },
+  {
+    "objectID": "Metagenome/Metagenomics.html#seed2-tutorial",
+    "href": "Metagenome/Metagenomics.html#seed2-tutorial",
+    "title": "Metagenomics data analysis",
+    "section": "",
+    "text": "Click here to explore SEED2 tutorial"
+  },
+  {
+    "objectID": "Metagenome/Metagenomics.html#qiime2-tutorial",
+    "href": "Metagenome/Metagenomics.html#qiime2-tutorial",
+    "title": "Metagenomics data analysis",
+    "section": "QIIME2 Tutorial",
+    "text": "QIIME2 Tutorial\nClick here to explore QIIME2 tutorial"
+  },
+  {
+    "objectID": "Metagenome/Metagenomics.html#ssu-pipeline",
+    "href": "Metagenome/Metagenomics.html#ssu-pipeline",
+    "title": "Metagenomics data analysis",
+    "section": "SSU pipeline",
+    "text": "SSU pipeline\nClick here to explore SSU pipeline"
+  },
+  {
+    "objectID": "Research/Research.html",
+    "href": "Research/Research.html",
+    "title": "Research",
+    "section": "",
+    "text": "Restoration Ecology\n\n\nFungal Ecology\n\n\nFungal Taxonomy"
+  },
+  {
+    "objectID": "Metagenome/QIIME2.html",
+    "href": "Metagenome/QIIME2.html",
+    "title": "QIIME2",
+    "section": "",
+    "text": "Here, I have illustrated the steps for downstream processing of fungal metagenomic data using QIIME2 in macOSx."
+  },
+  {
+    "objectID": "Metagenome/QIIME2.html#download-and-install-qiime2",
+    "href": "Metagenome/QIIME2.html#download-and-install-qiime2",
+    "title": "QIIME2",
+    "section": "Download and install QIIME2",
+    "text": "Download and install QIIME2\n\nTo download QIIME2 natively, you can follow these steps:\n\nInstall Miniconda appropriate to your system.\nThen, open terminal window.\nConfirm Miniconda is installed. Just write “conda” and press enter.\nNow install QIIME2 Metagenome Distribution running following code.\n\nconda env create -n qiime2-metagenome-2024.10 –file https://data.qiime2.org/distro/metagenome/qiime2-metagenome-2024.10-py310-osx-conda.yml\nIt will take some time….."
+  },
+  {
+    "objectID": "Metagenome/QIIME2.html#activate-qiime2-environment",
+    "href": "Metagenome/QIIME2.html#activate-qiime2-environment",
+    "title": "QIIME2",
+    "section": "Activate QIIME2 environment",
+    "text": "Activate QIIME2 environment\n\n1.Run following code to activate QIIME2 environment.\nconda activate qiime2-metagenome-2024.10 You can see “qiime” environment being activated"
+  },
+  {
+    "objectID": "Metagenome/QIIME2.html#importing-demultiplexed-pair-end-sequences",
+    "href": "Metagenome/QIIME2.html#importing-demultiplexed-pair-end-sequences",
+    "title": "QIIME2",
+    "section": "Importing demultiplexed pair-end sequences",
+    "text": "Importing demultiplexed pair-end sequences\n\n\nMake sure your working directory is set to the folder where you have saved your demultiplexed sequences.\n\nRun cd /path/to/your/file this will change your directory\nRun pwd check your current working directory\n\nMake sure your sequences file are in .gz and has name format e.g.\n\nForward sequences AF05_SB09_L001_R1_001.fastq.gz\nReverse sequences AF05_SB09_L001_R2_001.fastq.gz\nHere AF05 and SB09 are the sample information. You can use L001 and 001 for all samples, it will not affect importing demultiplexed sequences.\nqiime tools import   –type ‘SampleData[PairedEndSequencesWithQuality]’ \\ –input-path . \\ –input-format CasavaOneEightSingleLanePerSampleDirFmt \\ –output-path demux-paired-end.qza"
+  },
+  {
+    "objectID": "Metagenome/QIIME2.html#visualize-imported-paired-end-sequences",
+    "href": "Metagenome/QIIME2.html#visualize-imported-paired-end-sequences",
+    "title": "QIIME2",
+    "section": "Visualize imported paired-end sequences",
+    "text": "Visualize imported paired-end sequences\n\nTo get .qvz file of imported paired-end sequences run following code \nqiime demux summarize \\ –i-data demux-paired-end.qza \\ –o-visualization demux.qzv\nuse QIIME2view to view demux.qzv file You can see one example in the following figures.  here, you can see the quality of sequences which will help you to determine the parameters for denoising sequences for both forward and reverse sequencing"
+  },
+  {
+    "objectID": "Metagenome/QIIME2.html#denoising",
+    "href": "Metagenome/QIIME2.html#denoising",
+    "title": "QIIME2",
+    "section": "Denoising",
+    "text": "Denoising\n\nDenoising step includes cutting out ambiguous bp which are usually during begining and end of sequence amplification process, followed by removing chimeric sequences. qiime dada2 denoise-paired \\ –i-demultiplexed-seqs demux-paired-end.qza \\ –p-trim-left-f 15 \\ –p-trim-left-r 15 \\ –p-trunc-len-f 260 \\ –p-trunc-len-r 220 \\ –o-table table.qza \\ –o-representative-sequences rep-seqs.qza \\ –o-denoising-stats stats.qza \\ –verbose  here –verbose step will gives messages during the process of denoising."
+  },
+  {
+    "objectID": "Metagenome/QIIME2.html#view-denoised-samples-stats",
+    "href": "Metagenome/QIIME2.html#view-denoised-samples-stats",
+    "title": "QIIME2",
+    "section": "View denoised samples stats",
+    "text": "View denoised samples stats\n\nqiime metadata tabulate \\ –m-input-file stats.qza \\ –o-visualization stats.qzv"
+  },
+  {
+    "objectID": "Metagenome/QIIME2.html#view-feature-table",
+    "href": "Metagenome/QIIME2.html#view-feature-table",
+    "title": "QIIME2",
+    "section": "View feature table",
+    "text": "View feature table\n\nqiime feature-table summarize \\ –i-table table.qza \\ –m-sample-metadata-file metadata.txt \\ –o-visualization table.qzv"
+  },
+  {
+    "objectID": "Metagenome/QIIME2.html#export-feature-table",
+    "href": "Metagenome/QIIME2.html#export-feature-table",
+    "title": "QIIME2",
+    "section": "Export feature table",
+    "text": "Export feature table\n\nqiime tools export \\ –input-path rarefied-table.qza \\ –output-path Feature_table/"
+  },
+  {
+    "objectID": "Metagenome/QIIME2.html#convert-feature-table-biom-to-tsv",
+    "href": "Metagenome/QIIME2.html#convert-feature-table-biom-to-tsv",
+    "title": "QIIME2",
+    "section": "Convert feature table biom to tsv",
+    "text": "Convert feature table biom to tsv\n\nbiom convert \\ -i Feature_table/feature-table.biom \\ -o Feature_table/feature-table.tsv \\ –to-tsv\\"
+  },
+  {
+    "objectID": "Metagenome/QIIME2.html#view-representative-sequences",
+    "href": "Metagenome/QIIME2.html#view-representative-sequences",
+    "title": "QIIME2",
+    "section": "View representative sequences",
+    "text": "View representative sequences\n\nqiime feature-table tabulate-seqs \\ –i-data rep-seqs.qza \\ –o-visualization rep-seqs.qzv"
+  },
+  {
+    "objectID": "Metagenome/QIIME2.html#alignment",
+    "href": "Metagenome/QIIME2.html#alignment",
+    "title": "QIIME2",
+    "section": "Alignment",
+    "text": "Alignment\n\nqiime phylogeny align-to-tree-mafft-fasttree \\ –i-sequences filtered-rep-seqs.qza \\ –output-dir Aligned/"
+  },
+  {
+    "objectID": "Metagenome/QIIME2.html#diversity",
+    "href": "Metagenome/QIIME2.html#diversity",
+    "title": "QIIME2",
+    "section": "Diversity",
+    "text": "Diversity\n\nqiime diversity core-metrics-phylogenetic \\–i-phylogeny clustered-sequences/Aligned/rooted_tree.qza \\–i-table clustered-sequences/rarefied-table.qza \\–p-sampling-depth 27300 \\–m-metadata-file metadata.txt \\–output-dir clustered-sequences/diversity-rarefied-data"
   }
 ]
