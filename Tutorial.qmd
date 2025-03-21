@@ -14,9 +14,6 @@ editor:
 files: 
   - Metagenomics.qmd
   - Statistics.qmd
-  - SEED2.qmd
-  - QIIME2.qmd
-  - SSU.qmd
 ---
 
 ## Metagenomics
