@@ -10,7 +10,7 @@ website:
       - text: "Publications"
         href: publications.qmd
       - text: "Research"
-        href: Research/Research.qmd
+        href: Research.qmd
       - text: "Tutorial"
         href: Tutorial.qmd
     right:
