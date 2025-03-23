@@ -16,9 +16,11 @@ editor:
 
 ```         
 Restoration of abandoned agricultural lands
+```
+
+![](Research/Dolakha_Nepal.jpg)
 
 Restoration of rubber monoculture plantations
-```
 
 # Plant-microbe interactions {style="color: steelblue;"}
 
