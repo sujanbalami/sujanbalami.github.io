@@ -10,32 +10,40 @@ editor:
     wrap: 72
 ---
 
-![](Research/landscape.png)
+# Restoration Ecology {style="color: steelblue;"}
 
-Ecological restoration and its outcomes
+#### Ecological restoration and its outcomes.
 
--   Vegetation
+```         
+Restoration of abandoned agricultural lands
 
--   Soil nutrients and cycling
-
--   Soil microbial communities
-
-### Restoration of abandoned agricultural land {style="text-align: center;"}
-
-``` {style="font-family: Arial, sans-serif;  font-size: 16px; color: gray"}
-Restoration of abandoned agricultural land in Nepal
+Restoration of rubber monoculture plantations
 ```
 
-![Short-term abandoned agricultural
-land](Research/short_term_abandoned_land.jpg){style="text-align: center;"
-width="688"}
+# Plant-microbe interactions {style="color: steelblue;"}
 
-![Long-term abandoned agricultural
-land](Research/Long_term_abandoned_land.jpg){style="text-align: center;"
-width="681"}
+#### Mutualistic and pathogenic interactions
 
-### Restoration of rubber monoculture plantation {style="text-align: center;"}
+```         
+Mutualistic interactions with arbuscular and ecto- mycorrhizal fungi
 
-![Natural regeneration in abandoned rubber monoculture
-plantation](Research/Abandoned_rubber.jpg){style="text-align: center"
-width="783"}
+Pathogenic interaction with plant-pathogenic fungi
+```
+
+#### Mechanisms of interactions
+
+```         
+Molecular signalling
+```
+
+#### Factors affecting plant-microbe interactions
+
+```         
+Climate warming and changes in plant-mutualistic, and plant-pathogenic fungi interactions
+```
+
+#### Applied aspects
+
+```         
+Plant-microbiome and increase fitness of plants
+```
