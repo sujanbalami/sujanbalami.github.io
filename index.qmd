@@ -34,12 +34,13 @@ Key Laboratory of Tropical Forest Ecology \| Xishuangbanna Tropical Botanical Ga
 
 Chinese Academy of Sciences
 :::
+
 ------------------------------------------------------------------------
 
 ::: about-extra
 ### Professional summary
 
-Highly motivated and results-driven ecologist with experience on plant and soil microbiome. Skilled in molecular techniques including next-generation sequencing (NGS) methods. Proficient in analyzing NGS data as well as phylogenetic analysis. Published research and review articles in SCI listed journals and gathered experience in meta-analysis. Have strong collaborative spirit and passionate about conducting innovative research that drives scientific breakthroughs.
+Highly motivated and results-driven ecologist with experience on plant and soil microbiome. Skilled in molecular techniques including next-generation sequencing (NGS) methods. Proficient in analyzing NGS data. Published research and review articles in SCI listed journals. Have strong collaborative spirit and passionate about conducting innovative research that drives scientific breakthroughs.
 
 ### Education
 
@@ -57,10 +58,11 @@ Lab Technician \| University of South Bohemia, Ceske Budejovice \| Czech Republi
 :::
 
 ------------------------------------------------------------------------
+
 ::: contact2
 ### Contact
-E-mail: balamisujan@gmail.com \| sujanbalami@xtbg.ac.cn
 
-Address: Menglun Town \|  Mengla County \| Yunnan Province  \| China
+E-mail: balamisujan\@gmail.com \| sujanbalami\@xtbg.ac.cn
 
+Address: Menglun Town \| Mengla County \| Yunnan Province \| China
 :::
