@@ -1,0 +1,20 @@
+---
+title: "Amplicon sequencing data analysis"
+page-layout: full
+title-block-banner: true
+format: 
+  html: 
+    css: styles/tutorial.css
+    toc: true
+    toc-depth: 2
+    toc-title: "**Table of contents**"
+editor: 
+  markdown: 
+    wrap: 72
+---
+
+# [SEED2 pipeline](Amplicon/SEED/SEED2.qmd)
+
+# [QIIME2 pipeline](Amplicon/QIIME2/QIIME2.qmd)
+
+# [SSU pipeline](Amplicon/SSU/SSU.qmd)

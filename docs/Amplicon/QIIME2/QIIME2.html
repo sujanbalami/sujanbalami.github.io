@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Amplicon sequencing data analysis</title>
+<title>QIIME2</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,22 +23,22 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../">
-<script src="../site_libs/quarto-html/quarto.js"></script>
-<script src="../site_libs/quarto-html/popper.min.js"></script>
-<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-549806ee2085284f45b00abea8c6df48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-79108a0fc1995748cbd19a5b0e3e3e7c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-549806ee2085284f45b00abea8c6df48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-79108a0fc1995748cbd19a5b0e3e3e7c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -85,25 +85,25 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../index.html"> 
+    <a class="nav-link" href="../../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../publications.html"> 
+    <a class="nav-link" href="../../publications.html"> 
 <span class="menu-text">Publications</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../Research.html"> 
+    <a class="nav-link" href="../../Research.html"> 
 <span class="menu-text">Research</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../Tutorial.html"> 
+    <a class="nav-link" href="../../Tutorial.html"> 
 <span class="menu-text">Tutorial</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../CV.html"> 
+    <a class="nav-link" href="../../CV.html"> 
 <span class="menu-text">CV</span></a>
   </li>  
   <li class="nav-item compact">
@@ -127,7 +127,7 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-page-left">
-      <h1 class="title">Amplicon sequencing data analysis</h1>
+      <h1 class="title">QIIME2</h1>
                       </div>
   </div>
     
@@ -148,9 +148,18 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title"><strong>Table of contents</strong></h2>
    
   <ul class="collapse">
-  <li><a href="#seed2-pipeline" id="toc-seed2-pipeline" class="nav-link active" data-scroll-target="#seed2-pipeline">SEED2 pipeline</a></li>
-  <li><a href="#qiime2-pipeline" id="toc-qiime2-pipeline" class="nav-link" data-scroll-target="#qiime2-pipeline">QIIME2 pipeline</a></li>
-  <li><a href="#ssu-pipeline" id="toc-ssu-pipeline" class="nav-link" data-scroll-target="#ssu-pipeline">SSU pipeline</a></li>
+  <li><a href="#download-and-install-qiime2" id="toc-download-and-install-qiime2" class="nav-link active" data-scroll-target="#download-and-install-qiime2">Download and install QIIME2</a></li>
+  <li><a href="#activate-qiime2-environment" id="toc-activate-qiime2-environment" class="nav-link" data-scroll-target="#activate-qiime2-environment">Activate QIIME2 environment</a></li>
+  <li><a href="#importing-demultiplexed-pair-end-sequences" id="toc-importing-demultiplexed-pair-end-sequences" class="nav-link" data-scroll-target="#importing-demultiplexed-pair-end-sequences">Importing demultiplexed pair-end sequences</a></li>
+  <li><a href="#visualize-imported-paired-end-sequences" id="toc-visualize-imported-paired-end-sequences" class="nav-link" data-scroll-target="#visualize-imported-paired-end-sequences">Visualize imported paired-end sequences</a></li>
+  <li><a href="#denoising" id="toc-denoising" class="nav-link" data-scroll-target="#denoising">Denoising</a></li>
+  <li><a href="#view-denoised-samples-stats" id="toc-view-denoised-samples-stats" class="nav-link" data-scroll-target="#view-denoised-samples-stats">View denoised samples stats</a></li>
+  <li><a href="#view-feature-table" id="toc-view-feature-table" class="nav-link" data-scroll-target="#view-feature-table">View feature table</a></li>
+  <li><a href="#export-feature-table" id="toc-export-feature-table" class="nav-link" data-scroll-target="#export-feature-table">Export feature table</a></li>
+  <li><a href="#convert-feature-table-biom-to-tsv" id="toc-convert-feature-table-biom-to-tsv" class="nav-link" data-scroll-target="#convert-feature-table-biom-to-tsv">Convert feature table biom to tsv</a></li>
+  <li><a href="#view-representative-sequences" id="toc-view-representative-sequences" class="nav-link" data-scroll-target="#view-representative-sequences">View representative sequences</a></li>
+  <li><a href="#alignment" id="toc-alignment" class="nav-link" data-scroll-target="#alignment">Alignment</a></li>
+  <li><a href="#diversity" id="toc-diversity" class="nav-link" data-scroll-target="#diversity">Diversity</a></li>
   </ul>
 </nav>
     </div>
@@ -161,17 +170,103 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<section id="seed2-pipeline" class="level2">
-<h2 class="anchored" data-anchor-id="seed2-pipeline">SEED2 pipeline</h2>
-<p><a href="../Metagenome/SEED/SEED2.html">Click here to explore SEED2 tutorial</a></p>
+<div class="metagenomics">
+<p><img src="pictures/fungi.png" class="img-fluid" style="width:10.0%"></p>
+<p>Here, I have illustrated the steps for downstream processing of fungal metagenomic data using QIIME2 in macOSx.</p>
+</div>
+<section id="download-and-install-qiime2" class="level2">
+<h2 class="anchored" data-anchor-id="download-and-install-qiime2">Download and install QIIME2</h2>
+<div class="download">
+<p>To download QIIME2 natively, you can follow these steps:</p>
+<ol type="1">
+<li>Install <a href="https://docs.anaconda.com/miniconda/"><strong>Miniconda</strong></a> appropriate to your system.</li>
+<li>Then, open terminal window.</li>
+<li>Confirm Miniconda is installed. Just write “conda” and press enter.</li>
+<li>Now install <a href="https://docs.qiime2.org/2024.10/install/native/#install-qiime-2-within-a-conda-environment"><strong>QIIME2 Metagenome Distribution</strong></a> running following code.</li>
+</ol>
+<p><span style="color: #0000FF;">conda env create -n qiime2-metagenome-2024.10 –file https://data.qiime2.org/distro/metagenome/qiime2-metagenome-2024.10-py310-osx-conda.yml</span></p>
+<p>It will take some time…..</p>
+</div>
 </section>
-<section id="qiime2-pipeline" class="level2">
-<h2 class="anchored" data-anchor-id="qiime2-pipeline">QIIME2 pipeline</h2>
-<p><a href="../Metagenome/QIIME2/QIIME2.html">Click here to explore QIIME2 tutorial</a></p>
+<section id="activate-qiime2-environment" class="level2">
+<h2 class="anchored" data-anchor-id="activate-qiime2-environment">Activate QIIME2 environment</h2>
+<div class="download">
+<p>1.Run following code to activate QIIME2 environment.</p>
+<p><span style="color: #0000FF;">conda activate qiime2-metagenome-2024.10</span><br> You can see “qiime” environment being activated</p>
+</div>
 </section>
-<section id="ssu-pipeline" class="level2">
-<h2 class="anchored" data-anchor-id="ssu-pipeline">SSU pipeline</h2>
-<p><a href="../Metagenome/SSU/SSU.html">Click here to explore SSU pipeline</a></p>
+<section id="importing-demultiplexed-pair-end-sequences" class="level2">
+<h2 class="anchored" data-anchor-id="importing-demultiplexed-pair-end-sequences">Importing demultiplexed pair-end sequences</h2>
+<div class="download">
+<ol type="1">
+<li>Make sure your working directory is set to the folder where you have saved your demultiplexed sequences.</li>
+</ol>
+<p>Run <span style="color: #0000FF;">cd /path/to/your/file</span> this will change your directory</p>
+<p>Run <span style="color: #0000FF;">pwd</span> check your current working directory</p>
+<ol start="2" type="1">
+<li>Make sure your sequences file are in .gz and has name format e.g.</li>
+</ol>
+<p><strong>Forward sequences</strong> AF05_SB09_L001_R1_001.fastq.gz</p>
+<p><strong>Reverse sequences</strong> AF05_SB09_L001_R2_001.fastq.gz</p>
+<p>Here AF05 and SB09 are the sample information. You can use L001 and 001 for all samples, it will not affect importing demultiplexed sequences.</p>
+<p><span style="color: #0000FF;">qiime tools import &nbsp;<br> –type ‘SampleData[PairedEndSequencesWithQuality]’ \<br> –input-path . \<br> –input-format CasavaOneEightSingleLanePerSampleDirFmt \<br> –output-path demux-paired-end.qza</span></p>
+</div>
+</section>
+<section id="visualize-imported-paired-end-sequences" class="level2">
+<h2 class="anchored" data-anchor-id="visualize-imported-paired-end-sequences">Visualize imported paired-end sequences</h2>
+<div class="download">
+<p>To get .qvz file of imported paired-end sequences run following code <br></p>
+<p><span style="color: #0000FF;">qiime demux summarize \<br> –i-data demux-paired-end.qza \<br> –o-visualization demux.qzv</span></p>
+<p>use <a href="https://view.qiime2.org"><strong>QIIME2view</strong></a> to view demux.qzv file<br> You can see one example in the following figures. <img src="pictures/demux_qvz.png" class="img-fluid" style="width:100.0%"><br> here, you can see the quality of sequences which will help you to determine the parameters for denoising sequences for both forward and reverse sequencing</p>
+</div>
+</section>
+<section id="denoising" class="level2">
+<h2 class="anchored" data-anchor-id="denoising">Denoising</h2>
+<div class="download">
+<p>Denoising step includes cutting out ambiguous bp which are usually during begining and end of sequence amplification process, followed by removing chimeric sequences.<br> <span style="color: #0000FF;">qiime dada2 denoise-paired \<br> –i-demultiplexed-seqs demux-paired-end.qza \<br> –p-trim-left-f 15 \<br> –p-trim-left-r 15 \<br> –p-trunc-len-f 260 \<br> –p-trunc-len-r 220 \<br> –o-table table.qza \<br> –o-representative-sequences rep-seqs.qza \<br> –o-denoising-stats stats.qza \<br> –verbose</span> <br> here –verbose step will gives messages during the process of denoising.</p>
+</div>
+</section>
+<section id="view-denoised-samples-stats" class="level2">
+<h2 class="anchored" data-anchor-id="view-denoised-samples-stats">View denoised samples stats</h2>
+<div class="download">
+<p><span style="color: #0000FF;">qiime metadata tabulate \<br> –m-input-file stats.qza \<br> –o-visualization stats.qzv</span></p>
+</div>
+</section>
+<section id="view-feature-table" class="level2">
+<h2 class="anchored" data-anchor-id="view-feature-table">View feature table</h2>
+<div class="download">
+<p><span style="color: #0000FF;">qiime feature-table summarize \<br> –i-table table.qza \<br> –m-sample-metadata-file metadata.txt \<br> –o-visualization table.qzv</span></p>
+</div>
+</section>
+<section id="export-feature-table" class="level2">
+<h2 class="anchored" data-anchor-id="export-feature-table">Export feature table</h2>
+<div class="download">
+<p><span style="color: #0000FF;">qiime tools export \<br> –input-path rarefied-table.qza \<br> –output-path Feature_table/</span></p>
+</div>
+</section>
+<section id="convert-feature-table-biom-to-tsv" class="level2">
+<h2 class="anchored" data-anchor-id="convert-feature-table-biom-to-tsv">Convert feature table biom to tsv</h2>
+<div class="download">
+<p><span style="color: #0000FF;">biom convert \<br> -i Feature_table/feature-table.biom \<br> -o Feature_table/feature-table.tsv \<br> –to-tsv\</span></p>
+</div>
+</section>
+<section id="view-representative-sequences" class="level2">
+<h2 class="anchored" data-anchor-id="view-representative-sequences">View representative sequences</h2>
+<div class="download">
+<p><span style="color: #0000FF;">qiime feature-table tabulate-seqs \<br> –i-data rep-seqs.qza \<br> –o-visualization rep-seqs.qzv</span></p>
+</div>
+</section>
+<section id="alignment" class="level2">
+<h2 class="anchored" data-anchor-id="alignment">Alignment</h2>
+<div class="download">
+<p><span style="color: #0000FF;">qiime phylogeny align-to-tree-mafft-fasttree \<br> –i-sequences filtered-rep-seqs.qza \<br> –output-dir Aligned/</span></p>
+</div>
+</section>
+<section id="diversity" class="level2">
+<h2 class="anchored" data-anchor-id="diversity">Diversity</h2>
+<div class="download">
+<p><span style="color: #0000FF;">qiime diversity core-metrics-phylogenetic \<br>–i-phylogeny clustered-sequences/Aligned/rooted_tree.qza \<br>–i-table clustered-sequences/rarefied-table.qza \<br>–p-sampling-depth 27300 \<br>–m-metadata-file metadata.txt \<br>–output-dir clustered-sequences/diversity-rarefied-data</span></p>
+</div>
 
 
 </section>

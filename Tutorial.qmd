@@ -13,8 +13,17 @@ editor:
     wrap: 72
 ---
 
-## Metagenomics
-[Click here to explore Metagenomics analysis](Metagenome/Metagenomics.qmd)
+# Next-generation sequencing
 
-## Statistical Analysis
-[Click here to explore Statistical analysis](Statistics/Statistics.qmd)
+## [Amplicon sequencing](Amplicon/Amplicon.qmd)
+
+## [Metagenome sequencing](Metagenome/Metagenomics.qmd)
+
+
+
+
+
+
+# Statistical Analysis
+
+## [Univariate methods](Statistics/Statistics.qmd)
