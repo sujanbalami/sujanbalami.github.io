@@ -40,7 +40,7 @@ Chinese Academy of Sciences
 ::: about-extra
 ### Professional summary
 
-Highly motivated and results-driven ecologist with experience on plant and soil microbiome. Skilled in molecular techniques including next-generation sequencing (NGS) methods. Proficient in analyzing NGS data. Published research and review articles in SCI listed journals. Have strong collaborative spirit and passionate about conducting innovative research that drives scientific breakthroughs.
+Highly motivated and results-driven ecologist with experience on plant and soil microbiome. Skilled in molecular techniques including next-generation sequencing (NGS) methods. Proficient in analyzing amplicon and metagenome sequencing data. Published research and review articles in SCI listed journals. Have strong collaborative spirit and passionate about conducting innovative research that drives scientific breakthroughs.
 
 ### Education
 
