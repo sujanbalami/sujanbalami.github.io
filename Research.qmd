@@ -17,34 +17,6 @@ Restoration of abandoned agricultural lands
 
 ![](Research/Dolakha_Nepal.jpg)
         
-Above picture is landscape of Dolakha district central Nepal. 
+Landscape of Dolakha district central Nepal. 
 
 ![](Research/Rubber_monoculture.jpg)
-
-# Plant-microbe interactions
-
-## Mutualistic and pathogenic interactions
-
-```         
-Mutualistic interactions with arbuscular and ecto- mycorrhizal fungi
-
-Pathogenic interaction with plant-pathogenic fungi
-```
-
-#### Mechanisms of interactions
-
-```         
-Molecular signalling
-```
-
-#### Factors affecting plant-microbe interactions
-
-```         
-Climate warming and changes in plant-mutualistic, and plant-pathogenic fungi interactions
-```
-
-#### Applied aspects
-
-```         
-Plant-microbiome and increase fitness of plants
-```
