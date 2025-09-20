@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "About me",
     "section": "",
-    "text": "Sujan Balami PhD\nPostdoctoral Research Fellow\nRestoration Ecology Group\nKey Laboratory of Tropical Forest Ecology | Xishuangbanna Tropical Botanical Garden\nChinese Academy of Sciences\n\n\n\n\nProfessional summary\nHighly motivated and results-driven ecologist with experience on plant and soil microbiome. Skilled in molecular techniques including next-generation sequencing (NGS) methods. Proficient in analyzing NGS data as well as phylogenetic analysis. Published research and review articles in SCI listed journals and gathered experience in meta-analysis. Have strong collaborative spirit and passionate about conducting innovative research that drives scientific breakthroughs.\n\n\nEducation\nUniversity of South Bohemia, Ceske Budejovice | Czech Republic | PhD in Botany\nTribhuvan University, Kathmandu | Nepal | MSc in Botany\n\n\nExperience\nTeaching Assistant | Tribhuvan University, Kathmandu | Nepal\nResearch Assistant | CzechGlobe, Czech Academy of Science | Czech Republic\nLab Technician | University of South Bohemia, Ceske Budejovice | Czech Republic\n\n\n\n\nContact\nE-mail: balamisujan@gmail.com | sujanbalami@xtbg.ac.cn\nAddress: Menglun Town | Mengla County | Yunnan Province | China"
+    "text": "Sujan Balami PhD\nPostdoctoral Research Fellow\nRestoration Ecology Group\nKey Laboratory of Tropical Forest Ecology | Xishuangbanna Tropical Botanical Garden\nChinese Academy of Sciences\n\n\n\n\nProfessional summary\nHighly motivated and results-driven ecologist with experience on plant and soil microbiome. Skilled in molecular techniques including next-generation sequencing (NGS) methods. Proficient in analyzing amplicon and metagenome sequencing data. Published research and review articles in SCI listed journals. Have strong collaborative spirit and passionate about conducting innovative research that drives scientific breakthroughs.\n\n\nEducation\nUniversity of South Bohemia, Ceske Budejovice | Czech Republic | PhD in Botany\nTribhuvan University, Kathmandu | Nepal | MSc in Botany\n\n\nExperience\nTeaching Assistant | Tribhuvan University, Kathmandu | Nepal\nResearch Assistant | CzechGlobe, Czech Academy of Science | Czech Republic\nLab Technician | University of South Bohemia, Ceske Budejovice | Czech Republic\n\n\n\n\nContact\nE-mail: balamisujan@gmail.com | sujanbalami@xtbg.ac.cn\nAddress: Menglun Town | Mengla County | Yunnan Province | China"
   },
   {
     "objectID": "portfolio.html",
@@ -39,7 +39,7 @@
     "href": "Research.html",
     "title": "Research",
     "section": "",
-    "text": "Restoration Ecology\n\nEcological restoration and its outcomes.\nRestoration of abandoned agricultural lands\n\nAbove picture is landscape of Dolakha district central Nepal. \n\n\n\n\n\n\nPlant-microbe interactions\n\nMutualistic and pathogenic interactions\nMutualistic interactions with arbuscular and ecto- mycorrhizal fungi\n\nPathogenic interaction with plant-pathogenic fungi\n\n\nMechanisms of interactions\nMolecular signalling\n\n\nFactors affecting plant-microbe interactions\nClimate warming and changes in plant-mutualistic, and plant-pathogenic fungi interactions\n\n\nApplied aspects\nPlant-microbiome and increase fitness of plants"
+    "text": "Restoration of abandoned agricultural lands\n\nLandscape of Dolakha district central Nepal."
   },
   {
     "objectID": "Tutorial.html",
@@ -1076,5 +1076,40 @@
     "title": "QIIME2",
     "section": "Diversity",
     "text": "Diversity\n\nqiime diversity core-metrics-phylogenetic \\–i-phylogeny clustered-sequences/Aligned/rooted_tree.qza \\–i-table clustered-sequences/rarefied-table.qza \\–p-sampling-depth 27300 \\–m-metadata-file metadata.txt \\–output-dir clustered-sequences/diversity-rarefied-data"
+  },
+  {
+    "objectID": "Research.html#ecological-restoration-and-its-outcomes.",
+    "href": "Research.html#ecological-restoration-and-its-outcomes.",
+    "title": "Research",
+    "section": "",
+    "text": "Restoration of abandoned agricultural lands\n\nLandscape of Dolakha district central Nepal."
+  },
+  {
+    "objectID": "Research.html#mutualistic-and-pathogenic-interactions",
+    "href": "Research.html#mutualistic-and-pathogenic-interactions",
+    "title": "Research",
+    "section": "Mutualistic and pathogenic interactions",
+    "text": "Mutualistic and pathogenic interactions\nMutualistic interactions with arbuscular and ecto- mycorrhizal fungi\nPathogenic interaction with plant-pathogenic fungi"
+  },
+  {
+    "objectID": "Research.html#mechanisms-of-interactions",
+    "href": "Research.html#mechanisms-of-interactions",
+    "title": "Research",
+    "section": "Mechanisms of interactions",
+    "text": "Mechanisms of interactions\nMolecular signalling"
+  },
+  {
+    "objectID": "Research.html#factors-affecting-plant-microbe-interactions",
+    "href": "Research.html#factors-affecting-plant-microbe-interactions",
+    "title": "Research",
+    "section": "Factors affecting plant-microbe interactions",
+    "text": "Factors affecting plant-microbe interactions\nClimate warming and changes in plant-mutualistic, and plant-pathogenic fungi interactions"
+  },
+  {
+    "objectID": "Research.html#applied-aspects",
+    "href": "Research.html#applied-aspects",
+    "title": "Research",
+    "section": "Applied aspects",
+    "text": "Applied aspects\nPlant-microbiome and increase fitness of plants"
   }
 ]
