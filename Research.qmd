@@ -10,27 +10,20 @@ editor:
     wrap: 72
 ---
 
-# Restoration Ecology {style="color: steelblue;"}
-
-#### Ecological restoration and its outcomes.
-
-```         
+# Restoration Ecology
+## Ecological restoration and its outcomes.
+       
 Restoration of abandoned agricultural lands
-```
 
 ![](Research/Dolakha_Nepal.jpg)
-
-```         
+        
 Above picture is landscape of Dolakha district central Nepal. 
-
-
-```
 
 ![](Research/Rubber_monoculture.jpg)
 
 # Plant-microbe interactions {style="color: steelblue;"}
 
-#### Mutualistic and pathogenic interactions
+## Mutualistic and pathogenic interactions
 
 ```         
 Mutualistic interactions with arbuscular and ecto- mycorrhizal fungi
