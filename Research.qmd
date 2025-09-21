@@ -11,12 +11,17 @@ editor:
 ---
 
 # Restoration Ecology
-## Ecological restoration and its outcomes.
-       
-Restoration of abandoned agricultural lands
+## Ecological restoration of abandoned agriculture lands
 
 ![](Research/Dolakha_Nepal.jpg)
-        
-Landscape of Dolakha district central Nepal. 
+*Landscape of Dolakha district, central Nepal*
 
+Widespread abandonment of mid-hill farmland, driven by large-scale labour out-migration, is opening space to revive Nepal’s lost subtropical and temperate forests; my research therefore uses paired vegetation and soil surveys to quantify how site conditions on these fallow fields converge with, and can be steered toward, the composition and function of the nearest remnant forest stands.
+
+## Ecological restoration of rubber monoculture plantations
 ![](Research/Rubber_monoculture.jpg)
+*Rubber monoculture plantation in steep slope*
+
+As falling rubber prices and yield decline drive widespread abandonment of tropical monoculture plantations, my research tracks microbial-community dynamics across chronosequences of these sites to compare how natural regeneration versus active restoration plantings steer soil biota toward rainforest reference states.
+
+
