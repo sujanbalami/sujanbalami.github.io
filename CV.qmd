@@ -3,7 +3,7 @@ title: "CV"
 page-layout: full
 title-block-banner: true
 ---
-# Sujan Balami Ph.D.
+# Sujan Balami PhD
 
 Postdoctoral Research Fellow Xishuangbanna Tropical Botanical Garden, Chinese Academy of Sciences
 
