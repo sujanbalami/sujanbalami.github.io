@@ -9,7 +9,7 @@ format:
 
 # 2025
 
--   Soil Enzyme Stoichiometry Indicates the Alleviation of Microbial Carbon and Nutrient Limitations After Forest Restoration in Rubber Monocultures, Southwest China [(link)](https://onlinelibrary.wiley.com/doi/10.1111/btp.70104)
+-   Soil Enzyme Stoichiometry Indicates the Alleviation of Microbial Carbon and Nutrient Limitations After Forest Restoration in Rubber Monocultures, Southwest China [(lin)](https://onlinelibrary.wiley.com/doi/10.1111/btp.70104)
 
 -   Ectomycorrhizal Fungal Communities of *Shorea robusta* Along an Elevation Gradient [(link)](https://link.springer.com/article/10.1007/s00572-025-01224-5)
 
