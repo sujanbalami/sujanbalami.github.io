@@ -19,6 +19,8 @@ editor:
 
 # Prediction
 
+# Quantification
+
 # Functional table
 
 # Taxonomic profiling
