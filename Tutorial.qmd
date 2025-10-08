@@ -15,9 +15,9 @@ editor:
 
 # Next-generation sequencing
 
-## [Amplicon sequencing](Amplicon/Amplicon.qmd)
+## [Amplicon sequencing](Amplicon.qmd)
 
-## [Metagenome sequencing](Metagenome/Metagenomics.qmd)
+## [Metagenome sequencing](Metagenomics.qmd)
 
 # Statistical Analysis
 
