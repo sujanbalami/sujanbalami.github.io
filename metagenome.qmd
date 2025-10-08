@@ -13,8 +13,16 @@ editor:
     wrap: 72
 ---
 
-# [Assembly](SEED2.qmd)
+# Clean raw reads
 
-# [Gene prediction](QIIME2.qmd)
+# Assembly
 
-# [Quantification](SSU.qmd)
+# Prediction
+
+# Functional table
+
+# Taxonomic profiling
+
+# Taxonomic table
+
+![](pictures/metagenome.png){width="100%"}
