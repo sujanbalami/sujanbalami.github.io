@@ -19,11 +19,6 @@ editor:
 
 ## [Metagenome sequencing](Metagenome/Metagenomics.qmd)
 
-
-
-
-
-
 # Statistical Analysis
 
 ## [Univariate methods](Statistics/Statistics.qmd)

@@ -13,8 +13,8 @@ editor:
     wrap: 72
 ---
 
-# [SEED2 pipeline](Amplicon/SEED/SEED2.qmd)
+# [SEED2 pipeline](SEED/SEED2.qmd)
 
-# [QIIME2 pipeline](Amplicon/QIIME2/QIIME2.qmd)
+# [QIIME2 pipeline](QIIME2/QIIME2.qmd)
 
 # [SSU pipeline](Amplicon/SSU/SSU.qmd)
