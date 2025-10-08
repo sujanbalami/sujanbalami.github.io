@@ -3,6 +3,7 @@ title: "CV"
 page-layout: full
 title-block-banner: true
 ---
+
 # Sujan Balami PhD
 
 Kathmandu, Nepal
@@ -95,11 +96,11 @@ balamisujan\@gmail.com \| https://sujanbalami.github.io
 
 -   Participation \| National Symposium on Pesticides Pollution 2014 \| Kathmandu University and University Grant Commission, Nepal
 
-## Grants and Fellowships 
+## Grants and Fellowships
 
 -   The Yunnan Province Cai-Yun Postdoctoral Program 2024 - “Innovative project grant”
 
--    "Zhi-Hui Yunnan” Program 2024 - Young Scientists & Young Entrepreneurs
+-   "Zhi-Hui Yunnan” Program 2024 - Young Scientists & Young Entrepreneurs
 
 -   The Postdoctoral Talent Project of the Xishuangbanna Tropical Botanical Garden, Chinese Academy of Sciences
 
@@ -113,7 +114,7 @@ balamisujan\@gmail.com \| https://sujanbalami.github.io
 
 -   Gold Medal & Certificate of Merit (2011) \| Amrit Campus, Institute of Science & Technology, Tribhuvan University
 
-## Professional activities 
+## Professional activities
 
 -   Member \| Association of Tropical Biodiversity and Conservation (ATBC)
 
@@ -130,4 +131,3 @@ balamisujan\@gmail.com \| https://sujanbalami.github.io
 -   Vice-president (2017) \| Nature Conservation and Sustainable Development Society (NCDS), Nepal
 
 -   Member (2013) \| Botanical Student Society (BoSS), Central Department of Botany, TU
-
