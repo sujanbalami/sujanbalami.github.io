@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>SSU pipeline</title>
+<title>Amplicon sequencing data analysis</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -127,7 +127,7 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-page-left">
-      <h1 class="title">SSU pipeline</h1>
+      <h1 class="title">Amplicon sequencing data analysis</h1>
                       </div>
   </div>
     
@@ -148,18 +148,9 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title"><strong>Table of contents</strong></h2>
    
   <ul class="collapse">
-  <li><a href="#prerequisite-software" id="toc-prerequisite-software" class="nav-link active" data-scroll-target="#prerequisite-software">Prerequisite software</a></li>
-  <li><a href="#install-software-and-clone-project" id="toc-install-software-and-clone-project" class="nav-link" data-scroll-target="#install-software-and-clone-project">Install software and clone project</a></li>
-  <li><a href="#clean-raw-illumina-sequences" id="toc-clean-raw-illumina-sequences" class="nav-link" data-scroll-target="#clean-raw-illumina-sequences">Clean raw Illumina sequences</a></li>
-  <li><a href="#correct-strand-of-the-sequences-for-illumina" id="toc-correct-strand-of-the-sequences-for-illumina" class="nav-link" data-scroll-target="#correct-strand-of-the-sequences-for-illumina">Correct strand of the sequences for Illumina</a></li>
-  <li><a href="#remove-chimeric-sequences" id="toc-remove-chimeric-sequences" class="nav-link" data-scroll-target="#remove-chimeric-sequences">Remove chimeric sequences</a></li>
-  <li><a href="#identify-reads-against-reference-database" id="toc-identify-reads-against-reference-database" class="nav-link" data-scroll-target="#identify-reads-against-reference-database">Identify reads against reference database</a></li>
-  <li><a href="#summarize-blast-results" id="toc-summarize-blast-results" class="nav-link" data-scroll-target="#summarize-blast-results">Summarize BLAST results</a></li>
-  <li><a href="#final-results" id="toc-final-results" class="nav-link" data-scroll-target="#final-results">Final results</a></li>
-  <li><a href="#blast-against-insdc-optional" id="toc-blast-against-insdc-optional" class="nav-link" data-scroll-target="#blast-against-insdc-optional">BLAST against INSDC (Optional)</a></li>
-  <li><a href="#download-insdc-database-from-ncbi-ftp-server." id="toc-download-insdc-database-from-ncbi-ftp-server." class="nav-link" data-scroll-target="#download-insdc-database-from-ncbi-ftp-server.">Download INSDC database from NCBI FTP server.</a></li>
-  <li><a href="#run-blast-against-insdc" id="toc-run-blast-against-insdc" class="nav-link" data-scroll-target="#run-blast-against-insdc">Run BLAST against INSDC</a></li>
-  <li><a href="#summarize-blast-results-1" id="toc-summarize-blast-results-1" class="nav-link" data-scroll-target="#summarize-blast-results-1">Summarize BLAST results</a></li>
+  <li><a href="#seed2-pipeline" id="toc-seed2-pipeline" class="nav-link active" data-scroll-target="#seed2-pipeline">SEED2 pipeline</a></li>
+  <li><a href="#qiime2-pipeline" id="toc-qiime2-pipeline" class="nav-link" data-scroll-target="#qiime2-pipeline">QIIME2 pipeline</a></li>
+  <li><a href="#ssu-pipeline" id="toc-ssu-pipeline" class="nav-link" data-scroll-target="#ssu-pipeline">SSU pipeline</a></li>
   </ul>
 </nav>
     </div>
@@ -170,116 +161,14 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<p>Series of scripts to analyse 454 and Illumina sequences in SSU amplicon against MaarjAM database. This is pipeline that has been developed and sed in paper “Comparison of 454 and Illumina sequencing methods to study arbuscular mycorrhizal fungal community diversity” (Vasar et al.xxxx). Both 454 and Illumina pipelines are optimized on analyzing SSU sequences against MaarjAM database using BLAST based OTU picking approach. For 454, we assume that sequences are multiplexed into one file and for Illumina sequences are demultiplexed into separate fastq or fastq.tar.gz (packed) pairs for each sample as it is general approach.</p>
-<section id="prerequisite-software" class="level1">
-<h1>Prerequisite software</h1>
-<ol type="1">
-<li><p>BLAST+</p></li>
-<li><p>USEARCH</p></li>
-<li><p>FLASh</p></li>
-<li><p>Python 2.7</p></li>
-</ol>
+<section id="seed2-pipeline" class="level1">
+<h1><a href="./SEED2.html">SEED2 pipeline</a></h1>
 </section>
-<section id="install-software-and-clone-project" class="level1">
-<h1>Install software and clone project</h1>
-<p>First download ssu-pipeline</p>
-<pre style="color: white; background: steelblue"><code>git clone https://github.com/ut-planteco/ssu-pipeline</code></pre>
-<p>Update repository and install mandatory software</p>
-<pre style="color: white; background: steelblue"><code>sudo apt-get update
-sudo apt-get install ncbi-blast+
-wget https://sourceforge.net/projects/flashpage/files/FLASH-1.2.11.tar.gz/download</code></pre>
-<p>You need to download and install USEARCH from their homepage as they provide download link and license per e-mail.</p>
-<p>Example datasets for 454 and Illumina are located in example_data.tar.gz and unpacking will create folders 454 and illumina. All the example commands are using these files. Unpack dataset with following command</p>
-<pre style="color: white; background: steelblue"><code>tar -xzvf example_data.tar.gz</code></pre>
-<p>Inside maarjam folder is located MaarjAM database (status October 2016) with FASTA and BLAST+ formatted file formats that can be directly used to identify sequences. Use BLAST+ formatted files as it will allow to use multiple cores compared to only using FASTA file. You can format FASTA file into BLAST+ format as following</p>
-<pre style="color: white; background: steelblue"><code>makeblastdb -in reference.fasta -dbtype nucl -title CustomDB -out
-reference</code></pre>
+<section id="qiime2-pipeline" class="level1">
+<h1><a href="./QIIME2.html">QIIME2 pipeline</a></h1>
 </section>
-<section id="clean-raw-illumina-sequences" class="level1">
-<h1>Clean raw Illumina sequences</h1>
-<p>Clean Illumina sequences by defining the folder -folder where paired reads are located and provide forward and reverse for both primers with average quality. Make sure that demultiplexed file names coming from Illumina MiSeq platform are correct. Script will gather files named as SAMPLE_R1_001.fastq or SAMPLE_R1_001.fastq.tar.gz. Script will interleave correct forward and reverse reads together that can be easily used by FLASh software to pair them. Because FLASh output FASTQ, we need to convert it to FASTA to make it understandable for BLAST. We also define Illumina Nextera adapters first 10 nucleotides to remove sequences containing part of the adapter for forward -fadapter and reverse -radapter reads. As the example data is using tagmentation based Illumina, we do not need to define forward -fprimer and reverse -rprimer primers. Finally we define that average quality -quality for both reads needs to be at least 30 (0-40). In order to skip intermediate files, pipe each step into one command as following:</p>
-<pre style="color: white; background: steelblue"><code>python pipeline_clean_illumina.py -folder illumina/ -fprimer "" -rprimer "" -fadapter CTGTCTCTTA -radapter CTGTCTCTTA -quality 30 | ~/applications/FLASH/flash -m 10 -M 300 --interleaved-input - -c | python pipeline_fastq_fasta.py &gt; illumina.cleaned.fasta</code></pre>
-<p>Nextera adapters R1</p>
-<p>GTCTCGTGGGCTCGGAGATGTGTATAAGAGACAG and R2 TGTCTCGTGGGCTCGGAGATGTGTATAAGAGACAG needs to be reverse complement. We only need to match first ten bases to find adapters. These 10 bases have been checked against MaarjAM database and no interference using short adapter sequence is found to catch false positives.</p>
-<p>Command help</p>
-<pre style="color: white; background: steelblue"><code>python pipeline_clean_illumina.py 
-  -folder FOLDER [-fprimer SEQUENCE] [-rprimer SEQUENCE] 
-  [-fadapter SEQUENCE] [-radapter SEQUENCE] [-quality QUALITY] 
-  [-phred QUALITY] 
-
-arguments: 
--folder FOLDER define FOLDER where FASTQ or FASTQ.tar.gz files are stored
--fprimer SEQUENCE define forward read primer 
--rprimer SEQUENCE define reverse read primer 
--fadapter SEQUENCE define adapter for forward read 
--radapter SEQUENCE define adapter for reverse read 
--quality QUALITY average quality of sequence to be accepted 
--phred QUALITY FASTQ file phred quality score (33)</code></pre>
-</section>
-<section id="correct-strand-of-the-sequences-for-illumina" class="level1">
-<h1>Correct strand of the sequences for Illumina</h1>
-<p>Tagmentation based Illumina produces sequences that are not in the same direction, but USEARCH software needs to have all the reads in same direction as the reference database, we need to change them into correct strand. All the sequences should start from NS31 primer and end with AML2 primer. To achieve this, we use MaarjAM database with our cleaned sequences and run BLAST+ software to identify strand of the sequences. Sequences identified as +/- by the BLAST+ needs to be reverse complemented.</p>
-<pre style="color: white; background: steelblue"><code>blastn -query illumina.cleaned.fasta -evalue 1e-50 -max_target_seqs 1 -num_threads 4 -db maarjam/maarjam -outfmt 5 | python pipeline_parse_blast.py &gt; illumina.strand.blast </code></pre>
-<p>Now run python script that reads BLAST results and fasta input to change direction of the sequences</p>
-<pre style="color: white; background: steelblue"><code>python pipeline_correct_direction.py -f illumina.cleaned.fasta -b illumina.strand.blast &gt; illumina.correct.fasta</code></pre>
-</section>
-<section id="remove-chimeric-sequences" class="level1">
-<h1>Remove chimeric sequences</h1>
-<p>Once files are cleaned, we need to remove chimeric sequences that are introduced using PCR. We use USEARCH in reference database mode against MaarjAM database. Make sure to use correct input file for 454 and Illumina, 454.cleaned.fasta and illumina.correct.fasta respectivelly.</p>
-<pre style="color: white; background: steelblue"><code>usearch -uchime_ref 454.cleaned.fasta -db maarjam/maarjam.fasta -nonchimeras 454.cf.fasta -strand plus usearch -uchime_ref illumina.correct.fasta -db maarjam/maarjam.fasta -nonchimeras illumina.cf.fasta -strand plus</code></pre>
-</section>
-<section id="identify-reads-against-reference-database" class="level1">
-<h1>Identify reads against reference database</h1>
-<p>Once we have removed chimeric reads, we can start identifying sequences using BLAST+ software and MaarjAM database.</p>
-<pre style="color: white; background: steelblue"><code>blastn -query 454.cf.fasta -evalue 1e-50 -max_target_seqs 1 -num_threads 4 -db maarjam/maarjam -outfmt 5 | python pipeline_parse_blast.py &gt; 454.cf.blast blastn -query illumina.cf.fasta -evalue 1e-50 -max_target_seqs 1 -num_threads 4 -db maarjam/maarjam -outfmt 5 | python pipeline_parse_blast.py &gt; illumina.cf.blast</code></pre>
-</section>
-<section id="summarize-blast-results" class="level1">
-<h1>Summarize BLAST results</h1>
-<p>Finally, we can summarize BLAST result using parsed output. Providing FASTA file will output also nohit selection that can be used for further BLAST against additional databases. We use parameters -vs and -ve do define reference database variable region location. Because we use MaarjAM database in this example, all the referene sequences start after NS31 primer and variable region on the amplicon is located from 70nt to 300nt after the NS31 primer. We also define hit identity -i to be at least 97% and alignment length -l for the hit at least 95% to be counted as a hit.</p>
-<pre style="color: white; background: steelblue"><code>python pipeline_summarize_blast.py -f 454.cf.fasta -b 454.cf.blast -i 97 -l 95 -t 0 -vs 70 -ve 300 
-python pipeline_summarize_blast.py -f illumina.cf.fasta -b illumina.cf.blast -i 97 -l 95 -t 0 -vs 70 -ve 300 </code></pre>
-<p>Command help</p>
-<pre style="color: white; background: steelblue"><code>python pipeline_summarize_blast.py -b BLAST_FILE [-f FASTA_FILE] -i IDENTITY[0-100] -l ALIGNMENT[0-100] [-vs VARIABLE_START] [-ve VARIABLE_END] -t BLAST_TYPE[0-2] arguments: -b BLAST_FILE BLAST tabulated output that was generated with pipeline_parseblast.py -f FASTA_FILE FASTA file to be used to output list of bad hits that did not match thresholds -i IDENTITY[0-100] hit identity in percentage to be accepted as a hit, recommended 97 -l ALIGNMENT[0-100] hit aliginment length in percentage to be accepted a hit, recommended 95 -vs VARIABLE_START reference sequence variable region start -ve VARIABLE_END reference sequence variable region end -t BLAST_TYPE[0-2] defines which section of the BLAST to be used to summarize results. 0 - suitable for MaarjAM, only last portion of hit description is used, 1 - all hit description is used, 2 - hit identificator is used </code></pre>
-</section>
-<section id="final-results" class="level1">
-<h1>Final results</h1>
-<p>Two files are generated from previous step. One is named as <em>.nohits.fasta, where sequences that did not get significant hit against reference database are written out and</em> .tsv, where results are written as pivot table with samples and hits sorted in descending order.</p>
-</section>
-<section id="blast-against-insdc-optional" class="level1">
-<h1>BLAST against INSDC (Optional)</h1>
-<p>To identify nohits we can use INSDC database to understand what else the sequences are containing. We first need to download database from NCBI FTP server and conduct BLAST on the downloaded database. BLAST can be run with all the INSDC data partitions together (large memory usage) or if memory usage is limited, by separately.</p>
-</section>
-<section id="download-insdc-database-from-ncbi-ftp-server." class="level1">
-<h1>Download INSDC database from NCBI FTP server.</h1>
-<p>Please check number of NT sequences in FTP to download them all, change 41 from below line accordingly. As the database contains only GenBank accessions, GenBank ID and short description, we need to download taxonomy information (gi_taxid_nucl.dmp.gz, taxdump.tar.gz) to build taxonomy tree for each hit.</p>
-<pre style="color: white; background: steelblue"><code>for i in {00..41}; do echo "Downloading NT.$i"; wget ftp://ftp.ncbi.nlm.nih.gov/blast/db/nt.$i.tar.gz; tar xzvf nt.$i.tar.gz; done wget ftp://ftp.ncbi.nih.gov/pub/taxonomy/gi_taxid_nucl.dmp.gz wget ftp://ftp.ncbi.nih.gov/pub/taxonomy/taxdump.tar.gz gunzip gi_taxid_nucl.dmp.gz gunzip taxdump.tar.gz</code></pre>
-</section>
-<section id="run-blast-against-insdc" class="level1">
-<h1>Run BLAST against INSDC</h1>
-<p>To run BLAST with all the INSDC data partitions together, we can simply define database parameter in BLAST as nt or if we want to run them separately, we need to define all the partions one by one or use for loop.</p>
-<pre style="color: white; background: steelblue"><code>blastn -query 454.cf.blast.i97.a95.nohits.fasta -evalue 1e-50 -max_target_seqs 1 -num_threads 4 -db nt -outfmt 5 | python pipeline_parse_blast.py &gt; 454.nohits.blast 
-blastn -query illumina.cf.blast.i97.a95.nohits.fasta -evalue 1e-50 -max_target_seqs 1 -num_threads 4 -db nt -outfmt 5 | python pipeline_parse_blast.py &gt; illumina.nohits.blast</code></pre>
-<p>or run separately and combine BLAST results together by selecting best hut for each sequence based on BLAST score (change number 41 accordinly to downloaded partitions)</p>
-<pre style="color: white; background: steelblue"><code>for i in {00..41}; do blastn -query 454.cf.blast.i97.a95.nohits.fasta -evalue 1e-50 -max_target_seqs 1 -num_threads 4 -db nt.$i -outfmt 5 | python pipeline_parse_blast.py &gt; 454.nohits.$i.blast; done less 454.nohits..blast | python pipeline_merge_blasts.py &gt; 454.nohits.blast for i in {00..41}; do blastn -query illumina.cf.blast.i97.a95.nohits.fasta -evalue 1e-50 -max_target_seqs 1 -num_threads 4 -db nt.$i -outfmt 5 | python pipeline_parse_blast.py &gt; illumina.nohits.$i.blast; done less illumina.nohits..blast | python pipeline_merge_blasts.py &gt; illumina.nohits.blast</code></pre>
-</section>
-<section id="summarize-blast-results-1" class="level1">
-<h1>Summarize BLAST results</h1>
-<p>We use relaxed parameters to filter potential hits by reducing identity threshold to be at least 90% and length at least 90%. We also need to define files, where taxonomy information is stored for nt database. Warning: as the *.dmp files are relatively large and below script is not optimized, it can use large ammount of memory and will take time to process file gi_taxid_nucl.dmp.</p>
-<pre style="color: white; background: steelblue"><code>python pipeline_summarize_gbblast.py -b 454.nohits.blast -i 90 -l 90 -ti gi_taxid_nucl.dmp -tt names.dmp -tn nodes.dmp 
-python pipeline_summarize_gbblast.py -b illumina.nohits.blast -i 90 -l 90 -ti gi_taxid_nucl.dmp -tt names.dmp -tn nodes.dmp </code></pre>
-<p>Command help</p>
-<pre style="color: white; background: steelblue"><code>python pipeline_summarize_gbblast.py [-h] -b BLAST_FILE -ti ID_FILE -tt TAXONOMY_FILE -tn NODE_FILE -i IDENTITY[0-100] -l ALIGNMENT[0-100] 
-
-arguments: 
--h, --help show this help message and exit 
--b BLAST_FILE BLAST tabulated output that was generated with pipeline_parseblast.py 
--ti ID_FILE Taxonomy file, where for each GenBank ID node ID is specified 
--tt TAXONOMY_FILE Taxonomy file, where for each node ID scientific name is provided 
--tn NODE_FILE Taxonomy file, where full tree node connections of node IDs are provided to build full taxonomy tree 
--i IDENTITY[0-100] hit identity in percentage to be accepted as a hit, recommended 90 
--l ALIGNMENT[0-100] hit aliginment length in percentage to be accepted a hit, recommended 90 </code></pre>
-<p>Use following citation when using our python scripts:</p>
-<p>Vasar, M., Andreson, R., Davison, J., Jairus, T., Moora, M., Remm, M., Young, J.P.W., Zobel, M. and Öpik, M., 2017. Increased sequencing depth does not increase captured diversity of arbuscular mycorrhizal fungi. Mycorrhiza, 27(8), pp.761-773. License: CC-BY</p>
+<section id="ssu-pipeline" class="level1">
+<h1><a href="./SSU.html">SSU pipeline</a></h1>
 
 
 </section>
