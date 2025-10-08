@@ -17,7 +17,7 @@ editor:
 
 ## [Amplicon sequencing](Amplicon.qmd)
 
-## [Metagenome sequencing](Metagenomics.qmd)
+## [Metagenome sequencing](metagenome.qmd)
 
 # Statistical Analysis
 
