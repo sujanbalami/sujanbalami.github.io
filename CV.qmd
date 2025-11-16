@@ -2,9 +2,14 @@
 title: "CV"
 page-layout: full
 title-block-banner: true
+format:
+  html: 
+    theme: flatly
+    fontsize: 1.1em
+    linestretch: 1.7
 ---
 
-# Sujan Balami PhD
+# Sujan Balami
 
 Kathmandu, Nepal
 
@@ -30,63 +35,63 @@ balamisujan\@gmail.com \| https://sujanbalami.github.io
 
 ## Publications
 
-1.  Balami S, Mo Y-X, Hu H-X, Shi X-M, Song L\*. (2025) Soil enzyme stoichiometry indicates the alleviation of microbial carbon and nutrient limitations after forest restoration in rubber monocultures, Southwest China. Biotropica 57:e70104.
+1.  **Balami S**, Mo Y-X, Hu H-X, Shi X-M, Song L\*. (2025) Soil enzyme stoichiometry indicates the alleviation of microbial carbon and nutrient limitations after forest restoration in rubber monocultures, Southwest China. Biotropica 57:e70104.
 
-2.  Song L#, Balami S#, Gbadamassi GOD, Liu WG, Philippe T, Wanger TC, Edwards D, Wang MMH, Yang Y-P, Harrison R. (2025) Ecological restoration of rubber monocultures: strategies for biodiversity and ecosystem recovery in tropical regions. Integrative Conservation 2025: 1–9. \# equal first author.
+2.  Song L#, **Balami S**#, Gbadamassi GOD, Liu WG, Philippe T, Wanger TC, Edwards D, Wang MMH, Yang Y-P, Harrison R. (2025) Ecological restoration of rubber monocultures: strategies for biodiversity and ecosystem recovery in tropical regions. Integrative Conservation 2025: 1–9. \# equal first author.
 
-3.  Shrestha S, Balami S, Vasutova M, Mandal T, & Raut JK. (2025) Ectomycorrhizal fungal communities of *Shorea robusta* along an elevation gradient. Mycorrhiza 35: 50.
+3.  Shrestha S, **Balami S**, Vasutova M, Mandal T, & Raut JK. (2025) Ectomycorrhizal fungal communities of *Shorea robusta* along an elevation gradient. Mycorrhiza 35: 50.
 
-4.  Manzoor, Qian D, Mo YX, Balami S, Wang C-J, Shi X-M, Zheng Y-J, Song L. (2025) Habitat and Density Effects on Tea Quality: A Microclimate and Nutrients Perspective. Agriculture Ecosystem and Environment 394: 109866.
+4.  Manzoor, Qian D, Mo YX, **Balami S**, Wang C-J, Shi X-M, Zheng Y-J, Song L. (2025) Habitat and Density Effects on Tea Quality: A Microclimate and Nutrients Perspective. Agriculture Ecosystem and Environment 394: 109866.
 
-5.  Mo Y-X, Zou H, Hu H-X, Li S, Lu H, Pu X, Zhang Y, Balami S, Li Y, Hu T, Song L, Liu W. (2025) Strangler fig–host tree associations: Insights into the ecology and management of tropical urban green spaces. Plants People Planet 7:159–175.
+5.  Mo Y-X, Zou H, Hu H-X, Li S, Lu H, Pu X, Zhang Y, **Balami S**, Li Y, Hu T, Song L, Liu W. (2025) Strangler fig–host tree associations: Insights into the ecology and management of tropical urban green spaces. Plants People Planet 7:159–175.
 
-6.  Hu H, Mo Y, Balami S, Mendieta-Leiva G, Shen T, Haq SM, Song L. (2024) Combining critical transition indicator to compare the stable structure of epiphyte–host networks. Ecological Indicators 166:112470.
+6.  Hu H, Mo Y, **Balami S**, Mendieta-Leiva G, Shen T, Haq SM, Song L. (2024) Combining critical transition indicator to compare the stable structure of epiphyte–host networks. Ecological Indicators 166:112470.
 
-7.  Adhikari HS, Magar GT, Balami S. (2024) *Laetiporus sulphureus* in the mid-hills of Central Nepal: ecology, ethnomycology and present status. Our Nature 22:10–18.
+7.  Adhikari HS, Magar GT, **Balami S**. (2024) *Laetiporus sulphureus* in the mid-hills of Central Nepal: ecology, ethnomycology and present status. Our Nature 22:10–18.
 
-8.  Awasthi M, Pokhrel C, You YH, Balami S, Kunwar R, Thapa S, Kim EJ, Park JW, Park JH, Lee JM, Kim YS. (2023) Comparative assessment of ethnobotany and antibacterial activity of Moringa oleifera Lam. in Nepal. Ethnobotany Research and Applications 25:1–3.
+8.  Awasthi M, Pokhrel C, You YH, **Balami S**, Kunwar R, Thapa S, Kim EJ, Park JW, Park JH, Lee JM, Kim YS. (2023) Comparative assessment of ethnobotany and antibacterial activity of Moringa oleifera Lam. in Nepal. Ethnobotany Research and Applications 25:1–3.
 
-9.  Chaudhary S, Magar GT, Shrestha S, Balami S. (2022) Peoples' Perception on Invasive Alien Plant Species of Ramdhuni Municipality, Sunsari District, Eastern Nepal. Amrit Research Journal 3:1–9.
+9.  Chaudhary S, Magar GT, Shrestha S, **Balami S**. (2022) Peoples' Perception on Invasive Alien Plant Species of Ramdhuni Municipality, Sunsari District, Eastern Nepal. Amrit Research Journal 3:1–9.
 
-10. Balami S, Vašutová M, Košnar J, Karki R, Khadka C, Tripathi G, Cudlín P. (2021) Soil fungal communities in abandoned agricultural land has not yet moved towards the seminatural forest. Forest Ecology and Management 491:119181.
+10. **Balami S**, Vašutová M, Košnar J, Karki R, Khadka C, Tripathi G, Cudlín P. (2021) Soil fungal communities in abandoned agricultural land has not yet moved towards the seminatural forest. Forest Ecology and Management 491:119181.
 
-11. Balami S, Vašutová M, Godbold D, Kotas P, Cudlín P. (2020) Soil fungal communities across land use types. iForest 13:548–558.
+11. **Balami S**, Vašutová M, Godbold D, Kotas P, Cudlín P. (2020) Soil fungal communities across land use types. iForest 13:548–558.
 
-12. Balami S, Thapa LB, Jha SK. (2019) Effects of invasive *Ageratina adenophora* on mycelial growth of some important soil fungi. Songklanakarin Journal of Science & Technology 41:465–470.
+12. **Balami S**, Thapa LB, Jha SK. (2019) Effects of invasive *Ageratina adenophora* on mycelial growth of some important soil fungi. Songklanakarin Journal of Science & Technology 41:465–470.
 
-13. Bhatta SP, Sharma KP, Balami S. (2018) Variation in carbon storage among tree species in the planted forest of Kathmandu, Central Nepal. Current Science 115:274–282.
+13. Bhatta SP, Sharma KP, **Balami S**. (2018) Variation in carbon storage among tree species in the planted forest of Kathmandu, Central Nepal. Current Science 115:274–282.
 
 14. Balami S, Thapa LB, Jha SK. (2017) Effect of invasive *Ageratina adenophora* on species richness and composition of saprotrophic and pathogenic soil fungi. BIOTROPIA-The Southeast Asian Journal of Tropical Biology 24:212–219.
 
-15. Balami S, Thapa LB. (2017) Herbivory damage in native *Alnus nepalensis* and invasive *Ageratina adenophora*. Botanica Orientalis: Journal of Plant Science 11:7–11.
+15. **Balami S**, Thapa LB. (2017) Herbivory damage in native *Alnus nepalensis* and invasive *Ageratina adenophora*. Botanica Orientalis: Journal of Plant Science 11:7–11.
 
-16. Balami S, Thapa LB, Jha SK. (2017) Sterilization effect of *Ageratina adenophora* invaded soil on root growth of native *Schima wallichii*. Physiological Ecology and Environmental Science 8:25–30. 17.
+16. **Balami S**, Thapa LB, Jha SK. (2017) Sterilization effect of *Ageratina adenophora* invaded soil on root growth of native *Schima wallichii*. Physiological Ecology and Environmental Science 8:25–30. 17.
 
-17. Jha SK\*, Balami S. (2016) Nutritive value of some wild edible macrofungi from Devdaha, Rupandehi district, Nepal. Journal of Biodiversity Conservation and Bioresource Management 2:21–27.
+17. Jha SK\*, **Balami S**. (2016) Nutritive value of some wild edible macrofungi from Devdaha, Rupandehi district, Nepal. Journal of Biodiversity Conservation and Bioresource Management 2:21–27.
 
 ## Manuscripts
 
-1.  Balami S, Shi X-M, Hu H-X, Mo Y-X, Song L. Dynamics of soil fungal communities during restoration of forests from rubber monocultures. Agriculture Ecosystem & Environment (Under review)
+1.  **Balami S**, Shi X-M, Hu H-X, Mo Y-X, Song L. Dynamics of soil fungal communities during restoration of forests from rubber monocultures. Agriculture Ecosystem & Environment (Under review)
 
-2.  Balami S, Shi X-M, Hu H-X, Mo Y-X, Song L. Vegetation restoration brings positive changes in soil fungal communities but not sufficiently to approximate reference sites: Global meta-analysis. Soil Biology and Biochemistry (Submitted)
+2.  **Balami S**, Shi X-M, Hu H-X, Mo Y-X, Song L. Vegetation restoration brings positive changes in soil fungal communities but not sufficiently to approximate reference sites: Global meta-analysis. Soil Biology and Biochemistry (Submitted)
 
-3.  Balami S, Song L. Dynamics of soil microbial communities during secondary succession of abandoned rubber monocultures. (In preparation)
+3.  **Balami S**, Song L. Dynamics of soil microbial communities during secondary succession of abandoned rubber monocultures. (In preparation)
 
-4.  Balami S, Vasutova M. Three new ectomycorrhizal fungal fruitbodies from Nepal. (In preparation)
+4.  **Balami S**, Vasutova M. Three new ectomycorrhizal fungal fruitbodies from Nepal. (In preparation)
 
-5.  Chen Z-Y, Shi X-M, Balami S, Yuan H, Song L. Heavy metal accumulation and risk mitigation in rubber monocultures: Insights on ecological restoration and source control. Environmental Pollution (Submitted)
+5.  Chen Z-Y, Shi X-M, **Balami S**, Yuan H, Song L. Heavy metal accumulation and risk mitigation in rubber monocultures: Insights on ecological restoration and source control. Environmental Pollution (Submitted)
 
-6.  Yang Q-X, Yang B, Zhu X-A, Ma S, Hu Y-H, Chen Z-J, Balami S, Wu J, Song L. Terraces preserve more water with dimorphic water-uptake rubber trees than flatlands. Agriculture and Forest Meteorology (Under review)
+6.  Yang Q-X, Yang B, Zhu X-A, Ma S, Hu Y-H, Chen Z-J, **Balami S**, Wu J, Song L. Terraces preserve more water with dimorphic water-uptake rubber trees than flatlands. Agriculture and Forest Meteorology (Under review)
 
-7.  Shi X-M, Liu A-X, Mo Y-X, Balami S, Qi J-H, Liu Y, Chen Z-Y, Song L. Higher homeostasis of leaf stoichiometry can better predict plant biogeochemical niche response to simulate N deposition than root. Plant and Soil (Under review)
+7.  Shi X-M, Liu A-X, Mo Y-X, **Balami S**, Qi J-H, Liu Y, Chen Z-Y, Song L. Higher homeostasis of leaf stoichiometry can better predict plant biogeochemical niche response to simulate N deposition than root. Plant and Soil (Under review)
 
-8.  Thapa LB, Darji TB, Pathak S, Deuba R, Balami S, Pant G, Kaewchumnong K, Sinkkonen A. Response of native species to the invasive weeds Ageratina adenophora and Chromolaena odorata in central Nepal. Tropical Ecology (Under review)
+8.  Thapa LB, Darji TB, Pathak S, Deuba R, **Balami S**, Pant G, Kaewchumnong K, Sinkkonen A. Response of native species to the invasive weeds Ageratina adenophora and Chromolaena odorata in central Nepal. Tropical Ecology (Under review)
 
-9.  Vasutova M, Synkova H, Choma M, Balami S, Marketa S, Vitovcova K. Fungal assemblages associated with Eriophorum vaginatum are affected by disturbance of raised bogs. Restoration Ecology (Major revision)
+9.  Vasutova M, Synkova H, Choma M, **Balami S**, Marketa S, Vitovcova K. Fungal assemblages associated with Eriophorum vaginatum are affected by disturbance of raised bogs. Restoration Ecology (Major revision)
 
 ## Conferences and symposia
 
--   Paper presentation \| 24th Ecology Conference of China 2025 \| Ecological Society of China
+-   Paper presentation \| 24^th^ Ecology Conference of China 2025 \| Ecological Society of China
 
 -   Poster presentation \| Postdoctoral Conference 2023 \| Xishuangbanna Tropical Botanical Garden, Chinese Academy of Sciences
 
