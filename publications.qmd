@@ -4,6 +4,7 @@ page-layout: full
 title-block-banner: true
 format:
   html: 
+    theme: flatly
     css: styles/publication.css
 ---
 
