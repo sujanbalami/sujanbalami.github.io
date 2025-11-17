@@ -3,7 +3,8 @@ title: "About me"
 page-layout: full
 title-block-banner: true
 format: 
-  html: 
+  html:
+    theme: flatly
     css: styles/styles.css
 image: sujan.jpg
 about:
