@@ -4,7 +4,7 @@ page-layout: full
 title-block-banner: true
 format: 
   html: 
-    theme: flatly 
+    theme: lux 
     css: styles/tutorial.css
     toc: true
     toc-depth: 3
