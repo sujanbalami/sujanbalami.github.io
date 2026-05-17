@@ -56,6 +56,20 @@ Teaching Assistant \| Tribhuvan University, Kathmandu \| Nepal
 Research Assistant \| CzechGlobe, Czech Academy of Science \| Czech Republic
 
 Lab Technician \| University of South Bohemia, Ceske Budejovice \| Czech Republic
+
+### Computational Skills
+
+- R, Python, Bash
+
+- Metagenomics & Amplicon Analysis
+
+- Linux/HPC Computing
+
+- Statistical Modeling
+
+- Reproducible Workflows
+
+- Git/GitHub
 :::
 
 ------------------------------------------------------------------------
