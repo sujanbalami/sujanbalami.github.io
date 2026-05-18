@@ -19,7 +19,3 @@ editor:
 ## [Amplicon sequencing](Amplicon.qmd)
 
 ## [Metagenome sequencing](metagenome.qmd)
-
-# Statistical Analysis
-
-## [Univariate methods](Statistics/Statistics.qmd)
