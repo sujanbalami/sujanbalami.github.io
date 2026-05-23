@@ -13,6 +13,8 @@ website:
         href: Research.qmd
       - text: "Tutorial"
         href: Tutorial.qmd
+      - text: "Blogs"
+        href: blogs.qmd
     right:
       - text: "CV"
         href: CV.qmd
