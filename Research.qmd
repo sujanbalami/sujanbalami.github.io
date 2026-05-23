@@ -10,6 +10,8 @@ editor:
   markdown: 
     wrap: 72
 ---
+# Environmetal metagenomics
+Metagenomics has emerged as a powerful approach for deciphering belowground microbial communities. My research applies metagenomic tools and computational analyses to understand microbial ecology during ecosystem restoration and to reveal microbial community responses to environmental disturbances and ecological change.
 
 # Restoration Ecology
 
