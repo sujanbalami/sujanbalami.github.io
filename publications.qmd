@@ -10,6 +10,7 @@ format:
 
 # 2026
 
+- Applied nucleation triggers cross-scale recovery in degraded tropical riparian corridors: A 20-year multi-scale assessment in China (Accepted)
 - Ecological restoration mitigates heavy metal pollution in rubber monocultures: Quantifying risk reduction and anthropogenic source control [(link)](https://doi.org/10.1016/j.hazadv.2026.101203)
 
 # 2025
