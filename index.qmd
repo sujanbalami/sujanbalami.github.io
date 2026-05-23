@@ -39,7 +39,7 @@ Gyeongkuk National University, Andong city, Republic of Korea
 ::: about-extra
 ### Professional summary
 
-Highly motivated and results-driven ecologist with experience on plant and soil microbiome. Skilled in molecular techniques including next-generation sequencing (NGS) methods. Proficient in analyzing amplicon and metagenome sequencing data. Published research and review articles in SCI listed journals. Have strong collaborative spirit and passionate about conducting innovative research that drives scientific breakthroughs.
+I am a researcher in community ecology with a focus on belowground microbial processes, ecosystem functioning, and restoration ecology. My expertise includes environmental metagenomics, bioinformatics, computational ecology, and large-scale ecological and microbiome data analysis. I apply ecological statistics, multivariate analysis, and computational approaches to investigate microbial community dynamics, nutrient limitations, and ecological recovery in disturbed ecosystems.
 
 ### Education
 
