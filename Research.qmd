@@ -31,14 +31,14 @@ ecosystem processes, and complex ecological interactions.
 
 # Ecosystem restoration ecology
 
-## Restoration ecology of forests and grasslands invaded by invasive plant species
+## Ecological restoration of forests and grasslands invaded by invasive plant species
 
 My research investigates how alien invasive plant species alter native
 vegetation, soil properties, and microbial communities in forest and
 grassland ecosystems. I am interested in understanding ecological
 recovery processes and evaluating restoration strategies that promote
 native biodiversity and ecosystem functioning following biological
-invasions.
+invasions. ![](Research/parthenium.jpg)*Parthenium hysterophorus*
 
 ## Ecological restoration of abandoned agriculture lands
 
