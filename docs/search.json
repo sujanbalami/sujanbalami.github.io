@@ -39,7 +39,7 @@
     "href": "Research.html",
     "title": "Research",
     "section": "",
-    "text": "Metagenomics has emerged as a powerful approach for deciphering belowground microbial communities. My research applies metagenomic tools and computational analyses to understand microbial ecology during ecosystem restoration and to reveal microbial community responses to environmental disturbances and ecological change.\nResearch areas include:\n\nSoil microbial ecology\nEnvironmental metagenomics\nMicrobiome data analysis\nBioinformatics and computational methods\nMicrobial community dynamics"
+    "text": "The increasing availability of large ecological and environmental datasets requires advanced computational and statistical approaches for data integration, analysis, and interpretation. My research applies computational ecology methods, including ecological modeling, machine learning, and bioinformatics, to understand community dynamics, ecosystem processes, and complex ecological interactions.\n\nEcological data analysis and visualization (developing R and Python packages)\nStatistical modeling of ecological communities\nMeta-analysis and synthesis of ecological datasets\nEnvironmental metagenomics and data analysis"
   },
   {
     "objectID": "Tutorial.html",
@@ -1209,5 +1209,12 @@
     "title": "Metagenome sequencing data analysis",
     "section": "",
     "text": "Clean raw reads\n\n\nAssembly\n\n\nPrediction\n\n\nQuantification\n\n\nFunctional table\n\n\nTaxonomic profiling\n\n\nTaxonomic table"
+  },
+  {
+    "objectID": "Research.html#restoration-ecology-of-forests-and-grasslands-invaded-by-invasive-plant-species",
+    "href": "Research.html#restoration-ecology-of-forests-and-grasslands-invaded-by-invasive-plant-species",
+    "title": "Research",
+    "section": "Restoration ecology of forests and grasslands invaded by invasive plant species",
+    "text": "Restoration ecology of forests and grasslands invaded by invasive plant species\nMy research investigates how alien invasive plant species alter native vegetation, soil properties, and microbial communities in forest and grassland ecosystems. I am interested in understanding ecological recovery processes and evaluating restoration strategies that promote native biodiversity and ecosystem functioning following biological invasions."
   }
 ]

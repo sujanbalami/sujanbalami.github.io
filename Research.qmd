@@ -11,27 +11,34 @@ editor:
     wrap: 72
 ---
 
-# Microbial Ecology & Environmental Metagenomics
+# Computational ecology
 
-Metagenomics has emerged as a powerful approach for deciphering
-belowground microbial communities. My research applies metagenomic tools
-and computational analyses to understand microbial ecology during
-ecosystem restoration and to reveal microbial community responses to
-environmental disturbances and ecological change.
+The increasing availability of large ecological and environmental
+datasets requires advanced computational and statistical approaches for
+data integration, analysis, and interpretation. My research applies
+computational ecology methods, including ecological modeling, machine
+learning, and bioinformatics, to understand community dynamics,
+ecosystem processes, and complex ecological interactions.
 
-Research areas include:
+- Ecological data analysis and visualization (developing R and Python
+  packages)
 
-- Soil microbial ecology
+- Statistical modeling of ecological communities
 
-- Environmental metagenomics
+- Meta-analysis and synthesis of ecological datasets
 
-- Microbiome data analysis
-
-- Bioinformatics and computational methods
-
-- Microbial community dynamics
+- Environmental metagenomics and data analysis
 
 # Ecosystem restoration ecology
+
+## Restoration ecology of forests and grasslands invaded by invasive plant species
+
+My research investigates how alien invasive plant species alter native
+vegetation, soil properties, and microbial communities in forest and
+grassland ecosystems. I am interested in understanding ecological
+recovery processes and evaluating restoration strategies that promote
+native biodiversity and ecosystem functioning following biological
+invasions.
 
 ## Ecological restoration of abandoned agriculture lands
 
