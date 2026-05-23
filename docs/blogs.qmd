@@ -1,0 +1,14 @@
+---
+title: "Blogs"
+page-layout: full
+title-block-banner: true
+format: 
+  html: 
+    theme: lux 
+    css: styles/styles.css
+editor: 
+  markdown: 
+    wrap: 72
+---
+
+
