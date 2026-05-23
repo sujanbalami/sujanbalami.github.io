@@ -25,7 +25,7 @@ about:
 ---
 
 ::: contact
-**Sujan Balami PhD**
+# Sujan Balami
 
 *Postdoctoral Research Fellow*
 
