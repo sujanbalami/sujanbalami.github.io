@@ -15,7 +15,7 @@ website:
         href: Tutorial.qmd
       - text: "Collaborations"
         href: collaborations.qmd
-      - text: "Blogs"
+      - text: "Research blogs"
         href: blogs.qmd
     right:
       - text: "CV"
