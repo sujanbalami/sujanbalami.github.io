@@ -1,7 +1,3 @@
-a {
-  text-decoration: none; /* Removes underline */
-  color: steelblue; /* Ensures link inherits text color */
-}
 
 body {
   background-image: url("../pictures/dolakha.jpeg");
@@ -9,4 +5,24 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
+}
+
+
+.a {
+  font-family: Arial, sans-serif;
+  font-size: 15px;
+  color: white;
+  margin-top: 20px;
+  line-height: 1.6;
+  text-align: justify;
+
+  background: rgba(0, 0, 0, 0.55);
+  padding: 15px 20px;
+  border-radius: 10px;
+}
+
+.a h1,
+.a h2,
+.a h3 {
+  color: lightgreen;
 }

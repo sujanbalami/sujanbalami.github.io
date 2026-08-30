@@ -7,7 +7,7 @@ format:
     theme: lux
     css: styles/publication.css
 ---
-
+:::a
 # 2026
 - Limited restoration of plant microbiomes: insights from fungal assemblages of a peatland dominant [(link)](https://doi.org/10.1111/rec.70521)
 
@@ -77,3 +77,4 @@ format:
 # 2016
 
 - Nutritive Value of Some Wild Edible Macrofungi From Devdaha, Rupandehi District, Nepal [(link)](https://www.researchgate.net/publication/367331807_Nutritive_value_of_some_wild_edible_macrofungi_from_Devdaha_Rupandhei_district_Nepal)
+:::a
