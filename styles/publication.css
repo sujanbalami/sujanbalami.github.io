@@ -2,3 +2,11 @@ a {
   text-decoration: none; /* Removes underline */
   color: steelblue; /* Ensures link inherits text color */
 }
+
+body {
+  background-image: url("../pictures/dolakha.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}

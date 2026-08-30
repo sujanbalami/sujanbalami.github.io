@@ -1,29 +1,70 @@
+
+
 .contact {
-  font-family: 'Arial', serif;
+  font-family: Arial, sans-serif;
   font-size: 15px;
-  color: #553; /* Adjust the text color */
-  margin-top: 20px; /* Add spacing above this block */
-  line-height: 1.6; /* Adjust line spacing for better readability */
-  text-align: left !important; /* Justify the text */
+  color: white;
+  margin-top: 20px;
+  line-height: 1.6;
+  text-align: justify;
+
+  background: rgba(0, 0, 0, 0.55);
+  padding: 15px 20px;
+  border-radius: 10px;
 }
 
+.contact h1,
+.contact h2,
+.contact h3 {
+  color: lightgreen;
+}
 
 .about-extra {
-  font-family: 'Arial', serif;
+  font-family: Arial, sans-serif;
   font-size: 15px;
-  color: #553; /* Adjust the text color */
-  margin-top: 20px; /* Add spacing above this block */
-  line-height: 1.6; /* Adjust line spacing for better readability */
-  text-align: justify; /* Justify the text */
+  color: white;
+  margin-top: 20px;
+  line-height: 1.6;
+  text-align: justify;
+
+  background: rgba(0, 0, 0, 0.55);
+  padding: 15px 20px;
+  border-radius: 10px;
 }
+
+.about-extra h1,
+.about-extra h2,
+.about-extra h3 {
+  color: lightgreen;
+}
+
 
 
 
 .contact2 {
-  font-family: 'Arial', serif;
+  font-family: Arial, sans-serif;
   font-size: 15px;
-  color: #553; /* Adjust the text color */
-  margin-top: 20px; /* Add spacing above this block */
-  line-height: 1.6; /* Adjust line spacing for better readability */
-  text-align: justify; /* Justify the text */
+  color: white;
+  margin-top: 20px;
+  line-height: 1.6;
+  text-align: justify;
+
+  background: rgba(0, 0, 0, 0.55);
+  padding: 15px 20px;
+  border-radius: 10px;
+}
+
+.contact2 h1,
+.contact2 h2,
+.contact2 h3 {
+  color: lightgreen;
+}
+
+
+body {
+  background-image: url("../pictures/dolakha.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
