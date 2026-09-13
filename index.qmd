@@ -39,7 +39,7 @@ Gyeongkuk National University, Andong city, Republic of Korea
 ::: about-extra
 ### Professional summary
 
-I am a researcher in restoration ecology with a focus on plant and microbial communities, and ecosystem functioning. My expertise includes environmental metagenomics, bioinformatics, computational ecology, and large-scale ecological and microbiome data analysis. I apply ecological statistics, multivariate analysis, and computational approaches to investigate microbial community dynamics, nutrient limitations, and ecological recovery in disturbed ecosystems.
+I am a restoration ecologist with a research focus on plant communities, soils, and plant–soil microbiomes, including soil functions and ecosystem processes. My research integrates environmental metagenomics, bioinformatics, computational ecology, and large-scale ecological and microbiome data analysis to understand ecosystem responses to disturbance and recovery.
 
 ### Education
 
