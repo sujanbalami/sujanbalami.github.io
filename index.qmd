@@ -39,7 +39,7 @@ Gyeongkuk National University, Andong city, Republic of Korea
 ::: about-extra
 ### Professional summary
 
-I am a restoration ecologist with a research focus on plant communities, soils, and plant–soil microbiomes, including soil functions and ecosystem processes. My research integrates environmental metagenomics, bioinformatics, computational ecology, and large-scale ecological and microbiome data analysis to understand ecosystem responses to disturbance and recovery.
+I am a restoration ecologist investigating plant communities, soils, and plant–soil microbiomes across disturbed and recovering ecosystems. My research integrates environmental metagenomics, bioinformatics, computational ecology, and ecological statistics to understand microbial community dynamics, nutrient limitation, plant–soil interactions, and ecosystem recovery. I use large-scale ecological and microbiome datasets, multivariate analysis, and computational approaches to uncover mechanisms underlying ecological change and restoration.
 
 ### Education
 
@@ -49,7 +49,7 @@ Tribhuvan University, Kathmandu \| Nepal \| MSc in Botany
 
 ### Experience
 
-Research Fellow \| Chinese Academy of Sciences \| China
+Postdoctoral Research Fellow \| Chinese Academy of Sciences \| China
 
 Teaching Assistant \| Tribhuvan University, Kathmandu \| Nepal
 
@@ -79,5 +79,5 @@ Lab Technician \| University of South Bohemia, Ceske Budejovice \| Czech Republi
 
 E-mail: balamisujan\@gmail.com
 
-Address: Room 2205 \| Department of Biological Sciences \| Gyeongkuk National University \| Andong city \| Republic of Korea
+Address: Room 2205 \| Department of Biological Sciences (Building E10) \| Gyeongkuk National University \| Andong city \| Republic of Korea
 :::
