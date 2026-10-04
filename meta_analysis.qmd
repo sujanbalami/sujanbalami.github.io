@@ -1,0 +1,93 @@
+---
+title: "Meta-analysis"
+page-layout: full
+title-block-banner: true
+format: 
+  html: 
+    theme: lux 
+    css: styles/meta_analysis.css
+    toc: true
+    toc-depth: 3
+    toc-title: "**Table of contents**"
+editor: 
+  markdown: 
+    wrap: 72
+---
+
+Meta-analysis is a statistical approach for combining results from multiple independent studies to estimate an overall effect and identify factors that explain variation among studies.
+
+## What is a meta-analysis?
+
+Ecological studies often report different results because they are conducted in different environments, use different methods, or examine different species and systems. Meta-analysis provides a quantitative framework for synthesizing these findings.
+
+A typical meta-analysis involves:
+
+1. **Defining a research question**
+2. **Systematically searching the literature**
+3. **Screening and selecting relevant studies**
+4. **Extracting data from individual studies**
+5. **Calculating effect sizes**
+6. **Fitting meta-analytic models**
+7. **Examining heterogeneity and moderators**
+8. **Assessing the robustness of the results**
+
+## Effect sizes
+
+An effect size provides a common metric that allows results from different studies to be compared. For continuous ecological responses, the log response ratio (lnRR) is commonly used:
+
+\[
+\mathrm{lnRR} = \ln\left(\frac{\bar{X}_{T}}{\bar{X}_{C}}\right)
+\]
+
+where \(\bar{X}_{T}\) is the mean response in the treatment group and \(\bar{X}_{C}\) is the mean response in the control group.
+
+Positive values indicate higher values in the treatment relative to the control, whereas negative values indicate lower values.
+
+## Meta-analytic models
+
+A basic meta-analysis estimates an overall effect across studies. However, ecological datasets commonly contain multiple observations from the same study, site, or experiment. Multilevel meta-analysis can account for this non-independence by including appropriate random effects.
+
+For example:
+
+```{r  eval=FALSE}
+library(metafor)
+
+model <- rma.mv(
+  yi,
+  vi,
+  random = ~ 1 | StudyID/CohortID,
+  method = "REML",
+  data = dat
+)
+
+summary(model)
+```
+
+## Exploring moderators
+
+The effectiveness of an ecological treatment may depend on environmental conditions, species characteristics, or management practices. These factors can be examined using moderator analyses.
+
+```{r eval=FALSE}
+model_mod <- rma.mv(
+  yi,
+  vi,
+  mods = ~ Habitat + MAT + MAP,
+  random = ~ 1 | StudyID/CohortID,
+  method = "REML",
+  data = dat
+)
+
+summary(model_mod)
+```
+
+Moderator analyses can help identify **when, where, and under what conditions an ecological intervention is most effective**.
+
+## Visualizing results
+
+Forest plots provide a useful way to visualize individual study effects and the overall meta-analytic estimate.
+
+```{r  eval=FALSE}
+forest(model)
+```
+
+A well-designed meta-analysis should combine rigorous study selection, transparent data extraction, appropriate statistical models, and clear visualization of the results.

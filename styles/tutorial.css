@@ -1,3 +1,22 @@
+
+body {
+  background-image: url("../blogs/August_busan_visit.JPG");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+
+body {
+  color: #000000;
+}
+
+h1, h2, h3, h4, h5, h6,
+p, li, a {
+  color: #000000;
+}
+
 .metagenomics {
   font-family: 'Arial', serif;
   font-size: 15px;

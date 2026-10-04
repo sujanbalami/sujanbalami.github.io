@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Tutorial</title>
+<title>Meta-analysis</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -19,6 +19,41 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -71,7 +106,7 @@ ul.task-list li input[type="checkbox"] {
 
 
 <link rel="stylesheet" href="styles.css">
-<link rel="stylesheet" href="styles/tutorial.css">
+<link rel="stylesheet" href="styles/meta_analysis.css">
 </head>
 
 <body class="nav-fixed quarto-light">
@@ -99,7 +134,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Research</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./Tutorial.html" aria-current="page"> 
+    <a class="nav-link" href="./Tutorial.html"> 
 <span class="menu-text">Tutorial</span></a>
   </li>  
   <li class="nav-item">
@@ -137,7 +172,7 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-page-left">
-      <h1 class="title">Tutorial</h1>
+      <h1 class="title">Meta-analysis</h1>
                       </div>
   </div>
     
@@ -158,9 +193,11 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title"><strong>Table of contents</strong></h2>
    
   <ul>
-  <li><a href="#meta-analysis" id="toc-meta-analysis" class="nav-link active" data-scroll-target="#meta-analysis">Meta-analysis</a></li>
-  <li><a href="#ecological-modeling" id="toc-ecological-modeling" class="nav-link" data-scroll-target="#ecological-modeling">Ecological modeling</a></li>
-  <li><a href="#bioinformatics" id="toc-bioinformatics" class="nav-link" data-scroll-target="#bioinformatics">Bioinformatics</a></li>
+  <li><a href="#what-is-a-meta-analysis" id="toc-what-is-a-meta-analysis" class="nav-link active" data-scroll-target="#what-is-a-meta-analysis">What is a meta-analysis?</a></li>
+  <li><a href="#effect-sizes" id="toc-effect-sizes" class="nav-link" data-scroll-target="#effect-sizes">Effect sizes</a></li>
+  <li><a href="#meta-analytic-models" id="toc-meta-analytic-models" class="nav-link" data-scroll-target="#meta-analytic-models">Meta-analytic models</a></li>
+  <li><a href="#exploring-moderators" id="toc-exploring-moderators" class="nav-link" data-scroll-target="#exploring-moderators">Exploring moderators</a></li>
+  <li><a href="#visualizing-results" id="toc-visualizing-results" class="nav-link" data-scroll-target="#visualizing-results">Visualizing results</a></li>
   </ul>
 </nav>
     </div>
@@ -171,24 +208,71 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<section id="meta-analysis" class="level1">
-<h1>Meta-analysis</h1>
-<p>Learn more about meta-analysis:</p>
-<p><a href="./meta_analysis.html" class="meta-link">Meta-analysis tutorial →</a></p>
-<hr>
+<p>Meta-analysis is a statistical approach for combining results from multiple independent studies to estimate an overall effect and identify factors that explain variation among studies.</p>
+<section id="what-is-a-meta-analysis" class="level2">
+<h2 class="anchored" data-anchor-id="what-is-a-meta-analysis">What is a meta-analysis?</h2>
+<p>Ecological studies often report different results because they are conducted in different environments, use different methods, or examine different species and systems. Meta-analysis provides a quantitative framework for synthesizing these findings.</p>
+<p>A typical meta-analysis involves:</p>
+<ol type="1">
+<li><strong>Defining a research question</strong></li>
+<li><strong>Systematically searching the literature</strong></li>
+<li><strong>Screening and selecting relevant studies</strong></li>
+<li><strong>Extracting data from individual studies</strong></li>
+<li><strong>Calculating effect sizes</strong></li>
+<li><strong>Fitting meta-analytic models</strong></li>
+<li><strong>Examining heterogeneity and moderators</strong></li>
+<li><strong>Assessing the robustness of the results</strong></li>
+</ol>
 </section>
-<section id="ecological-modeling" class="level1">
-<h1>Ecological modeling</h1>
-<p>Learn more about ecological modeling:</p>
-<p><a href="./ecological_modeling.html" class="meta-link">Ecological modeling tutorial →</a></p>
-<hr>
+<section id="effect-sizes" class="level2">
+<h2 class="anchored" data-anchor-id="effect-sizes">Effect sizes</h2>
+<p>An effect size provides a common metric that allows results from different studies to be compared. For continuous ecological responses, the log response ratio (lnRR) is commonly used:</p>
+<p>[ = () ]</p>
+<p>where ({X}<em>{T}) is the mean response in the treatment group and ({X}</em>{C}) is the mean response in the control group.</p>
+<p>Positive values indicate higher values in the treatment relative to the control, whereas negative values indicate lower values.</p>
 </section>
-<section id="bioinformatics" class="level1">
-<h1>Bioinformatics</h1>
-<p>Learn more about downstream processing of next-generation sequencing data:</p>
-<p><a href="./Amplicon.html">Amplicon sequencing</a></p>
-<p><a href="./metagenome.html">Metagenome sequencing</a></p>
-<hr>
+<section id="meta-analytic-models" class="level2">
+<h2 class="anchored" data-anchor-id="meta-analytic-models">Meta-analytic models</h2>
+<p>A basic meta-analysis estimates an overall effect across studies. However, ecological datasets commonly contain multiple observations from the same study, site, or experiment. Multilevel meta-analysis can account for this non-independence by including appropriate random effects.</p>
+<p>For example:</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(metafor)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>model <span class="ot">&lt;-</span> <span class="fu">rma.mv</span>(</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>  yi,</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>  vi,</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>  <span class="at">random =</span> <span class="sc">~</span> <span class="dv">1</span> <span class="sc">|</span> StudyID<span class="sc">/</span>CohortID,</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>  <span class="at">method =</span> <span class="st">"REML"</span>,</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>  <span class="at">data =</span> dat</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(model)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+</section>
+<section id="exploring-moderators" class="level2">
+<h2 class="anchored" data-anchor-id="exploring-moderators">Exploring moderators</h2>
+<p>The effectiveness of an ecological treatment may depend on environmental conditions, species characteristics, or management practices. These factors can be examined using moderator analyses.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>model_mod <span class="ot">&lt;-</span> <span class="fu">rma.mv</span>(</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>  yi,</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>  vi,</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">mods =</span> <span class="sc">~</span> Habitat <span class="sc">+</span> MAT <span class="sc">+</span> MAP,</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">random =</span> <span class="sc">~</span> <span class="dv">1</span> <span class="sc">|</span> StudyID<span class="sc">/</span>CohortID,</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>  <span class="at">method =</span> <span class="st">"REML"</span>,</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>  <span class="at">data =</span> dat</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(model_mod)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<p>Moderator analyses can help identify <strong>when, where, and under what conditions an ecological intervention is most effective</strong>.</p>
+</section>
+<section id="visualizing-results" class="level2">
+<h2 class="anchored" data-anchor-id="visualizing-results">Visualizing results</h2>
+<p>Forest plots provide a useful way to visualize individual study effects and the overall meta-analytic estimate.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">forest</span>(model)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<p>A well-designed meta-analysis should combine rigorous study selection, transparent data extraction, appropriate statistical models, and clear visualization of the results.</p>
 
 
 </section>

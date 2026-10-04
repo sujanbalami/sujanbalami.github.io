@@ -1,0 +1,61 @@
+---
+title: "Ecological modeling"
+page-layout: full
+title-block-banner: true
+format: 
+  html: 
+    theme: lux 
+    css: styles/ecological_modeling.css
+    toc: true
+    toc-depth: 3
+    toc-title: "**Table of contents**"
+editor: 
+  markdown: 
+    wrap: 72
+---
+
+# Ecological modeling
+
+Ecological modeling provides a quantitative framework for understanding
+how organisms, communities, and ecosystems respond to environmental
+conditions and ecological processes.
+
+![](pictures/ecological_modeling_workflow.png){fig-align="center"
+width="516"}
+
+
+## Example 1: Community assembly processes
+
+Community assembly models can be used to investigate how environmental filtering,
+competition, dispersal, and stochastic processes determine species composition
+along environmental gradients.
+
+Common approaches include:
+
+- Trait-based models
+- Joint species distribution models
+- Generalized dissimilarity models
+- Null models
+- Structural equation models
+- Multivariate ordination and constrained ordination
+- Spatial models
+
+These approaches allow ecological observations to be linked to hypotheses about
+the mechanisms driving community composition.
+
+
+## Example 2: Epiphyte-host netwok
+
+<a href="https://www.sciencedirect.com/science/article/pii/S1470160X24009270"
+   target="_blank"
+   class="meta-link">
+  Read paper by Hu et al. 2024 on ScienceDirect →
+</a>
+
+## Example 3: Dynamics of biotic resistance mechanism
+
+<a href="https://onlinelibrary.wiley.com/doi/10.1002/brv.70190"
+   target="_blank"
+   class="meta-link">
+  Read paper Sheppard et al. 2026 on Wiley →
+</a>

@@ -46,7 +46,7 @@
     "href": "Tutorial.html",
     "title": "Tutorial",
     "section": "",
-    "text": "Click here to explore Statistical analysis"
+    "text": "Meta-analysis\nLearn more about meta-analysis:\nMeta-analysis tutorial →\n\n\n\nEcological modeling\nLearn more about ecological modeling:\nEcological modeling tutorial →\n\n\n\nBioinformatics\nLearn more about downstream processing of next-generation sequencing data:\nAmplicon sequencing\nMetagenome sequencing"
   },
   {
     "objectID": "index.html#education",
@@ -1237,5 +1237,159 @@
     "title": "Collaborations",
     "section": "",
     "text": "Professor Liang Song CHINA\n\nXishuangbanna Tropical Botanical Garden, Chinese Academy of Sciences, Xishuangbanna, China\n\nAssistant Professor Martina Vasutova CZECH REPUBLIC\n\nDepartment of Botany, Faculty of Science, University of South Bohemia, Ceske Budejovice, Czech Republic\n\nAssociate Professor Lal Bd. Thapa NEPAL\n\nCentral Department of Botany, Tribhuvan University, Kirtipur, Kathmandu, Nepal\n\nAssistant Professor Hari Sharan Adhikari NEPAL\n\nDepartment of Botany, Bhaktapur Multiple Campus, Tribhuvan University, Bhaktapur, Nepal"
+  },
+  {
+    "objectID": "Tutorial.html#amplicon-sequencing",
+    "href": "Tutorial.html#amplicon-sequencing",
+    "title": "Tutorial",
+    "section": "Amplicon sequencing",
+    "text": "Amplicon sequencing"
+  },
+  {
+    "objectID": "Tutorial.html#metagenome-sequencing",
+    "href": "Tutorial.html#metagenome-sequencing",
+    "title": "Tutorial",
+    "section": "Metagenome sequencing",
+    "text": "Metagenome sequencing"
+  },
+  {
+    "objectID": "meta_analysis.html",
+    "href": "meta_analysis.html",
+    "title": "Meta-analysis",
+    "section": "",
+    "text": "Meta-analysis is a statistical approach for combining results from multiple independent studies to estimate an overall effect and identify factors that explain variation among studies."
+  },
+  {
+    "objectID": "meta_analysis.html#what-is-a-meta-analysis",
+    "href": "meta_analysis.html#what-is-a-meta-analysis",
+    "title": "Meta-analysis",
+    "section": "What is a meta-analysis?",
+    "text": "What is a meta-analysis?\nEcological studies often report different results because they are conducted in different environments, use different methods, or examine different species and systems. Meta-analysis provides a quantitative framework for synthesizing these findings.\nA typical meta-analysis involves:\n\nDefining a research question\nSystematically searching the literature\nScreening and selecting relevant studies\nExtracting data from individual studies\nCalculating effect sizes\nFitting meta-analytic models\nExamining heterogeneity and moderators\nAssessing the robustness of the results"
+  },
+  {
+    "objectID": "meta_analysis.html#effect-sizes",
+    "href": "meta_analysis.html#effect-sizes",
+    "title": "Meta-analysis",
+    "section": "Effect sizes",
+    "text": "Effect sizes\nAn effect size provides a common metric that allows results from different studies to be compared. For continuous ecological responses, the log response ratio (lnRR) is commonly used:\n[ = () ]\nwhere ({X}{T}) is the mean response in the treatment group and ({X}{C}) is the mean response in the control group.\nPositive values indicate higher values in the treatment relative to the control, whereas negative values indicate lower values."
+  },
+  {
+    "objectID": "meta_analysis.html#meta-analytic-models",
+    "href": "meta_analysis.html#meta-analytic-models",
+    "title": "Meta-analysis",
+    "section": "Meta-analytic models",
+    "text": "Meta-analytic models\nA basic meta-analysis estimates an overall effect across studies. However, ecological datasets commonly contain multiple observations from the same study, site, or experiment. Multilevel meta-analysis can account for this non-independence by including appropriate random effects.\nFor example:\n\nlibrary(metafor)\n\nmodel &lt;- rma.mv(\n  yi,\n  vi,\n  random = ~ 1 | StudyID/CohortID,\n  method = \"REML\",\n  data = dat\n)\n\nsummary(model)"
+  },
+  {
+    "objectID": "meta_analysis.html#exploring-moderators",
+    "href": "meta_analysis.html#exploring-moderators",
+    "title": "Meta-analysis",
+    "section": "Exploring moderators",
+    "text": "Exploring moderators\nThe effectiveness of an ecological treatment may depend on environmental conditions, species characteristics, or management practices. These factors can be examined using moderator analyses.\n\nmodel_mod &lt;- rma.mv(\n  yi,\n  vi,\n  mods = ~ Habitat + MAT + MAP,\n  random = ~ 1 | StudyID/CohortID,\n  method = \"REML\",\n  data = dat\n)\n\nsummary(model_mod)\n\nModerator analyses can help identify when, where, and under what conditions an ecological intervention is most effective."
+  },
+  {
+    "objectID": "meta_analysis.html#visualizing-results",
+    "href": "meta_analysis.html#visualizing-results",
+    "title": "Meta-analysis",
+    "section": "Visualizing results",
+    "text": "Visualizing results\nForest plots provide a useful way to visualize individual study effects and the overall meta-analytic estimate.\n\nforest(model)\n\nA well-designed meta-analysis should combine rigorous study selection, transparent data extraction, appropriate statistical models, and clear visualization of the results."
+  },
+  {
+    "objectID": "ecological_modeling.html",
+    "href": "ecological_modeling.html",
+    "title": "Ecological modeling",
+    "section": "",
+    "text": "Ecological modeling provides a quantitative framework for understanding how organisms, communities, and ecosystems respond to environmental conditions and ecological processes.\n\n\n\n\n\n\n\nCommunity assembly models can be used to investigate how environmental filtering, competition, dispersal, and stochastic processes determine species composition along environmental gradients.\nCommon approaches include:\n\nTrait-based models\nJoint species distribution models\nGeneralized dissimilarity models\nNull models\nStructural equation models\nMultivariate ordination and constrained ordination\nSpatial models\n\nThese approaches allow ecological observations to be linked to hypotheses about the mechanisms driving community composition.\n\n\n\n Read paper by Hu et al. 2024 on ScienceDirect → \n\n\n\n Read paper Sheppard et al. 2026 on Wiley →"
+  },
+  {
+    "objectID": "ecological_modeling.html#statistical-modeling",
+    "href": "ecological_modeling.html#statistical-modeling",
+    "title": "Ecological modeling",
+    "section": "",
+    "text": "Statistical models allow ecological relationships to be quantified while accounting for variation and uncertainty in observations.\nCommon approaches include:\n\nGeneralized linear models (GLMs)\nGeneralized additive models (GAMs)\nLinear mixed-effects models\nGeneralized linear mixed-effects models (GLMMs)\nBayesian hierarchical models\nMultivariate models\nMeta-analytic models\n\nThe choice of model depends on the response variable, sampling design, distribution of the data, and ecological question."
+  },
+  {
+    "objectID": "ecological_modeling.html#generalized-linear-models",
+    "href": "ecological_modeling.html#generalized-linear-models",
+    "title": "Ecological modeling",
+    "section": "",
+    "text": "Generalized linear models extend ordinary linear regression to response variables that do not necessarily follow a normal distribution.\nFor example, species richness can be modeled using a Poisson or negative-binomial distribution:\n\nlibrary(MASS)\n\nmodel &lt;- glm.nb(\n  SpeciesRichness ~ Temperature + Precipitation + Habitat,\n  data = dat\n)\n\nsummary(model)\n\nGLMs are particularly useful for ecological count, proportion, and binary data."
+  },
+  {
+    "objectID": "ecological_modeling.html#mixed-effects-models",
+    "href": "ecological_modeling.html#mixed-effects-models",
+    "title": "Ecological modeling",
+    "section": "",
+    "text": "Ecological observations are often not independent. Multiple observations may come from the same site, region, study, or experimental block.\nMixed-effects models account for this hierarchical structure by including random effects.\n\nlibrary(lme4)\n\nmodel &lt;- lmer(\n  Biomass ~ Temperature + Precipitation + (1 | Site),\n  data = dat\n)\n\nsummary(model)\n\nFor non-Gaussian responses, generalized linear mixed-effects models can be used:\n\nmodel &lt;- glmer(\n  Abundance ~ Habitat + Temperature + (1 | Site),\n  family = poisson,\n  data = dat\n)\n\nsummary(model)\n\nMixed models are particularly useful for repeated measurements and nested ecological sampling designs."
+  },
+  {
+    "objectID": "ecological_modeling.html#community-ecology",
+    "href": "ecological_modeling.html#community-ecology",
+    "title": "Ecological modeling",
+    "section": "",
+    "text": "Ecological communities contain many interacting species, making community-level responses more complex than responses of individual species.\nOrdination methods can be used to summarize multivariate community composition.\n\n\nDetrended correspondence analysis (DCA) is useful for exploring species composition along environmental gradients.\n\nlibrary(vegan)\n\ndca_model &lt;- decorana(species_data)\n\nplot(dca_model)\n\n\n\n\nPrincipal components analysis (PCA) summarizes variation in multivariate environmental or community data using a smaller number of orthogonal axes.\n\npca_model &lt;- rda(environmental_data, scale = TRUE)\n\nplot(pca_model)\n\n\n\n\nCanonical correspondence analysis (CCA) relates species composition to measured environmental variables.\n\ncca_model &lt;- cca(\n  species_data ~ Soil_pH + Moisture + Temperature,\n  data = environmental_data\n)\n\nplot(cca_model)\n\nThese approaches can help identify major ecological gradients and environmental factors associated with differences in community composition."
+  },
+  {
+    "objectID": "ecological_modeling.html#environmental-relationships",
+    "href": "ecological_modeling.html#environmental-relationships",
+    "title": "Ecological modeling",
+    "section": "",
+    "text": "Ecological responses are often nonlinear. For example, species richness may increase with temperature up to an optimum and then decline.\nGeneralized additive models provide a flexible way to model such relationships.\n\nlibrary(mgcv)\n\ngam_model &lt;- gam(\n  SpeciesRichness ~ s(Temperature) + s(Precipitation),\n  data = dat,\n  method = \"REML\"\n)\n\nsummary(gam_model)\n\nplot(gam_model)\n\nGAMs are useful when the shape of an ecological relationship is not known in advance."
+  },
+  {
+    "objectID": "ecological_modeling.html#species-distribution-modeling",
+    "href": "ecological_modeling.html#species-distribution-modeling",
+    "title": "Ecological modeling",
+    "section": "",
+    "text": "Species distribution models estimate the relationship between species occurrence and environmental conditions.\nA simple logistic model can be used when the response is presence or absence:\n\nsdm &lt;- glm(\n  Presence ~ Temperature + Precipitation + Elevation,\n  family = binomial,\n  data = occurrence_data\n)\n\nsummary(sdm)\n\nMore complex species distribution models can incorporate nonlinear responses, spatial structure, and interactions among environmental variables."
+  },
+  {
+    "objectID": "ecological_modeling.html#multivariate-ecological-analysis",
+    "href": "ecological_modeling.html#multivariate-ecological-analysis",
+    "title": "Ecological modeling",
+    "section": "",
+    "text": "Many ecological questions involve several response variables simultaneously.\nMultivariate approaches can be used to investigate:\n\nSpecies composition\nFunctional traits\nEnvironmental gradients\nPlant–soil relationships\nMicrobial communities\nEcological networks\n\nFor example, PERMANOVA can test whether community composition differs among ecological groups:\nadon"
+  },
+  {
+    "objectID": "ecological_modeling.html#example-1",
+    "href": "ecological_modeling.html#example-1",
+    "title": "Ecological modeling",
+    "section": "",
+    "text": "Conceptual diagram first — map causal links before any math, grounded in literature examples.\nPick a simplified model family — predator-prey (Lotka-Volterra) instead of competition; hold abiotic factors constant.\nWrite governing equations — logistic invader growth minus predation; native growth from consumption minus mortality.\nAdd trait structure for evolution — 30 competing “types” per side; fitter types out-reproduce others, generating selection mechanically.\nParameterize starting diversity — beta-binomial distribution to set initial trait variance (V_I, V_C) explicitly.\nSolve numerically — deSolve::ode() integrates the system over simulated residence time.\nSensitivity analysis — rerun across a range of variance values to test how starting diversity affects outcomes.\nDecompose outcome into components — nested scenarios isolate density vs. diversity contributions to resistance over time.\nCompare to independent empirical pattern — check model output against the meta-analysis result only after the fact."
+  },
+  {
+    "objectID": "ecological_modeling.html#example-2-dynamics-of-biotic-resistance-mechanism",
+    "href": "ecological_modeling.html#example-2-dynamics-of-biotic-resistance-mechanism",
+    "title": "Ecological modeling",
+    "section": "",
+    "text": "Read the paper on Wiley →"
+  },
+  {
+    "objectID": "ecological_modeling.html#example-1-epiphyte-host-netwok",
+    "href": "ecological_modeling.html#example-1-epiphyte-host-netwok",
+    "title": "Ecological modeling",
+    "section": "",
+    "text": "Read the paper on ScienceDirect →"
+  },
+  {
+    "objectID": "ecological_modeling.html#example-1-community-assembly-processes",
+    "href": "ecological_modeling.html#example-1-community-assembly-processes",
+    "title": "Ecological modeling",
+    "section": "",
+    "text": "Community assembly models can be used to investigate how environmental filtering, competition, dispersal, and stochastic processes determine species composition along environmental gradients.\nCommon approaches include:\n\nTrait-based models\nJoint species distribution models\nGeneralized dissimilarity models\nNull models\nStructural equation models\nMultivariate ordination and constrained ordination\nSpatial models\n\nThese approaches allow ecological observations to be linked to hypotheses about the mechanisms driving community composition."
+  },
+  {
+    "objectID": "ecological_modeling.html#example-2-epiphyte-host-netwok",
+    "href": "ecological_modeling.html#example-2-epiphyte-host-netwok",
+    "title": "Ecological modeling",
+    "section": "",
+    "text": "Read paper by Hu et al. 2024 on ScienceDirect →"
+  },
+  {
+    "objectID": "ecological_modeling.html#example-3-dynamics-of-biotic-resistance-mechanism",
+    "href": "ecological_modeling.html#example-3-dynamics-of-biotic-resistance-mechanism",
+    "title": "Ecological modeling",
+    "section": "",
+    "text": "Read paper Sheppard et al. 2026 on Wiley →"
   }
 ]

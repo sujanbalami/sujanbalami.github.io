@@ -14,8 +14,29 @@ editor:
     wrap: 72
 ---
 
-# Next-generation sequencing
+# Meta-analysis
 
-## [Amplicon sequencing](Amplicon.qmd)
+Learn more about meta-analysis:
 
-## [Metagenome sequencing](metagenome.qmd)
+<a href="meta_analysis.qmd" class="meta-link">Meta-analysis tutorial →</a>
+
+---
+
+# Ecological modeling
+
+Learn more about ecological modeling:
+
+<a href="ecological_modeling.qmd" class="meta-link">Ecological modeling tutorial →</a>
+
+---
+
+
+# Bioinformatics
+
+Learn more about downstream processing of next-generation sequencing data:
+
+[Amplicon sequencing](Amplicon.qmd)
+
+[Metagenome sequencing](metagenome.qmd)
+
+---
