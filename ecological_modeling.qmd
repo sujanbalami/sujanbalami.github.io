@@ -23,8 +23,11 @@ conditions and ecological processes.
 ![](pictures/ecological_modeling_workflow.png){fig-align="center"
 width="516"}
 
+## Example 1: Species distrubution model
 
-## Example 1: Community assembly processes
+`library(dismo)`
+
+## Example 2: Community assembly processes
 
 Community assembly models can be used to investigate how environmental filtering,
 competition, dispersal, and stochastic processes determine species composition
@@ -43,14 +46,6 @@ Common approaches include:
 These approaches allow ecological observations to be linked to hypotheses about
 the mechanisms driving community composition.
 
-
-## Example 2: Epiphyte-host netwok
-
-<a href="https://www.sciencedirect.com/science/article/pii/S1470160X24009270"
-   target="_blank"
-   class="meta-link">
-  Read paper by Hu et al. 2024 on ScienceDirect →
-</a>
 
 ## Example 3: Dynamics of biotic resistance mechanism
 
