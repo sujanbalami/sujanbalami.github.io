@@ -11,6 +11,28 @@ editor:
     wrap: 72
 ---
 
+### 2026 September
+
+![](blogs/September_Gwacheon_visit.JPG){width="4284"}
+
+### 2026 August
+
+### ![](blogs/August_busan_visit.JPG)
+
+Busan visit
+
+### 2026 July
+
+![](blogs/july_KES_conference.JPG)
+
+Korean Ecological Society Conference
+
+### 2026 June
+
+### ![](blogs/june_busan_reference_sites.jpg)
+
+Wetland reference sites in Busan
+
 ### 2026 May ![](blogs/may_greenhouse.jpg)
 
 Taking data in greenhouse
