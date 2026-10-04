@@ -23,9 +23,11 @@ conditions and ecological processes.
 ![](pictures/ecological_modeling_workflow.png){fig-align="center"
 width="516"}
 
-## Example 1: Species distrubution model
+## Example 1: Species distribution model
 
-`library(dismo)`
+Species distribution modeling (SDM) is a quantitative approach for understanding and predicting where species may occur based on their relationship with environmental conditions. It is widely used in ecology, biogeography, biodiversity conservation, climate-change research, and the study of invasive species.
+
+
 
 ## Example 2: Community assembly processes
 

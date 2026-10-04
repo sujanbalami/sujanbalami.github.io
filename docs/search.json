@@ -1299,7 +1299,7 @@
     "href": "ecological_modeling.html",
     "title": "Ecological modeling",
     "section": "",
-    "text": "Ecological modeling provides a quantitative framework for understanding how organisms, communities, and ecosystems respond to environmental conditions and ecological processes.\n\n\n\n\n\n\n\nlibrary(dismo)\n\n\n\nCommunity assembly models can be used to investigate how environmental filtering, competition, dispersal, and stochastic processes determine species composition along environmental gradients.\nCommon approaches include:\n\nTrait-based models\nJoint species distribution models\nGeneralized dissimilarity models\nNull models\nStructural equation models\nMultivariate ordination and constrained ordination\nSpatial models\n\nThese approaches allow ecological observations to be linked to hypotheses about the mechanisms driving community composition.\n\n\n\n Read paper Sheppard et al. 2026 on Wiley →"
+    "text": "Ecological modeling provides a quantitative framework for understanding how organisms, communities, and ecosystems respond to environmental conditions and ecological processes.\n\n\n\n\n\n\n\nSpecies distribution modeling (SDM) is a quantitative approach for understanding and predicting where species may occur based on their relationship with environmental conditions. It is widely used in ecology, biogeography, biodiversity conservation, climate-change research, and the study of invasive species.\n\n\n\nCommunity assembly models can be used to investigate how environmental filtering, competition, dispersal, and stochastic processes determine species composition along environmental gradients.\nCommon approaches include:\n\nTrait-based models\nJoint species distribution models\nGeneralized dissimilarity models\nNull models\nStructural equation models\nMultivariate ordination and constrained ordination\nSpatial models\n\nThese approaches allow ecological observations to be linked to hypotheses about the mechanisms driving community composition.\n\n\n\n Read paper Sheppard et al. 2026 on Wiley →"
   },
   {
     "objectID": "ecological_modeling.html#statistical-modeling",
@@ -1405,5 +1405,12 @@
     "title": "Ecological modeling",
     "section": "",
     "text": "Community assembly models can be used to investigate how environmental filtering, competition, dispersal, and stochastic processes determine species composition along environmental gradients.\nCommon approaches include:\n\nTrait-based models\nJoint species distribution models\nGeneralized dissimilarity models\nNull models\nStructural equation models\nMultivariate ordination and constrained ordination\nSpatial models\n\nThese approaches allow ecological observations to be linked to hypotheses about the mechanisms driving community composition."
+  },
+  {
+    "objectID": "ecological_modeling.html#example-1-species-distribution-model",
+    "href": "ecological_modeling.html#example-1-species-distribution-model",
+    "title": "Ecological modeling",
+    "section": "",
+    "text": "Species distribution modeling (SDM) is a quantitative approach for understanding and predicting where species may occur based on their relationship with environmental conditions. It is widely used in ecology, biogeography, biodiversity conservation, climate-change research, and the study of invasive species."
   }
 ]
